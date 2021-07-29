@@ -35,25 +35,27 @@ genesis_markup(
 ?> 
 
 <div class="process-block">
-<div data-speed="1.5" style="transform:translate(-20px,0) rotate()" class="marquee3k news services prelative pr left is-init">
+	<div data-speed="1.5"  class="marquee3k news services prelative pr left is-init">
+		<div class="marquee3k__wrapper">
+			<div class="marquee3k-wrapper marquee3k__copy">
+				<div class="marquee-text news">
+					<span>Projekt Einreichen </span>
+				</div>
+			</div>
+			<div class="marquee3k-wrapper marquee3k__copy">
+				<div class="marquee-text news">
+					<span>Projekt Einreichen </span>
+				</div>
+			</div>
+			<div class="marquee3k-wrapper marquee3k__copy">
+				<div class="marquee-text news">
+					<span>Projekt Einreichen </span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<div class="marquee3k__wrapper" style="white-space: nowrap; transform: translate(-1032px, 0px) translateZ(0px);"><div class="marquee3k-wrapper marquee3k__copy" style="display: inline-block;">
-<div class="marquee-text news">
-<span>
-Projekt Einreichen </span>
-</div>
-</div><div class="marquee3k-wrapper marquee3k__copy" style="display: inline-block;">
-<div class="marquee-text news">
-<span>
-Projekt Einreichen </span>
-</div>
-</div><div class="marquee3k-wrapper marquee3k__copy" style="display: inline-block;">
-<div class="marquee-text news">
-<span>
-Projekt Einreichen </span>
-</div>
-</div></div></div>
-</div>
 <footer id="footer" class="footer">
     <div id="footer-widgets" class="footer-widgets">
         <div class="footer-wrapper row container m-auto p-0">
@@ -61,6 +63,13 @@ Projekt Einreichen </span>
                 <?php
                     if(is_active_sidebar('footer-1')){
                     dynamic_sidebar('footer-1');
+                    }
+                ?>
+            </div>
+            <div class="footer-sidebar d-sm col-12">
+                <?php
+                    if(is_active_sidebar('footer-3')){
+                    dynamic_sidebar('footer-3');
                     }
                 ?>
             </div>
@@ -73,7 +82,7 @@ Projekt Einreichen </span>
             </div>
         </div>
     </div>
-    <div class="footer-text-section">
+    <div class="footer-text-section d-md">
         <div class="row container m-auto p-0">
             <div class="disclaimer-copyright col-12">
                 <?php

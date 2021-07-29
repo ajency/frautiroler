@@ -1,2 +1,17 @@
+.d-md{
+	display: block;
+	@media(max-width: 991px){
+		display: none;
+	}
+}
+.d-sm{
+	display: block;
+	@media(min-width: 992px){
+		display: none;
+	}
+}
+
+
 @import "header";
+@import "animated-strip";
 @import "footer";

@@ -1,0 +1,48 @@
+
+
+@keyframes marquee {
+	0% {
+	  	transform: translateX(0);
+	}
+	100% {
+	  	transform: translateX(-100%);
+	}
+}
+
+.process-block{
+	.marquee3k{
+		&.services{
+			background: #F6F100;
+			transform: rotate(-6deg);
+			margin-bottom: 80px;
+		    padding: 10px 0;
+	        width: 110%;
+	        position: relative;
+	        left: -10px;
+	        .marquee3k__wrapper {
+	        	display: flex;
+		        .marquee3k-wrapper {
+		        	&.marquee3k__copy{
+		        		display: inline-block;
+	        		    white-space: nowrap;
+	        		    animation: marquee 15s linear infinite;
+						.marquee-text{
+							font-weight: bold;
+							font-size: 80px;
+							line-height: 96px;
+							text-transform: uppercase;
+							color: #D2277C;
+							@media(max-width: 991px){
+								font-size: 24px;
+								line-height: 29px;
+							}
+						}
+					}
+				}
+			}
+			@media(max-width: 991px){
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
