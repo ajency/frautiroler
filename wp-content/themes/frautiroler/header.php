@@ -73,7 +73,7 @@ do_action( 'genesis_before_header' );
  *
  * @since 1.0.2
  */
-do_action( 'genesis_header' );
+//do_action( 'genesis_header' );
 
 /**
  * Fires immediately after the `genesis_header` action hook, before the site inner opening markup.
@@ -81,11 +81,52 @@ do_action( 'genesis_header' );
  * @since 1.0.0
  */
 do_action( 'genesis_after_header' );
-?><div> <?php
-genesis_markup(
-	[
-		'open'    => '<div %s>',
-		'context' => 'site-inner',
-	]
-);
-genesis_structural_wrap( 'site-inner' );
+?>
+
+<header id="site-header" class="site-header">
+	<div class="site-header-block">
+		<div id="site-navigation" class="site-navigation">
+			<div class="site-navigation-wrapper container">
+				<div class="main-header d-flex justify-content-between pt-3 pb-4">
+					<div class="logo-text">
+						<div class="site-logo d-flex align-items-center">
+							<?php 
+							   	$custom_logo_id = get_theme_mod( 'custom_logo' );
+							   	$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+					      	?>
+							<a href="<?php echo get_site_url(); ?>/" class="d-flex align-items-center"><img src="<?php echo $image[0]; ?>" alt="" class="pr-2"></a>
+						</div>
+					</div>
+				</div>
+				<div class="navbar navbar-expand-md navbar-light header-menu p-0 d-md">
+				  	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+				</div>
+			</div>
+			<div class="navbar-right">
+				<input class="menu-trigger hidden" id="togglenav" type="checkbox" />
+				<label class="burger-wrapper" for="togglenav">
+				    <div class="hamburger">
+				     	<div class="bar"></div>
+					    <div class="bar"></div>
+					    <div class="bar"> </div>
+				    </div>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="hamburger-menu">
+		<div class="mobile-menu">
+			<div class="overlay"></div>
+			<div class="header-wrapper">
+				<a href="<?php echo get_site_url(); ?>/" class="site-logo"><img src="./wp-content/uploads/2021/07/tiroler-pink-logo.png" alt="" class="pr-2"></a>
+				<div class="hamburger hamburger-close">
+			     	<div class="bar"></div>
+				    <div class="bar"></div>
+				    <div class="bar"> </div>
+			    </div>
+		    </div>
+			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+		</div>
+	</div>	
+</header>
+<?php

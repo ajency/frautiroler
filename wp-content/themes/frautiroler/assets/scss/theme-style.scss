@@ -1,17 +1,8 @@
-.d-md{
-	display: block;
-	@media(max-width: 991px){
-		display: none;
-	}
-}
-.d-sm{
-	display: block;
-	@media(min-width: 992px){
-		display: none;
-	}
-}
-
+$ease-in-out: cubic-bezier(0.48, 0.04, 0.25, 1);
 
 @import "header";
 @import "animated-strip";
+@import "helpers";
+@import "form";
+@import "button";
 @import "footer";
