@@ -3,6 +3,8 @@ $(document).ready(function () {
 });
 $('.burger-wrapper').on('click', function(){
 	$('.mobile-menu').toggleClass('open');
+	$('.site-navigation').addClass('show-main-menu');
+	$('.header-wrapper').addClass('show-hamburger-menu');
     if($('.mobile-menu').hasClass('open')){
         $('body').addClass('overflow-hidden');
     }else{
@@ -11,6 +13,9 @@ $('.burger-wrapper').on('click', function(){
 });
 $('.hamburger-close').on('click', function(){
 	$('.mobile-menu').removeClass('open');
+	$('.site-navigation').removeClass('show-main-menu');
+	$('.header-wrapper').removeClass('show-hamburger-menu');
+	$('body').removeClass('overflow-hidden');
 });
 
 

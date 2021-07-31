@@ -53,6 +53,7 @@
 					margin-bottom: 0;
 					padding: 17px 0 14px;
 					line-height: 0;
+					position: relative;
 					a{
 						font-weight: normal;
 						font-size: 14px;
@@ -92,8 +93,9 @@
 			display: flex;
 			padding: 28px 0px;
 			&-item{
-				margin-bottom: 0;
+				margin: 0px 24px 0 0;
 			    line-height: 0;
+			    position: relative;
 				a{
 					font-weight: normal;
 					font-size: 14px;
@@ -102,8 +104,39 @@
 					flex: none;
 					order: 0;
 					flex-grow: 0;
-					margin: 0px 24px 0 0;
 				    text-decoration: none;
+				}
+				&:before{
+					transition: all 250ms $ease-out;
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					height: 1px;
+					margin: auto;
+					pointer-events: none;
+    				background: 0 0;
+				}
+				&:after{
+					content: '';
+					transition: transform 250ms $ease-out;
+					background-color: #FFFFFF;
+					transform: scaleX(0);
+					transform-origin: right center;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					height: 1px;
+					margin: auto;
+					pointer-events: none;
+				}
+				&:hover{
+					&:after {
+					    transform: scaleX(1);
+					    transform-origin: left center;
+				    }
 				}
 			}
 		}

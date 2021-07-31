@@ -1,3 +1,8 @@
+
+body{
+	-webkit-font-smoothing:antialiased; 
+	background-color: #FFF;
+}
 .d-md{
 	display: block;
 	@media(max-width: 991px){
@@ -44,6 +49,11 @@
 .hidden {
 	display: none;
 }
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
 .section-title{
 	font-size: 60px;
 	line-height: 70px;
