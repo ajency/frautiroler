@@ -10,39 +10,38 @@
 }
 
 .process-block{
+	overflow: hidden;
 	.marquee3k{
-		&.services{
-			background: #F6F100;
-			transform: rotate(-6deg);
-			margin-bottom: 80px;
-		    padding: 10px 0;
-	        width: 110%;
-	        position: relative;
-	        left: -10px;
-	        .marquee3k__wrapper {
-	        	display: flex;
-		        .marquee3k-wrapper {
-		        	&.marquee3k__copy{
-		        		display: inline-block;
-	        		    white-space: nowrap;
-	        		    animation: marquee 15s linear infinite;
-						.marquee-text{
-							font-weight: bold;
-							font-size: 80px;
-							line-height: 96px;
-							text-transform: uppercase;
-							color: #D2277C;
-							@media(max-width: 991px){
-								font-size: 24px;
-								line-height: 29px;
-							}
+		background: #F6F100;
+	    transform: translate(-20px,0) rotate(-5deg);
+	    margin-top: 80px;
+		margin-bottom: 80px;
+		padding: 10px 0;
+		position: relative;
+		width: 110%;
+    	.marquee3k__wrapper {
+        	display: flex;
+	        .marquee3k-wrapper {
+	        	&.marquee3k__copy{
+	        		display: inline-block;
+        		    white-space: nowrap;
+        		    animation: marquee 10s linear infinite;
+					.marquee-text{
+						font-weight: bold;
+						font-size: 80px;
+						line-height: 96px;
+						text-transform: uppercase;
+						color: #D2277C;
+						@media(max-width: 991px){
+							font-size: 24px;
+							line-height: 29px;
 						}
 					}
 				}
 			}
-			@media(max-width: 991px){
-				margin-bottom: 40px;
-			}
+		}
+		@media(max-width: 991px){
+			margin-bottom: 40px;
 		}
 	}
 }
