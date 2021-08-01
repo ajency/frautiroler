@@ -35,14 +35,15 @@
 	    justify-content: space-between;
 		.widget-wrap{
 			h2{
+				font-family: 'Myriad-Pro-Bold';
 				font-weight: bold;
 				font-size: 32px;
-				line-height: 38px;
+				line-height: 32px;
 				color: #008D36;
 			    margin-bottom: 0;
 			    @media(max-width: 991px){
 					font-size: 24px;
-					line-height: 29px;
+					line-height: 24px;
 					margin-bottom: 36px;
 			    }
 			}
@@ -56,6 +57,7 @@
 					position: relative;
 					a{
 						font-weight: normal;
+						font-family: 'Myriad-Pro-Regular';
 						font-size: 14px;
 						line-height: 17px;
 						color: #000000;
@@ -91,13 +93,15 @@
 		}
 		.menu{
 			display: flex;
-			padding: 28px 0px;
+			padding: 31px 0px 26px;
+			font-family: 'Myriad-Pro-Regular';
 			&-item{
 				margin: 0px 24px 0 0;
 			    line-height: 0;
 			    position: relative;
 				a{
 					font-weight: normal;
+					font-family: 'Myriad-Pro-Regular';
 					font-size: 14px;
 					line-height: 17px;
 					color: #FFFFFF;
