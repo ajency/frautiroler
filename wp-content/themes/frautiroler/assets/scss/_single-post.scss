@@ -1,9 +1,19 @@
 .single-post{
     background-color: #F8F8F8 !important;
+    .site-header--overlay {
+        min-height: 708px;
+        left: -20px;
+
+        @media only screen and (max-width: 768px){
+            min-height: 300px;
+            left: 0px;
+        }
+    }
     header{
         background-color: #F8F8F8 !important;
-        background-image: url("../../../../uploads/2021/08/single-page-header-bg.png");
-        min-height: 708px;
+        box-shadow: none !important;
+        //background-image: url("../../../../uploads/2021/08/single-page-header-bg.png");
+        //min-height: 708px;
     }
     .footer-widgets{
         background-color: #F8F8F8 !important;
@@ -90,12 +100,14 @@ i{
             background-color: white;
             padding: 100px;
             display: flex;
-            transform: translateY(-500px);
+            transform: translateY(-130px);
+            position: relative;
+            z-index: 9999;
 
             @media only screen and (max-width: 768px){
                 padding: 33px 25px;
                 flex-direction: column;
-                transform: translateY(-580px);
+                transform: translateY(-90px);
             }
             
             .post-content-left{
@@ -184,11 +196,11 @@ i{
         }
 
         .projects{
-            margin-top: -400px;
+            margin-top: -10px;
             padding-bottom: 56px;
 
             @media only screen and (max-width: 768px){
-                margin-top: -520px;
+                margin-top: -30px;
                 padding-bottom: 30px;
             }
 
