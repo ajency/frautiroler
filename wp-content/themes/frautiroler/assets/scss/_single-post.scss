@@ -235,6 +235,11 @@ i{
                         line-height: 38px;
                         text-decoration: none !important;
                         color: #000000;
+
+                        a{
+                            text-decoration: none !important;
+                            color: #000000;
+                        }
                     }
                     .project-votes{
 
@@ -243,11 +248,33 @@ i{
                         right: 20px;
                     }
                     .project-description{
+                        
+                        a:nth-child(1){
+
+                            text-decoration: none;
+                            color: black !important;
+
+                            &:hover{
+                                text-decoration: none;
+                                color: black !important;
+                            }
+                        }
                         p{
                             display: flex;
                             flex-direction: column;
 
-                            a{
+                            a:nth-child(1){
+
+                                text-decoration: none;
+                                color: black !important;
+
+                                &:hover{
+                                    text-decoration: none;
+                                    color: black !important;
+                                }
+                            }
+
+                            a:nth-child(2){
                                 margin-top:19px;
                                 color: #000000;
                                 font-weight: bold;
@@ -260,7 +287,7 @@ i{
                             }
                         }
                     }
-                    &:hover >.project-description a{
+                    &:hover >.project-description p a:nth-child(2){
                         color: $pink-hover !important;
                         transition: color $normal-duration-2 $ease-out;
                     }
@@ -272,7 +299,7 @@ i{
                         opacity: 10%;
                         transition: opacity $normal-duration-2 $ease-out;
                     }
-                    &:active >.project-description a{
+                    &:active >.project-description p a:nth-child(2){
                         color: $pink-pressed !important;
                         transition: color $normal-duration-2 $ease-out;
                     }
