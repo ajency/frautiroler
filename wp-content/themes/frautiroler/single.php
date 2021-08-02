@@ -14,26 +14,62 @@
 // This file handles single entries, but only exists for the sake of child theme forward compatibility.
 /* genesis(); */
 get_header();  ?>
+ 
+<?php if ( have_posts() ) : ?>
+ 
+     
+        <div class="custom_single_post_page">
+            <div class="container">
 
-<div class="custom_single_post_page">
+<!-- project details -->
+<?php while ( have_posts() ) : the_post(); ?>
 
-    <div class="container">
-        <div class="row">
-            <div class="post-content-left">
-                    <h1 class="post-title">Kurse für junge Mütter</h1>
-                    <h5 class="post-author">von MAria K.</h5>
-                    <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.</p>
+                <div class="row project-details">
+                    <div class="post-content-left">
+                            <div class="project-votes">94</div>
+                            <h1 class="post-title"><?php the_title(); ?></h1>
+                            <h5 class="post-author"><?php the_author(); ?></h5>
+                            <p class="post-content"><?php the_content(); ?></p>
+                    </div>
+                    <div class="post-content-right">
+                        <div class="votes">29</div>
+                        <div class="votes-subtext">STimmen</div>
+                        <button class="custom-button">Jetzt abstimmen</button>
+                    </div>
+                </div>
+<?php endwhile; ?>
+<!-- project details end-->
+<!-- other projects -->
 
-                    <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua incididunt ut labore.</p>
-            </div>
-            <div class="post-content-right">
-                <div class="vote-counter">29</div>
-                <div class="vote-counter-subtext">STimmen</div>
-                <button class="custom-button">Jetzt abstimmen</button>
+<?php $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3));
+
+    if ( $allPostsWPQuery->have_posts() ) :?>
+
+                <div class="row projects">
+                    <div class="section-title">Weitere Projekte</div>
+                    <div class="project-list">
+                    <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
+                        <div class="project-item" onclick="location.href='<?php the_permalink(); ?>';" style="cursor:pointer;">
+                            <div class="project-image"><?php the_post_thumbnail( 'medium' ); ?></div>
+                            <div class="project-votes">94</div>
+                            <div class="project-title"><?php the_title(); ?></div>
+                            <div class="project-description"><?php the_excerpt(); ?></div>
+                        </div>
+                        <?php endwhile; ?>
+                    </div>
+                </div>
+    <?php wp_reset_postdata(); ?>
+    <?php endif; ?>
+
+<!-- other projects end-->
+
             </div>
         </div>
-    </div>
-</div>
+
+ <?php else : ?>
+    <p><?php _e( 'There no posts to display.' ); ?></p>
+<?php endif; ?>
+
 
 <?php
 get_footer();

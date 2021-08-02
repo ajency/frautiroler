@@ -304,3 +304,21 @@ function register_menus() {
 	);
 }
 add_action('init', 'register_menus');
+
+/*
+=============================================================
+Read more link for excerpts
+=============================================================
+*/
+
+function new_excerpt_more($more) {
+	global $post;
+	   return '… <a href="'. get_permalink($post->ID) . '">' . 'Mehr Info' . '</a>';
+	}
+	add_filter('excerpt_more', 'new_excerpt_more');
+
+
+	function wpdocs_custom_excerpt_length( $length ) {
+		return 18;
+	}
+	add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

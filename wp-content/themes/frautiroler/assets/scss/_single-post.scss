@@ -1,24 +1,69 @@
 .single-post{
+    background-color: #F8F8F8 !important;
     header{
         background-color: #F8F8F8 !important;
+        background-image: url("../../../../uploads/2021/07/single-page-header-bg.png");
+        min-height: 708px;
+    }
+    .footer-widgets{
+        background-color: #F8F8F8 !important;
+    }
+}
+
+.project-votes{
+    background-color: white;
+    width: max-content;
+    padding: 12px 16px;
+    border-radius: 60px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+
+    &::after{
+        content: '\f004';
+        color: #D2277C;
+        font-family: 'FontAwesome';
+        font-size: 16px;
+        margin-left: 10px;
     }
 }
 
 .custom_single_post_page{
     background-color: #F8F8F8;
-    padding-bottom: 300px;
 
     .container{
-        background-color: white;
-        padding: 100px;
-        /* transform: translateY(-150px); */
-        .row{
+
+        .project-details{
+            background-color: white;
+            padding: 100px;
             display: flex;
+            transform: translateY(-500px);
+
+            @media only screen and (max-width: 768px){
+                padding: 33px 25px;
+                flex-direction: column;
+                transform: translateY(-580px);
+            }
             
             .post-content-left{
                width: 70%;
                border-right: 1px solid #CCCCCC;
                padding-right: 100px;
+
+               @media only screen and (max-width: 768px){
+                padding-right: 0px;
+                width: 100%;
+                border:none;
+                }
+
+                .project-votes{
+                    border: 1px solid #000000;
+                    margin-bottom: 24px;
+
+                    @media only screen and (min-width: 768px){
+                        display: none;
+                    }
+                }
 
                .post-title{
                 font-size: 60px;
@@ -35,10 +80,6 @@
                 opacity: 0.6;
                }
                .post-content{
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: 26px;
                 margin-top: 32px;
                }
             }
@@ -46,13 +87,21 @@
                 width: 30%;
                 text-align: center;
 
-                .vote-counter{
+                @media only screen and (max-width: 768px){
+                    width: 100%;
+                    }
+
+                .votes{
                     font-style: normal;
                     font-weight: bold;
                     font-size: 100px;
                     line-height: 120px;
+
+                    @media only screen and (max-width: 768px){
+                        display: none;
+                    }
                 }
-                .vote-counter-subtext{
+                .votes-subtext{
                     font-style: normal;
                     font-weight: bold;
                     font-size: 14px;
@@ -60,6 +109,10 @@
                     text-align: center;
                     letter-spacing: 0.08em;
                     text-transform: uppercase;
+
+                    @media only screen and (max-width: 768px){
+                        display: none;
+                    }
                 }
                 .custom-button{
                     background: #D2277C;
@@ -76,5 +129,78 @@
                 }
              }
         }
+
+        .projects{
+            margin-top: -400px;
+            padding-bottom: 95px;
+
+            @media only screen and (max-width: 768px){
+                margin-top: -520px;
+                padding-bottom: 30px;
+            }
+
+            .project-list{
+                margin-top: 56px;
+                display: flex;
+                justify-content: space-between;
+
+                @media only screen and (max-width: 768px){
+                    flex-direction: column;
+                    margin-top: 64px;
+                }
+
+                .project-item{
+                    width: 412px;
+                    position: relative;
+
+                    @media only screen and (max-width: 768px){
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+
+                    .project-image{
+                        img{
+                            width: auto;
+                            height: 254px;
+                        }
+                    }
+                    .project-title{
+                        margin-top: 24px;
+                        margin-bottom: 12px;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 38px;
+                        text-decoration: none !important;
+                        color: #000000;
+                    }
+                    .project-votes{
+
+                        position: absolute;
+                        top: 19px;
+                        right: 20px;
+                    }
+                    .project-description{
+                        p{
+                            display: flex;
+                            flex-direction: column;
+
+                            a{
+                                margin-top:19px;
+                                color: #000000;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 19px;
+
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
