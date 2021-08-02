@@ -119,7 +119,7 @@ do_action( 'genesis_after_header' );
 		<div class="mobile-menu">
 			<div class="overlay"></div>
 			<div class="header-wrapper">
-				<a href="<?php echo get_site_url(); ?>/" class="site-logo"><img src="./wp-content/themes/frautiroler/assets/img/tiroler-pink-logo.png" alt="" class="pr-2"></a>
+				<a href="<?php echo get_site_url(); ?>/" class="site-logo"><img src="../wp-content/themes/frautiroler/assets/img/tiroler-pink-logo.png" alt="" class="pr-2"></a>
 				<div class="hamburger hamburger-close">
 			     	<div class="bar"></div>
 				    <div class="bar"></div>
