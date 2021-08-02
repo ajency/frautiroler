@@ -1,15 +1,30 @@
 .site-header{
-	background-color: #D2277C;
     width: 100%;
     max-width: 100%;
-    min-height: 350px;
-    background-repeat: no-repeat;
-    position: static;
-    top: 0 !important;
-    left: 0;
-    right: 0;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+	top: 0 !important;
+	left: 0;
+	right: 0;
+	min-height: 325px;
+	padding: 0;
+    &--overlay{
+	    width: 110%;
+    	transform: translate(-20px, 0) rotate(-5deg);
+	    background-color: #D2277C;
+	    min-height: 325px;
+	    background-repeat: no-repeat;
+	    position: absolute;
+	    top: -90px;
+	    left: 0;
+	    right: 0;
+	    z-index: -1;
+	    background-position: center;
+	    background-size: cover;
+	    @media(max-width: 991px){
+	    	min-height: 220px;
+	    	z-index: 0;
+	    }
+    }
     .site-navigation{
     	&-wrapper{
 		    display: flex;
@@ -36,7 +51,9 @@
 		    }
 		    @media(max-width: 991px){
 		    	margin-top: 0;
+	    	    margin-left: 0;
 		    	padding: 0;
+		    	z-index: 2;
 		    }
     	}
 	    .navbar-right{
@@ -98,7 +115,7 @@
     		display: flex;
 		    justify-content: space-between;
 		    align-items: center;
-		    margin-top: 20px;
+		    margin-top: 25px;
     	}
     }
 	.header-menu{

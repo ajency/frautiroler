@@ -84,6 +84,7 @@ do_action( 'genesis_after_header' );
 ?>
 
 <header id="site-header" class="site-header">
+	<div class="site-header--overlay"></div>
 	<div class="site-header-block">
 		<div id="site-navigation" class="site-navigation">
 			<div class="site-navigation-wrapper container">
