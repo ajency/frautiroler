@@ -10,6 +10,12 @@
     }
 }
 
+i{
+    font-family: 'FontAwesome' !important;
+    font-style: normal !important;
+    font-size: 16px;
+}
+
 .project-votes{
     background-color: white;
     width: max-content;
@@ -17,18 +23,65 @@
     border-radius: 60px;
     font-size: 14px;
     line-height: 17px;
-    font-weight: bold;
+    letter-spacing: 0.08em;
+    font-family: 'Myriad-Pro-Bold';
+    cursor: pointer;
+    
+    &:hover .heart{
+        color: $pink-hover;
+        transition: color $normal-duration-2 $ease-out;
+    }
+    &:active .heart{
+        color: $pink-pressed;
+        transition: color $normal-duration-2 $ease-out;
+    }
+    .heart{
+        color: $pink;
+        margin-left: 2px;
 
-    &::after{
-        content: '\f004';
-        color: #D2277C;
-        font-family: 'FontAwesome';
-        font-size: 16px;
-        margin-left: 10px;
     }
 }
 
+.tooltip:before {
+    content: attr(data-content);
+    display: block;
+    background-color:$pink;
+    border-radius: 3px;
+    padding:10px;
+    color: white;
+    font-size: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Myriad-Pro-Regular';
+    letter-spacing: normal;
+  }
+.tooltip:after {
+    content: '';
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid $pink;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-top: 36.5px;
+    margin-left: 35px;
+  }
+  .tooltip:before,
+  .tooltip:after {
+    top: -50px;
+    left: -10px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.project-votes:hover.tooltip:before,
+.project-votes:hover.tooltip:after {
+    opacity: 1;
+  }
+
 .custom_single_post_page{
+    font-family: 'Myriad-Pro-Regular';
     background-color: #F8F8F8;
 
     .container{
@@ -115,7 +168,7 @@
                     }
                 }
                 .custom-button{
-                    background: #D2277C;
+                    background: $pink;
                     border-radius: 60px;
                     margin-top:35.61px;
 
@@ -132,7 +185,7 @@
 
         .projects{
             margin-top: -400px;
-            padding-bottom: 95px;
+            padding-bottom: 56px;
 
             @media only screen and (max-width: 768px){
                 margin-top: -520px;
@@ -159,9 +212,18 @@
                     }
 
                     .project-image{
+                        overflow: hidden;
                         img{
                             width: auto;
                             height: 254px;
+                        }
+                        .overlay{
+                            height: 254px;
+                            width: 100%;
+                            background-color: black;
+                            position: absolute;
+                            top: 0;
+                            opacity: 0%;
                         }
                     }
                     .project-title{
@@ -197,6 +259,30 @@
                                 }
                             }
                         }
+                    }
+                    &:hover >.project-description a{
+                        color: $pink-hover !important;
+                        transition: color $normal-duration-2 $ease-out;
+                    }
+                    &:hover >.project-image img{
+                        transform: scale(1.05);
+                        transition: transform $normal-duration-2 $ease-out;
+                    }
+                    &:hover >.project-image .overlay{
+                        opacity: 10%;
+                        transition: opacity $normal-duration-2 $ease-out;
+                    }
+                    &:active >.project-description a{
+                        color: $pink-pressed !important;
+                        transition: color $normal-duration-2 $ease-out;
+                    }
+                    &:active >.project-image img{
+                        transform: scale(1.07);
+                        transition: transform $normal-duration-2 $ease-out;
+                    }
+                    &:active >.project-image .overlay{
+                        opacity: 10%;
+                        transition: opacity $normal-duration-2 $ease-out;
                     }
                 }
             }

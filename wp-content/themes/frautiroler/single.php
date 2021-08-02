@@ -26,7 +26,7 @@ get_header();  ?>
 
                 <div class="row project-details">
                     <div class="post-content-left">
-                            <div class="project-votes">94</div>
+                            <div class="project-votes">94 <i class="fas fa-heart heart"></i></div>
                             <h1 class="post-title"><?php the_title(); ?></h1>
                             <h5 class="post-author"><?php the_author(); ?></h5>
                             <p class="post-content"><?php the_content(); ?></p>
@@ -49,11 +49,11 @@ get_header();  ?>
                     <div class="section-title">Weitere Projekte</div>
                     <div class="project-list">
                     <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
-                        <div class="project-item" onclick="location.href='<?php the_permalink(); ?>';" style="cursor:pointer;">
-                            <div class="project-image"><?php the_post_thumbnail( 'medium' ); ?></div>
-                            <div class="project-votes">94</div>
-                            <div class="project-title"><?php the_title(); ?></div>
-                            <div class="project-description"><?php the_excerpt(); ?></div>
+                        <div class="project-item" style="cursor:pointer;">
+                            <div class="project-image" onclick="location.href='<?php the_permalink(); ?>';" style="cursor:pointer;"><?php the_post_thumbnail( 'medium' ); ?><div class="overlay"></div></div>
+                            <div class="project-votes tooltip" data-content="Abstimmen">94 <i class="fas fa-heart heart"></i></div>
+                            <div class="project-title" onclick="location.href='<?php the_permalink(); ?>';"><?php the_title(); ?></div>
+                            <div class="project-description" onclick="location.href='<?php the_permalink(); ?>';"><?php the_excerpt(); ?></div>
                         </div>
                         <?php endwhile; ?>
                     </div>
