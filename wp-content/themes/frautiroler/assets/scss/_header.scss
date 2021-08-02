@@ -1,6 +1,5 @@
 .site-header{
-	/*background-color: #D2277C;*/
-	background-image: url("../../../../uploads/2021/08/header-bg.png");
+	background-color: #D2277C;
     width: 100%;
     max-width: 100%;
     min-height: 350px;
@@ -18,13 +17,21 @@
 		    align-items: center;
 		    margin-top: 30px;
 		    .site-logo{
-		    	img{
-		    		width: 285px;
-		    		height: 100%;
-		    		object-fit: contain;
-		    		@media(max-width: 991px){
-		    			width: 140px;
-		    		}
+		    	a{
+			    	img{
+			    		width: 285px;
+			    		height: 100%;
+			    		object-fit: contain;
+			    		@media(max-width: 991px){
+			    			width: 140px;
+			    		}
+				    	&:focus{
+			    			outline: 0;
+			    		}
+			    	}
+			    	&:focus{
+			    		outline: 0;
+			    	}
 		    	}
 		    }
 		    @media(max-width: 991px){
@@ -256,7 +263,7 @@
 				left: 0;
 				right: 0;
 				top: 0;
-				z-index: 1;
+				z-index: 2;
 				padding: 25px 30px;
 				display: inline-block;
 				width: 100%;
