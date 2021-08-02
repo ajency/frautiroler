@@ -151,11 +151,11 @@
 						    content: '';
 						    color: #DDDDDD;
 						    border: 1px solid;
-						    width: 107%;
+						    width: calc(100% + 14px);
 						    height: 100%;
 						    position: absolute;
 						    top: 0;
-						    left: -3px;
+						    left: -7px;
 						    right: 0;
 						    padding: 6px 8px;
 						    border-radius: 4px;
