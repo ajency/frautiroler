@@ -117,16 +117,17 @@ do_action( 'genesis_after_header' );
 	</div>
 	<div class="hamburger-menu">
 		<div class="mobile-menu">
-			<div class="overlay"></div>
-			<div class="header-wrapper">
-				<a href="<?php echo get_site_url(); ?>/" class="site-logo"><img src="../wp-content/themes/frautiroler/assets/img/tiroler-pink-logo.png" alt="" class="pr-2"></a>
-				<div class="hamburger hamburger-close">
-			     	<div class="bar"></div>
-				    <div class="bar"></div>
-				    <div class="bar"> </div>
+			<div class="overlay">
+				<div class="header-wrapper">
+					<a href="<?php echo get_site_url(); ?>/" class="site-logo"><img src="wp-content/themes/frautiroler/assets/img/tiroler-pink-logo.png" alt="" class="pr-2"></a>
+					<div class="hamburger hamburger-close">
+				     	<div class="bar"></div>
+					    <div class="bar"></div>
+					    <div class="bar"> </div>
+				    </div>
 			    </div>
-		    </div>
-			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+			</div>
 		</div>
 	</div>	
 </header>
