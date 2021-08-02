@@ -51,9 +51,8 @@ get_header();  ?>
                     <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
                         <div class="project-item" style="cursor:pointer;">
                             <div class="project-image" style="cursor:pointer;">
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?>
-                                    <div class="overlay"></div>
-                                </a>
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
+                                <div class="overlay"></div>
                             </div>
                             <div class="project-votes tooltip" data-content="Abstimmen">94 <i class="fas fa-heart heart"></i></div>
                             <div class="project-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
