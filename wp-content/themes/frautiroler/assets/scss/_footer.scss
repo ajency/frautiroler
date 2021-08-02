@@ -63,6 +63,9 @@
 						color: #000000;
 						text-align: center;
 						text-decoration: none;
+						&:focus{
+						    outline: 0;
+						}
 					}
 					&:last-child{
 						border-bottom: 1px solid #E6E6E6;
@@ -71,6 +74,11 @@
 			}
 			.wp-block-image{
 				margin-bottom: 0;
+				a{
+					&:focus{
+						ouline: 0;
+					}
+				}
 				img{
 					width: 285px;
 					height: 100%;
