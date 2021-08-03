@@ -1,9 +1,20 @@
 $(document).ready(function () {
     $('body').removeClass('overflow-hidden');
+    $('.gb-container-content').addClass('banner-slider');
     $('.gb-container-content .one-column:nth-child(1)').addClass('pink');
     $('.gb-container-content .one-column:nth-child(2)').addClass('yellow');
  	$('.gb-container-content .one-column:nth-child(3)').addClass('green');
 
+ 	$('.banner-slider').slick({
+		dots: false,
+		arrows: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 5000
+	});
 });
 $('.burger-wrapper').on('click', function(){
 	$('.mobile-menu').toggleClass('open');
@@ -69,3 +80,4 @@ $("#project-submission").validate({
 $('.click-heart').on('click', function(){
     $(this).toggleClass('animated-heart');
 });
+
