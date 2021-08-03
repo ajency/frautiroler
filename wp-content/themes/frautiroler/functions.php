@@ -322,3 +322,19 @@ function new_excerpt_more($more) {
 		return 18;
 	}
 	add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+/*
+=============================================================
+social share widget area
+=============================================================
+*/
+
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'Social share',
+    'before_widget' => '<div class = "widgetizedArea">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  )
+);
