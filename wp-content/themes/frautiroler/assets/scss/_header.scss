@@ -319,6 +319,7 @@
 					visibility: hidden;
 					transition: all 450ms 0ms $ease-in-out;
 				    -webkit-transition: all 450ms 0ms $ease-in-out;
+				    margin-top: 25px;
 					&.show-hamburger-menu{
 						opacity: 1;
 						visibility: visible;
@@ -357,6 +358,9 @@
 				.menu{
 					margin-top: 125px;
 					visibility: hidden;
+					display: flex;
+					flex-direction: column;
+
 					&-item{
 						display: block;
 						transform: translateY(-40px);
@@ -371,6 +375,15 @@
 						    color: #D2277C;
 						    text-decoration: none;
 		    			}
+	    				&:first-child{
+			    			order: 2;
+		    			}
+			    		&:nth-child(2){
+				    		order: 3;
+			    		}
+			    		&:nth-child(3){
+				    		order: 1;
+			    		}
 	    			}
 
 				}
@@ -397,22 +410,22 @@
 				    			opacity: 1;
 				    			transform: translateY(0);
 				    			-webkit-transform: translateY(0);
-				    			transition: all 200ms 100ms $ease-in-out;
-				    			-webkit-transition: all 200ms 100ms $ease-in-out;
+				    			transition: all 240ms 100ms $ease-in-out;
+				    			-webkit-transition: all 240ms 100ms $ease-in-out;
 			    			}
 				    		&:nth-child(2){
 					    		opacity: 1;
 				    			transform: translateY(0);
 				    			-webkit-transform: translateY(0);
-				    			transition: all 240ms 100ms $ease-in-out;
-				    			-webkit-transition: all 240ms 100ms $ease-in-out;
+    							transition: all 280ms 100ms $ease-in-out;
+				    			-webkit-transition: all 280ms 100ms $ease-in-out;
 				    		}
 				    		&:nth-child(3){
 					    		opacity: 1;
 				    			transform: translateY(0);
 				    			-webkit-transform: translateY(0);
-				    			transition: all 280ms 100ms $ease-in-out;
-				    			-webkit-transition: all 280ms 100ms $ease-in-out;
+				    			transition: all 200ms 100ms $ease-in-out;
+				    			-webkit-transition: all 200ms 100ms $ease-in-out;
 				    		}
 				    	}
 				    }

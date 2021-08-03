@@ -1,5 +1,9 @@
 $(document).ready(function () {
     $('body').removeClass('overflow-hidden');
+    $('.gb-container-content .one-column:nth-child(1)').addClass('pink');
+    $('.gb-container-content .one-column:nth-child(2)').addClass('yellow');
+ 	$('.gb-container-content .one-column:nth-child(3)').addClass('green');
+
 });
 $('.burger-wrapper').on('click', function(){
 	$('.mobile-menu').toggleClass('open');
