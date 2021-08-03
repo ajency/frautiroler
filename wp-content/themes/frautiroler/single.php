@@ -28,7 +28,7 @@ get_header();  ?>
                     <div class="section-top">
                         <div class="post-content-left">
                                 <div class="content-first">
-                                    <div class="project-votes">94 <i class="fas fa-heart heart"></i></div>
+                                <div class="project-votes tooltip" data-content="Abstimmen">94 <div class="heart1 click-heart"></div><!-- <i class="fas fa-heart heart"></i> --></div>
                                     <h1 class="post-title"><?php the_title(); ?></h1>
                                     <h5 class="post-author"><?php the_author(); ?></h5>
                                     <div class="post-content"><?php the_content(); ?></div>
@@ -106,7 +106,7 @@ get_header();  ?>
                                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
                                 <div class="overlay"></div>
                             </div>
-                            <div class="project-votes tooltip" data-content="Abstimmen">94 <i class="fas fa-heart heart"></i></div>
+                            <div class="project-votes tooltip" data-content="Abstimmen">94 <div class="heart1 click-heart"></div><!-- <i class="fas fa-heart heart"></i> --></div>
                             <div class="project-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                             <div class="project-description"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
                         </div>

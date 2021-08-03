@@ -60,3 +60,8 @@ $("#project-submission").validate({
     }
 });
 
+/* heart animation */
+
+$('.click-heart').on('click', function(){
+    $(this).toggleClass('animated-heart');
+});

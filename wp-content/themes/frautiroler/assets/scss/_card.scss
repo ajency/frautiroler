@@ -184,3 +184,40 @@
 .project-votes:hover.tooltip:after {
     opacity: 1;
   }
+
+/* heart animation */
+
+.project-votes{
+    width: 71px;
+
+    &:hover .heart1{
+        background-position: right;
+    }
+
+	.heart1{
+		margin: 0 auto;
+		background: url('https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+		width: 60px;
+		height: 60px;
+		background-size: 2900%;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: -8px;
+		left: 19px;
+	}
+	.animated-heart {
+		animation-name: moveHeart;
+		animation-duration: .8s;
+		animation-iteration-count: 1;
+		animation-timing-function: steps(28);
+		animation-fill-mode: forwards;
+	  }
+	  @keyframes moveHeart {
+		0% { background-position: left; }
+		50% { background-position: right; }
+		100% { background-position: right; }
+	}
+	.click-heart {
+		cursor: pointer;
+	  }
+}

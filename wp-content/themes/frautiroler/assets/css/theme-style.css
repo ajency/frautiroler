@@ -1431,6 +1431,68 @@ h1, h2, h3, h4, h5 {
   opacity: 1;
 }
 
+/* heart animation */
+.project-votes {
+  width: 71px;
+}
+
+.project-votes:hover .heart1 {
+  background-position: right;
+}
+
+.project-votes .heart1 {
+  margin: 0 auto;
+  background: url("https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png");
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -8px;
+  left: 19px;
+}
+
+.project-votes .animated-heart {
+  -webkit-animation-name: moveHeart;
+          animation-name: moveHeart;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: steps(28);
+          animation-timing-function: steps(28);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveHeart {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes moveHeart {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.project-votes .click-heart {
+  cursor: pointer;
+}
+
 .single-post {
   background-color: #F8F8F8 !important;
 }
@@ -1534,8 +1596,9 @@ i {
 
 .custom_single_post_page .container .project-details .section-top .post-content-left .project-votes {
   border: 1px solid #000000;
-  margin-bottom: 24px;
-  position: inherit !important;
+  margin-bottom: 38px;
+  position: relative !important;
+  margin-left: 25px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1625,6 +1688,7 @@ i {
 @media only screen and (max-width: 768px) {
   .custom_single_post_page .container .project-details .section-top .post-content-right .social-share {
     margin-top: 56px;
+    margin-bottom: 70px;
   }
 }
 
