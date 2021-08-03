@@ -27,70 +27,6 @@ i{
     font-size: 16px;
 }
 
-.project-votes{
-    background-color: white;
-    width: max-content;
-    padding: 12px 16px;
-    border-radius: 60px;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.08em;
-    font-family: 'Myriad-Pro-Bold';
-    cursor: pointer;
-    
-    &:hover .heart{
-        color: $pink-hover;
-        transition: color $normal-duration-2 $ease-out;
-    }
-    &:active .heart{
-        color: $pink-pressed;
-        transition: color $normal-duration-2 $ease-out;
-    }
-    .heart{
-        color: $pink;
-        margin-left: 2px;
-
-    }
-}
-
-.tooltip:before {
-    content: attr(data-content);
-    display: block;
-    background-color:$pink;
-    border-radius: 3px;
-    padding:10px;
-    color: white;
-    font-size: 12px;
-    font-size: 14px;
-    line-height: 17px;
-    font-family: 'Myriad-Pro-Regular';
-    letter-spacing: normal;
-  }
-.tooltip:after {
-    content: '';
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid $pink;
-    width: 0;
-    height: 0;
-    display: block;
-    margin-top: 36.5px;
-    margin-left: 35px;
-  }
-  .tooltip:before,
-  .tooltip:after {
-    top: -50px;
-    left: -10px;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 200ms linear;
-}
-
-.project-votes:hover.tooltip:before,
-.project-votes:hover.tooltip:after {
-    opacity: 1;
-  }
-
 .custom_single_post_page{
     font-family: 'Myriad-Pro-Regular';
     background-color: #F8F8F8;
@@ -130,6 +66,7 @@ i{
                 .project-votes{
                     border: 1px solid #000000;
                     margin-bottom: 24px;
+                    position: inherit !important;
 
                     @media only screen and (min-width: 768px){
                         display: none;
