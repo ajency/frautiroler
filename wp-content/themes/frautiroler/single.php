@@ -39,7 +39,48 @@ get_header();  ?>
                         </div>
                     </div>
                     <div class="section-bottom">
-                        
+                        <div class="wrapper">
+                            <input checked type=radio name="slider" id="slide1" />
+                            <input type=radio name="slider" id="slide2" />
+                            <input type=radio name="slider" id="slide3" />
+                            <input type=radio name="slider" id="slide4" />
+                            <input type=radio name="slider" id="slide5" />
+
+                            <div class="slider-wrapper">
+                                <div class="inner">
+                                <article>
+                                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg" />
+                                </article>
+
+                                <article>
+                                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg" />
+                                </article>
+
+                                <article>
+                                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg" />
+                                </article>
+
+                                <article>
+                                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg" />
+                                </article>
+
+                                <article>
+                                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg" />
+                                </article>
+                                </div>
+                                <!-- .inner -->
+                            </div>
+                            <!-- .slider-wrapper -->
+
+                            <div class="slider-prev-next-control">
+                                <label for=slide1></label>
+                                <label for=slide2></label>
+                                <label for=slide3></label>
+                                <label for=slide4></label>
+                                <label for=slide5></label>
+                            </div>
+                            <!-- .slider-prev-next-control -->
+                        </div>
                     </div>
                 </div>
 <?php endwhile; ?>
