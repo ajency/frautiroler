@@ -25,16 +25,21 @@ get_header();  ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
                 <div class="row project-details">
-                    <div class="post-content-left">
-                            <div class="project-votes">94 <i class="fas fa-heart heart"></i></div>
-                            <h1 class="post-title"><?php the_title(); ?></h1>
-                            <h5 class="post-author"><?php the_author(); ?></h5>
-                            <p class="post-content"><?php the_content(); ?></p>
+                    <div class="section-top">
+                        <div class="post-content-left">
+                                <div class="project-votes">94 <i class="fas fa-heart heart"></i></div>
+                                <h1 class="post-title"><?php the_title(); ?></h1>
+                                <h5 class="post-author"><?php the_author(); ?></h5>
+                                <p class="post-content"><?php the_content(); ?></p>
+                        </div>
+                        <div class="post-content-right">
+                            <div class="votes">29</div>
+                            <div class="votes-subtext">STimmen</div>
+                            <button class="custom-button">Jetzt abstimmen</button>
+                        </div>
                     </div>
-                    <div class="post-content-right">
-                        <div class="votes">29</div>
-                        <div class="votes-subtext">STimmen</div>
-                        <button class="custom-button">Jetzt abstimmen</button>
+                    <div class="section-bottom">
+                        
                     </div>
                 </div>
 <?php endwhile; ?>
