@@ -104,7 +104,7 @@ get_header();  ?>
                         <div class="project-item" style="cursor:pointer;">
                             <div class="project-image" style="cursor:pointer;">
                                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
-                                <div class="overlay"></div>
+                                <a href="<?php the_permalink(); ?>"><div class="overlay"></div></a>
                             </div>
                             <div class="project-votes tooltip" data-content="Abstimmen">94 <div class="heart1 click-heart"></div><!-- <i class="fas fa-heart heart"></i> --></div>
                             <div class="project-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
