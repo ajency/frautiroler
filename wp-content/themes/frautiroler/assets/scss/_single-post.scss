@@ -57,6 +57,9 @@ i{
                 }
                 .post-content-left{
                     width: 70%;
+                    .wpulike{
+                        display: none;
+                    }
 
                     @media only screen and (max-width: 768px){
                      padding-right: 0px;
@@ -106,11 +109,46 @@ i{
                  .post-content-right{
                      width: 30%;
                      text-align: center;
-     
+                     position: relative;
                      @media only screen and (max-width: 768px){
-                         width: 100%;
-                         }
-     
+                        width: 100%;
+                     }
+                    .wp_ulike_general_class{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        flex: 1;
+                        min-height: 200px;
+                        justify-content: space-between;
+                        box-shadow: none;
+                        border: 0;
+                        button{
+                            background: #D2277C;
+                            border-radius: 60px;
+                            border: 0;
+                            border-radius: 60px;
+                            color: #fff;
+                            cursor: pointer;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 17px 30px 14px;
+                            text-align: center;
+                            text-decoration: none;
+                            white-space: normal;
+                            width: auto;
+                            &.wp_ulike_put_image{
+                                &:after{
+                                    filter: brightness(0) invert(1) !important;
+                                }
+                            }
+                        }
+                    }
+                    .wpulike-heart .count-box{
+                        font-weight: bold;
+                        font-size: 100px;
+                        line-height: 120px;
+                        color: #000000;
+                    }
+
                      .votes{
                          font-style: normal;
                          font-weight: bold;
@@ -129,22 +167,14 @@ i{
                          text-align: center;
                          letter-spacing: 0.08em;
                          text-transform: uppercase;
+                         position: absolute;
+                         top: 110px;
+                         left: 0;
+                         right: 0;
+                         color: #000;
      
                          @media only screen and (max-width: 768px){
                              display: none;
-                         }
-                     }
-                     .custom-button{
-                         background: $pink;
-                         border-radius: 60px;
-                         margin-top:35.61px;
-     
-                         &::after{
-                             content: '\f004';
-                             color: white;
-                             font-family: 'FontAwesome';
-                             font-size: 16px;
-                             margin-left: 10px;
                          }
                      }
                      .social-share{
