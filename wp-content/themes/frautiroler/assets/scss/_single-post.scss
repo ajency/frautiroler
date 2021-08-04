@@ -527,3 +527,52 @@ i{
         margin-left: -400%;
     }
 }
+
+/* Sticky button */
+
+.sticky-button{
+
+    display: none;
+    background-color: $yellow !important;
+    color: $pink !important;
+    height: 53px;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Myriad-Pro-Bold';
+    width: 100%;
+    border-radius: 0px;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999 !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    &:active{
+        background-color: $yellow-pressed !important;
+        color: $pink !important;
+    }
+
+    &:after{
+        content: '\f004';
+        color: #D2277C;
+        font-family: 'FontAwesome';
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    @media only screen and (max-width: 768px){
+        display: block;
+    }
+
+    /* Sticky button disabled state*/
+
+    &.disabled{
+        transition: background-color $fast-duration $ease-out, color $fast-duration $ease-out;
+        background-color: $dark-gray !important;
+        color: white !important;
+
+        &:after{
+            content: '' !important;
+            margin-left: 0;
+        }
+    }
+}

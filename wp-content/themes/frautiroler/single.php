@@ -19,6 +19,7 @@ get_header();  ?>
 
 
         <div class="custom_single_post_page">
+            <button class="sticky-button">Jetzt abstimmen</button>
             <div class="container">
 
 <!-- project details -->
