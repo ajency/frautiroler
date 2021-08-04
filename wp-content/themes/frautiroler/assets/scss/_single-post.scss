@@ -103,6 +103,9 @@ i{
                     }
                     .post-content{
                      margin-top: 32px;
+                     .wpulike{
+                        display: none;
+                     }
                     }
                     .wp_ulike_general_class{
                         box-shadow: none;
@@ -162,6 +165,7 @@ i{
                         }
                         @media(max-width: 767px){
                             min-height: 100%;
+                            margin-top: 84px;
                         }
                     }
                     .wpulike-heart .count-box{
