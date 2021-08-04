@@ -1974,7 +1974,6 @@ i {
   max-height: 453px;
   overflow: hidden;
   background: #fff;
-  background: #fcfff4;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition: all 500ms ease-out;
@@ -1994,10 +1993,19 @@ i {
   width: 20%;
   float: left;
   position: relative;
+  text-align: center;
 }
 
 .section-bottom .wrapper .slider-wrapper .inner article img {
-  width: 100%;
+  width: auto;
+  height: 453px;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-bottom .wrapper .slider-wrapper .inner article img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .section-bottom .wrapper .slider-prev-next-control {

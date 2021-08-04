@@ -380,7 +380,6 @@ i{
             max-height: 453px;
             overflow: hidden;
             background: #fff;
-            background: #fcfff4;
             -webkit-transform: translateZ(0);
             -moz-transform: translateZ(0);
             -ms-transform: translateZ(0);
@@ -406,9 +405,17 @@ i{
                     width: 20%;
                     float: left;
                     position: relative;
+                    text-align: center;
 
                     img {
-                        width: 100%;
+                        //width: 100%;
+                        width: auto;
+                        height: 453px;
+
+                        @media only screen and (max-width: 768px){
+                            width: 100%;
+                            height: auto;
+                        }
                     }
                 }
             }
