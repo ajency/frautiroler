@@ -228,6 +228,7 @@
     }
 }
 
+/* heart button size */
 .wpulike-robeen .wp_ulike_btn:after{
     transform: translateX(-50%) translateY(-50%) scale(0.7) !important;
 }
@@ -236,3 +237,22 @@
         outline: none !important;
     }
 }
+
+/* heart beat animation */
+.wpulike-robeen .wp_ulike_btn{
+    animation: 2.5s ease 0s normal none infinite running animateHeart;
+
+    &:hover:after{
+        background-position: right !important;
+    }
+}
+/* keyframes */
+
+@keyframes animateHeart {
+    0% {transform: scale(1); } 
+    5% {transform: scale(1.2); } 
+    10% {transform: scale(1.1); } 
+    15% {transform: scale(1.3); } 
+    50% {transform: scale(1); } 
+    100% {transform: scale(1); } 
+    }
