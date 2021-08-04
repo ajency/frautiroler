@@ -101,12 +101,32 @@ get_header();  ?>
                                 </div>
                         </div>
                         <div class="post-content-right">
-                             <?php  echo do_shortcode( '[wp_ulike for="post" style="wpulike-heart"]' ); ?>
+                            <?php  echo do_shortcode( '[wp_ulike for="post" style="wpulike-heart"]' ); ?>
+                            <button id="button" class="ready" onclick="clickButton();">
+                                <div class="message submitMessage">
+                                    <span class="button-text">Jetzt abstimmen</span>  
+                                </div>
+
+                                <div class="message loadingMessage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                                        <circle class="loadingCircle" cx="2.2" cy="10" r="1.6"/>
+                                        <circle class="loadingCircle" cx="9.5" cy="10" r="1.6"/>
+                                        <circle class="loadingCircle" cx="16.8" cy="10" r="1.6"/>
+                                    </svg>
+                                </div>
+
+                                <div class="message successMessage">
+                                    <span class="button-text">Danke!</span>
+                                </div>
+                            </button>
+                            <canvas id="canvas"></canvas>  
                             <div class="votes-subtext">Stimmen</div>
-                            <!-- <button class="custom-button">Jetzt abstimmen</button> -->
+
+                            
                             <div class="social-share">
                                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Social share") ) : ?><?php endif;?>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -120,7 +140,7 @@ get_header();  ?>
 
         if ( $allPostsWPQuery->have_posts() ) :?>
 
-            <div class="row projects">
+            <div class="row projects" style="position: relative;"> 
                 <div class="section-title"><?php the_field('section_title'); ?></div>
                 <div class="project-list">
                     <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
@@ -135,7 +155,7 @@ get_header();  ?>
                             <div class="project-description"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
                         </div>
                     <?php endwhile; ?>
-                </div>
+                </div> -->
             </div>
 
         <?php wp_reset_postdata(); ?>
