@@ -83,3 +83,35 @@ $('.click-heart').on('click', function(){
     $(this).toggleClass('animated-heart');
 });
 
+/* lightbox gallery */
+
+$(document).ready(function(){
+    $('.js-gallery').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable:false,
+      prevArrow: '<span class="gallery-arrow mod-prev"><i class="fas fa-chevron-left"></i></span>',
+      nextArrow: '<span class="gallery-arrow mod-next"><i class="fas fa-chevron-right"></i></span>'
+    });
+  });
+
+$(document).ready(function(){
+    
+    $('.js-gallery-mobile').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable:false,
+        prevArrow: '<span class="gallery-arrow mod-prev"><i class="fas fa-chevron-left"></i></span>',
+        nextArrow: '<span class="gallery-arrow mod-next"><i class="fas fa-chevron-right"></i></span>'
+    });
+    
+    $('.js-gallery-mobile').slickLightbox({
+      src: 'src',
+      itemSelector: '.js-gallery-popup img',
+      background: '#fff'
+    });
+  });
+
+  $(".lightbox-btn").click(function(){
+    
+  });

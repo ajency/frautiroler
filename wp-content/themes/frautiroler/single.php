@@ -36,57 +36,69 @@ get_header();  ?>
                             </div>
 
                             <div class="section-bottom">
-                                <div class="wrapper">
-                                    <input checked type=radio name="slider" id="slide1" />
-                                    <input type=radio name="slider" id="slide2" />
-                                    <input type=radio name="slider" id="slide3" />
-                                    <input type=radio name="slider" id="slide4" />
-                                    <input type=radio name="slider" id="slide5" />
-
                                     <?php
-                                        $image1 = get_field('image_1');
-                                        $image2 = get_field('image_2');
-                                        $image3 = get_field('image_3');
-                                        $image4 = get_field('image_4');
-                                        $image5 = get_field('image_5');
+                                            $image1 = get_field('image_1');
+                                            $image2 = get_field('image_2');
+                                            $image3 = get_field('image_3');
+                                            $image4 = get_field('image_4');
+                                            $image5 = get_field('image_5');
                                     ?>
-
-                                    <div class="slider-wrapper">
-                                        <div class="inner">
-                                        <article>
-                                            <img src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" />
-                                        </article>
-
-                                        <article>
-                                            <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" />
-                                        </article>
-
-                                        <article>
-                                            <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" />
-                                        </article>
-
-                                        <article>
-                                            <img src="<?php echo esc_url($image4['url']); ?>" alt="<?php echo esc_attr($image4['alt']); ?>" />
-                                        </article>
-
-                                        <article>
-                                            <img src="<?php echo esc_url($image5['url']); ?>" alt="<?php echo esc_attr($image5['alt']); ?>" />
-                                        </article>
+                                    <div class="gallery js-gallery">
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" class="gallery-img"/>
+                                            </div>
                                         </div>
-                                        <!-- .inner -->
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" class="gallery-img"/>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" class="gallery-img"/>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image4['url']); ?>" alt="<?php echo esc_attr($image4['alt']); ?>" class="gallery-img"/>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image5['url']); ?>" alt="<?php echo esc_attr($image5['alt']); ?>" class="gallery-img"/>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- .slider-wrapper -->
-
-                                    <div class="slider-prev-next-control">
-                                        <label for=slide1></label>
-                                        <label for=slide2></label>
-                                        <label for=slide3></label>
-                                        <label for=slide4></label>
-                                        <label for=slide5></label>
+                                    <button class="lightbox-btn">Bilder</button>
+                                    <div class="gallery js-gallery-mobile">
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" class="gallery-img"/>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" class="gallery-img"/>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" class="gallery-img"/>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image4['url']); ?>" alt="<?php echo esc_attr($image4['alt']); ?>" class="gallery-img"/>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
+                                            <img src="<?php echo esc_url($image5['url']); ?>" alt="<?php echo esc_attr($image5['alt']); ?>" class="gallery-img"/>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- .slider-prev-next-control -->
                                 </div>
-                            </div>
                         </div>
                         <div class="post-content-right">
                              <?php  echo do_shortcode( '[wp_ulike for="post" style="wpulike-heart"]' ); ?>
