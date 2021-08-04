@@ -271,7 +271,9 @@ function my_child_theme_scripts() {
     wp_enqueue_style( 'parent-theme-css', get_stylesheet_directory_uri() . '/style.css' );
  	wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/assets/css/theme-style.css', array(), '0.1', false);
  	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=5.4.2', array(), '', false);
+	wp_enqueue_style('slick-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css', array(), '', false);
  	wp_enqueue_style('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '', false);
+	wp_enqueue_style('slick-lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css', array(), '', false);
 }
 //* this will bring in the Genesis Parent files needed:
 include_once( get_template_directory() . '/lib/init.php' );
@@ -282,11 +284,13 @@ function enqueue_theme_scripts() {
     wp_register_script( 'jquery', get_stylesheet_directory_uri().'/assets/js/jquery.js' , '', '', true );
     wp_register_script( 'bootstrap', get_stylesheet_directory_uri().'/assets/js/bootstrap.min.js' , '', '', true );
     wp_register_script( 'slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', '', '', true );
+	wp_register_script( 'slick-lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js', '', '', true );
     wp_register_script( 'themescripts', get_stylesheet_directory_uri().'/assets/js/theme-scripts.js' , '', '', true );
     wp_register_script( 'jquery-validate', 'https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js', '', '', true );
    	wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap');
-    wp_enqueue_script('slick');    
+    wp_enqueue_script('slick');
+	wp_enqueue_script('slick-lightbox');
     wp_enqueue_script('jquery-validate'); 
     wp_enqueue_script('themescripts');  
 
