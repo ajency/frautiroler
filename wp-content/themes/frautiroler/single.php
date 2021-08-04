@@ -103,7 +103,7 @@ get_header();  ?>
 <!-- project details end-->
 <!-- other projects -->
 
-<?php $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3));
+<?php $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'post__not_in' => array( get_the_ID() ), 'posts_per_page'=>3));
 
     if ( $allPostsWPQuery->have_posts() ) :?>
 
