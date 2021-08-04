@@ -188,7 +188,6 @@
 /* heart animation */
 
 .project-votes{
-    width: 71px;
 
     &:hover .heart1{
         background-position: right;
@@ -199,7 +198,6 @@
 		background: url('https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
 		width: 60px;
 		height: 60px;
-		background-size: 2900%;
 		background-repeat: no-repeat;
 		position: absolute;
 		top: -8px;
@@ -220,4 +218,18 @@
 	.click-heart {
 		cursor: pointer;
 	  }
+}
+
+.post-content{
+    &-left{
+        .wpulike{
+            display: none;
+        }
+    }
+    &-right{
+        .wpulike{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }

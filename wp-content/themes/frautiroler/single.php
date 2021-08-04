@@ -88,6 +88,7 @@ get_header();  ?>
                                 </div>
                         </div>
                         <div class="post-content-right">
+                             <?php  echo do_shortcode( '[wp_ulike for="post" style="wpulike-heart"]' ); ?>
                             <div class="votes">29</div>
                             <div class="votes-subtext">STimmen</div>
                             <button class="custom-button">Jetzt abstimmen</button>
@@ -114,7 +115,8 @@ get_header();  ?>
                                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
                                 <a href="<?php the_permalink(); ?>"><div class="overlay"></div></a>
                             </div>
-                            <div class="project-votes tooltip" data-content="Abstimmen">94 <div class="heart1 click-heart"></div><!-- <i class="fas fa-heart heart"></i> --></div>
+
+                            <div class="project-votes tooltip" data-content="Abstimmen"><?php  echo do_shortcode( '[wp_ulike]' ); ?></div>
                             <div class="project-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                             <div class="project-description"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
                         </div>
