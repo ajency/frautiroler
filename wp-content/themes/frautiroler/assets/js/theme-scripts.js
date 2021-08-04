@@ -1,3 +1,5 @@
+$(".post-content-right .wp_ulike_btn").html("Jetzt abstimmen");
+
 $(document).ready(function () {
     $('body').removeClass('overflow-hidden');
     $('.gb-container-content').addClass('banner-slider');

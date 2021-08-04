@@ -19,7 +19,6 @@ get_header();  ?>
 
 
         <div class="custom_single_post_page">
-            <button class="sticky-button">Jetzt abstimmen</button>
             <div class="container">
 
 <!-- project details -->
@@ -29,7 +28,8 @@ get_header();  ?>
                     <div class="section-top">
                         <div class="post-content-left">
                                 <div class="content-first">
-                                <div class="project-votes tooltip" data-content="Abstimmen">94</div>
+                                <div class="project-votes tooltip" data-content="Abstimmen">
+                                    <?php  echo do_shortcode( '[wp_ulike for="post" style="wpulike-heart"]' ); ?></div>
                                     <h1 class="post-title"><?php the_title(); ?></h1>
                                     <h5 class="post-author"><?php the_author(); ?></h5>
                                     <div class="post-content"><?php the_content(); ?></div>
@@ -102,7 +102,7 @@ get_header();  ?>
 <!-- project details end-->
 <!-- other projects -->
 
-<?php $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'post__not_in' => array( get_the_ID() ), 'posts_per_page'=>3));
+<?php $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3));
 
     if ( $allPostsWPQuery->have_posts() ) :?>
 
