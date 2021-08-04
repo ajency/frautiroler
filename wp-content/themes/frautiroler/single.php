@@ -29,7 +29,7 @@ get_header();  ?>
                     <div class="section-top">
                         <div class="post-content-left">
                                 <div class="content-first">
-                                <div class="project-votes tooltip" data-content="Abstimmen">94 <div class="heart1 click-heart"></div><!-- <i class="fas fa-heart heart"></i> --></div>
+                                <div class="project-votes tooltip" data-content="Abstimmen">94</div>
                                     <h1 class="post-title"><?php the_title(); ?></h1>
                                     <h5 class="post-author"><?php the_author(); ?></h5>
                                     <div class="post-content"><?php the_content(); ?></div>
@@ -90,9 +90,8 @@ get_header();  ?>
                         </div>
                         <div class="post-content-right">
                              <?php  echo do_shortcode( '[wp_ulike for="post" style="wpulike-heart"]' ); ?>
-                            <div class="votes">29</div>
-                            <div class="votes-subtext">STimmen</div>
-                            <button class="custom-button">Jetzt abstimmen</button>
+                            <div class="votes-subtext">Stimmen</div>
+                            <!-- <button class="custom-button">Jetzt abstimmen</button> -->
                             <div class="social-share">
                                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Social share") ) : ?><?php endif;?>
                             </div>
