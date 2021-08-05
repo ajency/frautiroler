@@ -238,8 +238,13 @@ canvas {
 
 
 /* Sticky button */
-@media(max-width: 768px){
 	.sticky-button{
+		opacity: 1;
+		transition: opacity 250ms $ease-out;
+		&.sticky-button-visible{
+			opacity: 0;
+			transition: opacity 250ms $ease-out;
+		}
 	    #button2 {
 			background: none;
 			border: none;
@@ -359,5 +364,7 @@ canvas {
 		    	transition: background 1s ease-in-out;
 		  	}
 	    }
+	    @media(min-width: 769px){
+	    	display: none;
+	    }
 	}
-}

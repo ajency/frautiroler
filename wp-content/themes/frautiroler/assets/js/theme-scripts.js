@@ -395,22 +395,22 @@ render()
 
 
 $(window).on("load",function() {
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".button-burst").each(function() {
-      var objectBottom = $(this).offset().top - 30;
-      if (objectBottom < windowBottom && objectBottom + 860 > windowBottom ) { 
-        if ($(this).css("opacity")==0)  {
-          $(this).addClass('moveup');
-          $('.sticky-button').fadeOut(300);
+    $(window).scroll(function() {
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $(".button-burst").each(function() {
+        var objectBottom = $(this).offset().top - 30;
+        if (objectBottom < windowBottom && objectBottom + 860 > windowBottom ) { 
+          if ($(this).css("opacity")==0)  {
+            $(this).addClass('moveup');
+            $('.sticky-button').addClass('sticky-button-visible');
+          }
+        } else { 
+          if ($(this).css("opacity")==1)  {
+            $(this).removeClass('moveup');
+            $('.sticky-button').removeClass('sticky-button-visible');
+          }
         }
-      } else { 
-        if ($(this).css("opacity")==1)  {
-          $(this).removeClass('moveup');
-          $('.sticky-button').fadeIn(300);
-        }
-      }
-    });
-  }).scroll(); 
+      });
+    }).scroll(); 
 });
 
