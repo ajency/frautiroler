@@ -683,9 +683,11 @@ i{
         position: absolute;
         z-index: 1;
         border-radius: 60px;
-        height: 55px;
-        width: 133px;
         outline:none !important;
+        text-decoration: none;
+        width: fit-content;
+        padding: 15px 32px;
+        font-family: 'Myriad-Pro-Bold';
     
         &::after{
             content: '\f030';
@@ -705,7 +707,7 @@ i{
         background-image: url(https://frautiroler.svr.fm/wp-content/uploads/2021/08/lightbox-bg.png) !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
-        background-position-y: -12vh !important;
+        background-position-y: -24vh !important;
     
         .slick-lightbox-slick-img{
             max-width: 100% !important;

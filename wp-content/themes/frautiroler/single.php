@@ -70,41 +70,41 @@ get_header();  ?>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="lightbox-btn">Bilder</button>
                                     <div class="gallery js-gallery-mobile">
                                         <div class="gallery-item">
                                             <div class="gallery-img-holder js-gallery-popup">
-                                                <a href="<?php echo esc_url($image1['url']); ?>" target="_blank">
-                                                    <img src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" class="gallery-img"/>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="gallery-item">
-                                            <div class="gallery-img-holder js-gallery-popup">
-                                                <a href="<?php echo esc_url($image2['url']); ?>" target="_blank">
-                                                    <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" class="gallery-img"/>
-                                                </a>
+                                                <img src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" class="gallery-img"/>
+                                                <a href="<?php echo esc_url($image1['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
                                             </div>
                                         </div>
                                         <div class="gallery-item">
                                         <div class="gallery-img-holder js-gallery-popup">
-                                                <a href="<?php echo esc_url($image3['url']); ?>" target="_blank">
-                                                    <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" class="gallery-img"/>
-                                                </a>
+                                                <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" class="gallery-img"/>
+                                                <a href="<?php echo esc_url($image2['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
                                             </div>
                                         </div>
                                         <div class="gallery-item">
                                         <div class="gallery-img-holder js-gallery-popup">
-                                                <a href="<?php echo esc_url($image4['url']); ?>" target="_blank">
-                                                    <img src="<?php echo esc_url($image4['url']); ?>" alt="<?php echo esc_attr($image4['alt']); ?>" class="gallery-img"/>
-                                                </a>
+                                        <div class="gallery-img-holder js-gallery-popup">
+                                                <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" class="gallery-img"/>
+                                                <a href="<?php echo esc_url($image3['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
+                                            </div>
                                             </div>
                                         </div>
                                         <div class="gallery-item">
                                         <div class="gallery-img-holder js-gallery-popup">
-                                                <a href="<?php echo esc_url($image5['url']); ?>" target="_blank">
-                                                    <img src="<?php echo esc_url($image5['url']); ?>" alt="<?php echo esc_attr($image5['alt']); ?>" class="gallery-img"/>
-                                                </a>
+                                        <div class="gallery-img-holder js-gallery-popup">
+                                                <img src="<?php echo esc_url($image4['url']); ?>" alt="<?php echo esc_attr($image4['alt']); ?>" class="gallery-img"/>
+                                                <a href="<?php echo esc_url($image4['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-item">
+                                        <div class="gallery-img-holder js-gallery-popup">
+                                        <div class="gallery-img-holder js-gallery-popup">
+                                                <img src="<?php echo esc_url($image5['url']); ?>" alt="<?php echo esc_attr($image5['alt']); ?>" class="gallery-img"/>
+                                                <a href="<?php echo esc_url($image5['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
