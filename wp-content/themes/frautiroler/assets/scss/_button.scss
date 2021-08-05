@@ -39,10 +39,14 @@ canvas {
 }
 .button-burst{
 	position: relative;
-	opacity: 0;
 	&.moveup{
-		opacity: 1;
-		transition: opacity $normal-duration-1 $ease-in-out;
+		@media(max-width: 768px){
+			opacity: 1;
+			transition: opacity $normal-duration-1 $ease-in-out;
+		}
+	}
+	@media(max-width: 768px){
+		opacity: 0;
 	}
 }
 .post-content-right #button {
