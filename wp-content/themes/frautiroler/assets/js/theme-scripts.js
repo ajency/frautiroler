@@ -367,7 +367,6 @@ document.body.onkeyup = (e) => {
 
 // Set up button text transition timings on page load
 textElements = button.querySelectorAll('.button-text')
-textElements1 = button1.querySelectorAll('.button-text')
 textElements.forEach((element) => {
   characters = element.innerText.split('')
   let characterHTML = ''
@@ -376,6 +375,8 @@ textElements.forEach((element) => {
   })
   element.innerHTML = characterHTML
 })
+
+textElements1 = button1.querySelectorAll('.button-text')
 textElements1.forEach((element) => {
   characters1 = element.innerText.split('')
   let characterHTML1 = ''
@@ -387,3 +388,19 @@ textElements1.forEach((element) => {
 
 // kick off the render loop
 render()
+
+
+
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".button-burst").each(function() {
+      var objectBottom = $(this).offset().top;
+      if (objectBottom < windowBottom) { 
+        if ($(this).css("opacity")==0)  {$(this).addClass('moveup');}
+      } else { 
+        if ($(this).css("opacity")==1)  {$(this).removeClass('moveup');}
+      }
+    });
+  }).scroll(); 
+});
