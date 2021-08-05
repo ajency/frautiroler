@@ -142,6 +142,11 @@
     font-family: 'Myriad-Pro-Bold';
     cursor: pointer;
     
+    @media only screen and (max-width: 768px){
+        top: 9px;
+        right: 8px;
+    }
+    
     &:hover .heart{
         color: $pink-hover;
         transition: color $normal-duration-2 $ease-out;
