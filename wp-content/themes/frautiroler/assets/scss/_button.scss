@@ -272,6 +272,12 @@ canvas {
 				transition: width .2s ease calc(var(--d) + 1000ms);
 				width: 100%;
 			}
+			&:active{
+				&::before {
+					transition: background .2s ease;
+					background: #D6D300;
+				}
+			}
 		}
 
 		// READY STATE
