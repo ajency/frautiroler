@@ -44,69 +44,75 @@ get_header();  ?>
                                             $image5 = get_field('image_5');
                                     ?>
                                     <div class="gallery js-gallery">
+                                        <?php if (!empty($image1)){ ?>
                                         <div class="gallery-item">
                                             <div class="gallery-img-holder js-gallery-popup">
                                             <img src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" class="gallery-img"/>
                                             </div>
                                         </div>
+                                        <?php } else {} if (!empty($image2)){?>
                                         <div class="gallery-item">
                                             <div class="gallery-img-holder js-gallery-popup">
                                             <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" class="gallery-img"/>
                                             </div>
                                         </div>
+                                        <?php } else {} if (!empty($image3)){?>
                                         <div class="gallery-item">
                                             <div class="gallery-img-holder js-gallery-popup">
                                             <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" class="gallery-img"/>
                                             </div>
                                         </div>
+                                        <?php } else {} if (!empty($image4)){?>
                                         <div class="gallery-item">
                                             <div class="gallery-img-holder js-gallery-popup">
                                             <img src="<?php echo esc_url($image4['url']); ?>" alt="<?php echo esc_attr($image4['alt']); ?>" class="gallery-img"/>
                                             </div>
                                         </div>
+                                        <?php } else {} if (!empty($image5)){?>
                                         <div class="gallery-item">
                                             <div class="gallery-img-holder js-gallery-popup">
                                             <img src="<?php echo esc_url($image5['url']); ?>" alt="<?php echo esc_attr($image5['alt']); ?>" class="gallery-img"/>
                                             </div>
                                         </div>
+                                        <?php } else {}?>
                                     </div>
                                     <div class="gallery js-gallery-mobile">
+                                        <?php if (!empty($image1)){ ?>
                                         <div class="gallery-item">
                                             <div class="gallery-img-holder js-gallery-popup">
                                                 <img src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" class="gallery-img"/>
                                                 <a href="<?php echo esc_url($image1['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
                                             </div>
                                         </div>
+                                        <?php } else {} if (!empty($image2)){?>
                                         <div class="gallery-item">
-                                        <div class="gallery-img-holder js-gallery-popup">
+                                            <div class="gallery-img-holder js-gallery-popup">
                                                 <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" class="gallery-img"/>
                                                 <a href="<?php echo esc_url($image2['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
                                             </div>
                                         </div>
-                                        <div class="gallery-item">
-                                        <div class="gallery-img-holder js-gallery-popup">
-                                        <div class="gallery-img-holder js-gallery-popup">
+                                        <?php } else {} if (!empty($image3)){?>
+                                            <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
                                                 <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" class="gallery-img"/>
                                                 <a href="<?php echo esc_url($image3['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
                                             </div>
-                                            </div>
                                         </div>
-                                        <div class="gallery-item">
-                                        <div class="gallery-img-holder js-gallery-popup">
-                                        <div class="gallery-img-holder js-gallery-popup">
+                                        <?php } else {} if (!empty($image4)){?>
+                                            <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
                                                 <img src="<?php echo esc_url($image4['url']); ?>" alt="<?php echo esc_attr($image4['alt']); ?>" class="gallery-img"/>
                                                 <a href="<?php echo esc_url($image4['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
                                             </div>
-                                            </div>
                                         </div>
-                                        <div class="gallery-item">
-                                        <div class="gallery-img-holder js-gallery-popup">
-                                        <div class="gallery-img-holder js-gallery-popup">
+                                        <?php } else {} if (!empty($image5)){?>
+                                            <div class="gallery-item">
+                                            <div class="gallery-img-holder js-gallery-popup">
                                                 <img src="<?php echo esc_url($image5['url']); ?>" alt="<?php echo esc_attr($image5['alt']); ?>" class="gallery-img"/>
                                                 <a href="<?php echo esc_url($image5['url']); ?>" class="lightbox-btn open-lightbox">Bilder</a>
                                             </div>
-                                            </div>
                                         </div>
+                                        <?php } else {}?>
                                     </div>
                                 </div>
                         </div>
