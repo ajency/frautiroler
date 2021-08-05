@@ -703,7 +703,8 @@ i{
         color: $pink;
         background-image: url(https://frautiroler.svr.fm/wp-content/uploads/2021/08/lightbox-bg.png) !important;
         background-repeat: no-repeat !important;
-        background-position-y: -20vh !important;
+        background-size: cover !important;
+        background-position-y: -12vh !important;
     
         .slick-lightbox-slick-img{
             max-width: 100% !important;
