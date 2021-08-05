@@ -395,12 +395,19 @@ $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".button-burst").each(function() {
-      var objectBottom = $(this).offset().top;
-      if (objectBottom < windowBottom) { 
-        if ($(this).css("opacity")==0)  {$(this).addClass('moveup');}
+      var objectBottom = $(this).offset().top - 30;
+      if (objectBottom < windowBottom && objectBottom + 800 > windowBottom ) { 
+        if ($(this).css("opacity")==0)  {
+          $(this).addClass('moveup');
+          $('.sticky-button').fadeOut(300);
+        }
       } else { 
-        if ($(this).css("opacity")==1)  {$(this).removeClass('moveup');}
+        if ($(this).css("opacity")==1)  {
+          $(this).removeClass('moveup');
+          $('.sticky-button').fadeIn(300);
+        }
       }
     });
   }).scroll(); 
 });
+
