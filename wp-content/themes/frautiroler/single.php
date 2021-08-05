@@ -136,7 +136,7 @@ get_header();  ?>
 
         <!-- other projects -->
 
-        <?php $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3));
+        <?php $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'post__not_in' => array( get_the_ID() ), 'posts_per_page'=>3));
 
         if ( $allPostsWPQuery->have_posts() ) :?>
 
@@ -155,7 +155,7 @@ get_header();  ?>
                             <div class="project-description"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
                         </div>
                     <?php endwhile; ?>
-                </div> -->
+                </div>
             </div>
 
         <?php wp_reset_postdata(); ?>
