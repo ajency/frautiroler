@@ -127,7 +127,9 @@ const dragSequins = 0.02
 const terminalVelocity = 3
 
 // init other global elements
+
 const button = document.getElementById('button')
+const button1 = document.getElementById('button2')
 var disabled = false
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d')
@@ -295,7 +297,7 @@ render = () => {
   window.requestAnimationFrame(render)
 }
 
-// cycle through button states when clicked
+//cycle through button states when clicked
 clickButton = () => {
   if (!disabled) {
     disabled = true
@@ -317,6 +319,31 @@ clickButton = () => {
   button.classList.remove('complete')
   }
 }
+
+
+// cycle through button states when clicked
+clickStickyButton = () => {
+  if (!disabled) {
+    disabled = true
+    // Loading stage
+    button1.classList.add('loading')
+    button1.classList.remove('ready')
+    setTimeout(() => {
+      // Completed stage
+      button1.classList.add('complete')
+      button1.classList.remove('loading')
+      setTimeout(() => {
+        window.initBurst()
+      }, 320)
+    }, 1800)
+  }else{
+  // Reset button so user can select it again
+  disabled = false
+  button1.classList.add('ready')
+  button1.classList.remove('complete')
+  }
+}
+
 
 // re-init canvas if the window size changes
 resizeCanvas = () => {
@@ -340,6 +367,7 @@ document.body.onkeyup = (e) => {
 
 // Set up button text transition timings on page load
 textElements = button.querySelectorAll('.button-text')
+textElements1 = button1.querySelectorAll('.button-text')
 textElements.forEach((element) => {
   characters = element.innerText.split('')
   let characterHTML = ''
@@ -347,6 +375,14 @@ textElements.forEach((element) => {
     characterHTML += `<span class="char${index}" style="--d:${index * 30}ms; --dr:${(characters.length - index - 1) * 30}ms;">${letter}</span>`
   })
   element.innerHTML = characterHTML
+})
+textElements1.forEach((element) => {
+  characters1 = element.innerText.split('')
+  let characterHTML1 = ''
+  characters1.forEach((letter, index) => {
+    characterHTML1 += `<span class="char${index}" style="--d:${index * 30}ms; --dr:${(characters1.length - index - 1) * 30}ms;">${letter}</span>`
+  })
+  element.innerHTML = characterHTML1
 })
 
 // kick off the render loop
