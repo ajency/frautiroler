@@ -25,20 +25,21 @@
 }
 
 canvas {
-	height: 55vh;
-	pointer-events: none;
-	position: absolute;
-	top: -4px;
-	left: 0;
-	right: 0;
-	width: 100%;
-	z-index: 2;
+	height: 310px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 	@media(max-width: 768px){
-		height: 65vh;
-		top: -150px;
+		height: 400px;
+		top: -140px;
 	}
 }
-
+.button-burst{
+	position: relative;
+}
 .post-content-right #button {
 	background: none;
 	border: none;

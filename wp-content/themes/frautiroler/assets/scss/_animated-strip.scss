@@ -14,11 +14,14 @@
 	.marquee3k{
 		background: #F6F100;
 	    transform: translate(-20px,0) rotate(-5deg);
+	    -webkit-transform: translate(-20px,0) rotate(-5deg);
 	    margin-top: 110px;
 		margin-bottom: 124px;
 		padding: 14px 0 0;
 		position: relative;
 		width: 110%;
+		transition: background $slow-duration-half $ease-in-out;
+		cursor: pointer;
     	.marquee3k__wrapper {
         	display: flex;
 	        .marquee3k-wrapper {
@@ -40,6 +43,12 @@
 					}
 				}
 			}
+		}
+		&:hover{
+			background: #E8E400;
+		}
+		&:active{
+			background: #D6D300;
 		}
 		@media(max-width: 991px){
 			margin-bottom: 40px;
