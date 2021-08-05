@@ -2239,6 +2239,12 @@ i {
 
 @media only screen and (max-width: 768px) {
   .custom_single_post_page .container .projects .project-list .project-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .custom_single_post_page .container .projects .project-list .project-item:last-child {
     margin-bottom: 0px;
   }
 }
