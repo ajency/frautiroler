@@ -107,16 +107,25 @@ $(document).ready(function(){
 		nextArrow: '<span class="gallery-arrow mod-next"><i class="fas fa-chevron-right"></i></span>'
 	});
 
-	$('.js-gallery-mobile').slickLightbox({
+/* 	$('.js-gallery-mobile').slickLightbox({
 		src: 'src',
 		itemSelector: '.js-gallery-popup img',
 		background: '#fff'
 		});
-	});
+	}); */
 
-	$(".lightbox-btn").click(function(){
-
-});
+  $(function() {
+    $('.js-gallery-mobile').slickLightbox({
+      src: 'src',
+      itemSelector: '.js-gallery-popup img',
+      background: '#fff'
+      });
+    });
+    $('.lightbox-btn').on('click', function(e) {
+      e.preventDefault();
+      $('.js-gallery-mobile .gallery-item:first-child gallery-img-holder A','.js-gallery-mobile').click();
+    });
+  });
 
 
 //confettie 
