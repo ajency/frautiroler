@@ -629,8 +629,10 @@ i{
             right: 35px !important;
             &::before{
                 color: $yellow;
-                font-size: 50px;
-                opacity: 1;
+                font-size: 45px;
+                content: '\f00d';
+                font-family: 'FontAwesome' !important;
+                -webkit-text-stroke: 6px $pink;
             }
         }
         .slick-arrow{

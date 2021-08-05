@@ -37,6 +37,7 @@
             a{
                 text-decoration: none !important;
                 color: #000000;
+                outline: none !important;
             }
         }
         .project-description{
@@ -45,6 +46,7 @@
     
                 text-decoration: none;
                 color: black !important;
+                outline: none !important;
     
                 &:hover{
                     text-decoration: none;
@@ -54,6 +56,7 @@
             p{
                 display: flex;
                 flex-direction: column;
+
     
                 a:nth-child(1){
     
@@ -73,9 +76,26 @@
                     font-size: 16px;
                     line-height: 19px;
                     width: fit-content;
-    
-                    &:hover{
-                        text-decoration: underline;
+                    outline: none !important;
+                    text-decoration: underline !important;
+
+                    &:focus{
+                        outline: none !important;
+                    }
+                    &:focus-visible{
+
+                        &:after{
+                            content: '';
+                            border: 1px solid #919191;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            border-radius: 4px;
+                            position: absolute;
+                            height: 25px;
+                            width: 75px;
+                            left: -5px;
+                            bottom: 25px;
+                        }
                     }
                 }
             }

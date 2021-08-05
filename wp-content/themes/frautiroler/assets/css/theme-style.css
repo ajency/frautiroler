@@ -1546,11 +1546,13 @@ canvas {
 .project-item .project-title a {
   text-decoration: none !important;
   color: #000000;
+  outline: none !important;
 }
 
 .project-item .project-description a:nth-child(1) {
   text-decoration: none;
   color: black !important;
+  outline: none !important;
 }
 
 .project-item .project-description a:nth-child(1):hover {
@@ -1587,10 +1589,25 @@ canvas {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  outline: none !important;
+  text-decoration: underline !important;
 }
 
-.project-item .project-description p a:nth-child(2):hover {
-  text-decoration: underline;
+.project-item .project-description p a:nth-child(2):focus {
+  outline: none !important;
+}
+
+.project-item .project-description p a:nth-child(2):focus-visible:after {
+  content: '';
+  border: 1px solid #919191;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: absolute;
+  height: 25px;
+  width: 75px;
+  left: -5px;
+  bottom: 25px;
 }
 
 .project-item:hover > .project-description p a:nth-child(2) {
@@ -2604,8 +2621,10 @@ i {
 
 .slick-lightbox .slick-lightbox-close::before {
   color: #F8F400;
-  font-size: 50px;
-  opacity: 1;
+  font-size: 45px;
+  content: '\f00d';
+  font-family: 'FontAwesome' !important;
+  -webkit-text-stroke: 6px #D2277C;
 }
 
 .slick-lightbox .slick-arrow {
