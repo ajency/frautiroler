@@ -1964,6 +1964,13 @@ i {
   color: #000000;
 }
 
+@media only screen and (max-width: 768px) {
+  .custom_single_post_page .container .project-details .section-top .post-content-left .post-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
 .custom_single_post_page .container .project-details .section-top .post-content-left .post-author {
   font-style: normal;
   font-weight: bold;
@@ -1977,6 +1984,16 @@ i {
 
 .custom_single_post_page .container .project-details .section-top .post-content-left .post-content {
   margin-top: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .custom_single_post_page .container .project-details .section-top .post-content-left .post-content {
+    margin-top: 24px;
+  }
+  .custom_single_post_page .container .project-details .section-top .post-content-left .post-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .custom_single_post_page .container .project-details .section-top .post-content-left .post-content .wpulike {
