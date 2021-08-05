@@ -519,7 +519,24 @@ i{
             color:white;
             z-index: 10;
             cursor: pointer;
+            outline: none !important;
             transition: background-color .3s ease;
+
+            &:focus-visible{
+
+                &:after{
+                    content: '';
+                    border: 1px solid #919191;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    position: absolute;
+                    height: 74px;
+                    width: 75px;
+                    left: -5px;
+                    bottom: -5px;
+                }
+            }
     
             &:hover{
                 background-color: $pink-hover;
@@ -637,7 +654,7 @@ i{
                 font-size: 45px;
                 content: '\f00d';
                 font-family: 'FontAwesome' !important;
-                -webkit-text-stroke: 6px $pink;
+                -webkit-text-stroke: 7px $pink;
             }
         }
         .slick-arrow{
@@ -648,6 +665,22 @@ i{
             z-index: 1;
             border-radius: 0px;
             box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.5);
+
+            &:focus-visible{
+
+                &:after{
+                    content: '';
+                    border: 1px solid #919191;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    position: absolute;
+                    height: 56px;
+                    width: 56px;
+                    left: -5px;
+                    bottom: -5px;
+                }
+            }
     
             &:hover{
                 background-color: $pink-hover !important;
