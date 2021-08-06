@@ -716,6 +716,15 @@ i{
                 font-size: 16px;
             }
         }
+        .lightbox-close-btn{
+            position: absolute;
+            top: 38px;
+            right: 30px;
+            padding: 0;
+            border-radius: 0;
+            background: transparent;
+            outline: none !important;
+        }
 }
 
 /* Sticky button */

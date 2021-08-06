@@ -103,10 +103,13 @@ $(document).ready(function(){
 
 	$('.js-gallery-mobile').slickLightbox({
 		itemSelector: 'a.open-lightbox',
-		background: '#fff'
+		background: '#fff',
+    layouts: {
+      closeButton: '<button class="lightbox-close-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="20.9219" width="28.1734" height="2.34779" transform="rotate(-45 1 20.9219)" fill="#F8F400"/><rect width="28.1734" height="2.34779" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 22.5818 20.9219)" fill="#F8F400"/></svg></button>'
+   }
 		});
 	});
-
+/* lightbox gallery end*/
 
 $(window).on("load",function() {
     $(window).scroll(function() {
