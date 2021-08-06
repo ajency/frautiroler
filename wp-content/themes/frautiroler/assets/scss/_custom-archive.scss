@@ -5,6 +5,10 @@
     header{
         background-color: #F8F8F8 !important;
         box-shadow: none !important;
+
+        @media only screen and (max-width: 768px){
+            min-height: 0 !important;
+        }
     }
     .footer-widgets{
         background-color: #F8F8F8 !important;
@@ -218,5 +222,18 @@
                 }
             }
         }
+    }
+}
+
+.display-mobile{
+    display: none !important;
+    @media only screen and (max-width: 768px){
+        display: block !important;
+    }
+}
+.display-desktop{
+    display: none !important;
+    @media only screen and (min-width: 769px){
+        display: block !important;
     }
 }

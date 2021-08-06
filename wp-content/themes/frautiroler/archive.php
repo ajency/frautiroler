@@ -4,7 +4,34 @@
 
 get_header();
 
+
 ?>
+<div class="process-block display-mobile">
+	<div class="marquee3k news services prelative pr left is-init">
+		<div class="marquee3k__wrapper">
+			<div class="marquee3k-wrapper marquee3k__copy">
+				<div class="marquee-text news">
+					<span> Projekt Einreichen&nbsp;</span> 
+				</div>
+			</div>
+			<div class="marquee3k-wrapper marquee3k__copy">
+				<div class="marquee-text news">
+					<span> Projekt Einreichen&nbsp;</span>
+				</div>
+			</div>
+			<div class="marquee3k-wrapper marquee3k__copy">
+				<div class="marquee-text news">
+					<span> Projekt Einreichen&nbsp;</span>
+				</div>
+			</div>
+            <div class="marquee3k-wrapper marquee3k__copy">
+                <div class="marquee-text news">
+                    <span> Projekt Einreichen&nbsp;</span>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
  
 <?php if ( have_posts() ) : ?>
 
@@ -19,7 +46,8 @@ get_header();
 
             <div class="row projects" style="position: relative;"> 
                 <div class="section-title">
-                    Jetzt abstimmen und unterstützen!
+                    <span class="display-desktop"><?php the_field('page_title'); ?></span>
+                    <span class="display-mobile"><?php the_field('page_title_mobile'); ?></span>
                     <div class="title-underline">
                         <svg width="278" height="13" viewBox="0 0 278 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
@@ -32,7 +60,10 @@ get_header();
                             </defs>
                         </svg>
                     </div>
-                    <p class="subtitle">Stimme hier für deine Lieblingsprojekte!</p>
+                    <p class="subtitle">
+                        <span class="display-desktop"><?php the_field('subtitle'); ?></span>
+                        <span class="display-mobile"><?php the_field('subtitle_mobile'); ?></span>
+                    </p>
                 </div>
                 <div class="project-list">
                     <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
