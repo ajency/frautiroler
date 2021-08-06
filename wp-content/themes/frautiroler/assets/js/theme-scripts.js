@@ -142,6 +142,8 @@ $(document).ready(function(){
     $(window).on("load",function() {
         changeColor(".home .site-container--overlay", ["#F8F400", "#008D36", "#D2277C"], 5000);
     });
+});
+
 
   window.addEventListener("load", function() {
     const ele = document.querySelector('.home');
@@ -154,5 +156,3 @@ $(document).ready(function(){
       ele.classList.toggle("active", !ele.classList.contains("banner-1"));
     }, 5000);
   });
-});
-
