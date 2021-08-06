@@ -15,7 +15,7 @@
 		left: 0;
 		right: 0;
 		width: calc(100% + 120px);
-	    min-height: calc(100% - 38rem);
+	    min-height: calc(100% - 34rem);
 		position: absolute;
 		top: -100px;
 		left: 0;
@@ -61,6 +61,7 @@
 				}
 			}
 			.wp-block-buttons{
+				margin-bottom: 40px;
 				.wp-block-button{
 					&__link{
 						font-weight: bold;
@@ -90,8 +91,12 @@
 							font-size: 16px;
 							line-height: 19px;
 						}
+						&:hover{
+							box-shadow: none;
+						}
 					}
 				}
+				margin-bottom: 20px;
 			}
 			.wp-block-gallery{
 				.blocks-gallery{
@@ -105,16 +110,26 @@
 						}
 						&:first-child{
 							display: block;
-							transition: display $slow-duration $ease-in-out $normal-duration-1;
+							transition: display 6s $ease-in-out;
 						}
 						&:nth-child(2){
 							display: none;
-							transition: display $slow-duration $ease-in-out $normal-duration-1;
 						}
 						&:nth-child(3){
 							display: none;
-							transition: display $slow-duration $ease-in-out $normal-duration-1;
 						}
+					}
+				}
+				&.desktop-gallery{
+					display: block;
+					@media(max-width: 991px){
+						display: none;
+					}
+				}
+				&.mobil-gallery{
+					display: block;
+					@media(min-width: 992px){
+						display: none;
 					}
 				}
 			}
@@ -135,6 +150,9 @@
 				}
 			}
 		}
+		@media(max-width: 991px){
+			margin-top: 40px;
+		}
 	}
 	&.banner-2{
 		.site-header{
@@ -152,6 +170,21 @@
 						    transition: all $slow-duration $ease-out;
 					    }
 					}
+					&:after{
+						background-color: $red;
+					}
+				}
+			}
+			.site-navigation {
+				.navbar-right{
+					.burger-wrapper{
+						.hamburger{ 
+							.bar{
+    							background: $red;
+    							transition: background-color $slow-duration $ease-out;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -166,15 +199,13 @@
 						&-item{
 							&:first-child{
 								display: none;
-								transition: display $slow-duration $ease-in-out $normal-duration-1;
 							}
 							&:nth-child(2){
 								display: block;
-								transition: display $slow-duration $ease-in-out $normal-duration-1;
+								transition: display 6s $ease-in-out;
 							}
 							&:nth-child(3){
 								display: none;
-								transition: display $slow-duration $ease-in-out $normal-duration-1;
 							}
 						}
 					}
@@ -214,6 +245,21 @@
 						    transition: all $slow-duration $ease-out;
 					    }
 					}
+					&:after{
+						background-color: $off-white;
+					}
+				}
+			}
+			.site-navigation {
+				.navbar-right{
+					.burger-wrapper{
+						.hamburger{ 
+							.bar{
+    							background: $off-white;
+    							transition: background-color $slow-duration $ease-out;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -240,15 +286,13 @@
 						&-item{
 							&:first-child{
 								display: none;
-								transition: display $slow-duration $ease-in-out $normal-duration-1;
 							}
 							&:nth-child(2){
 								display: none;
-								transition: display $slow-duration $ease-in-out $normal-duration-1;
 							}
 							&:nth-child(3){
 								display: block;
-								transition: display $slow-duration $ease-in-out $normal-duration-1;
+								transition: display 6s $ease-in-out;
 							}
 						}
 					}
