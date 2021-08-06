@@ -24,7 +24,7 @@
 		-webkit-transform: translate(-70px, 0) rotate(-5deg);
 		@media(max-width: 991px){
 			min-height: 950px;
-			width: 100%;
+			width: calc(100% + 110px);
 		}
 	}
 	.content-sidebar-wrap{
