@@ -14,7 +14,7 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		width: calc(100% + 120px);
+		width: calc(100% + 150px);
 	    min-height: calc(100% - 34rem);
 		position: absolute;
 		top: -100px;
@@ -176,6 +176,18 @@
 				}
 			}
 			.site-navigation {
+				&-wrapper{
+					.site-logo{
+						a {
+							.banner-1--logo{
+								display: none;
+							}
+							.banner-2--logo{
+								display: block;
+							}
+						}
+					}
+				}
 				.navbar-right{
 					.burger-wrapper{
 						.hamburger{ 
@@ -251,6 +263,18 @@
 				}
 			}
 			.site-navigation {
+				&-wrapper{
+					.site-logo{
+						a {
+							.banner-1--logo{
+								display: none;
+							}
+							.banner-3--logo{
+								display: block;
+							}
+						}
+					}
+				}
 				.navbar-right{
 					.burger-wrapper{
 						.hamburger{ 

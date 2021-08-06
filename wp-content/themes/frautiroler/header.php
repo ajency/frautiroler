@@ -109,7 +109,11 @@ do_action( 'genesis_after_header' );
 							   	$custom_logo_id = get_theme_mod( 'custom_logo' );
 							   	$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 					      	?>
-							<a href="<?php echo get_site_url(); ?>/" class="d-flex align-items-center"><img src="<?php echo $image[0]; ?>" alt="" class="pr-2"></a>
+							<a href="<?php echo get_site_url(); ?>/" class="d-flex align-items-center">
+								<img src="<?php echo $image[0]; ?>" alt="" class="banner-1--logo pr-2">
+								<img class="banner-2--logo pr-2" src="../wp-content/themes/frautiroler/assets/img/tiroler-logo-red.png" alt="">
+								<img class="banner-3--logo pr-2" src="../wp-content/themes/frautiroler/assets/img/tiroler-logo-white.png" alt="">
+							</a>
 						</div>
 					</div>
 				</div>
