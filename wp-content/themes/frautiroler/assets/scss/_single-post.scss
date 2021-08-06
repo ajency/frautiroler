@@ -645,8 +645,13 @@ i{
         background-size: cover !important;
         background-position-y: -24vh !important;
         z-index: 99999 !important;
-        overflow-y: scroll !important;
-        max-height: 100vh !important;
+        overflow: hidden !important;
+        height: 100vh !important;
+
+        .slick-lightbox-inner{
+
+            height: 100vh !important;
+        }
 
         .slick-lightbox-slick-img{
             max-width: 100% !important;
