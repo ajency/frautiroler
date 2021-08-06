@@ -40,7 +40,15 @@ get_header();
 
         <!-- Projects -->
 
-        <?php $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'post__not_in' => array( get_the_ID() ), 'posts_per_page'=>9));
+        <?php
+
+        if( wp_is_mobile() ) {
+            $posts_per_page = 4;
+        } else{
+            $posts_per_page = 9;
+        }
+        
+        $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'post__not_in' => array( get_the_ID() ), 'posts_per_page'=> $posts_per_page));
 
         if ( $allPostsWPQuery->have_posts() ) :?>
 
