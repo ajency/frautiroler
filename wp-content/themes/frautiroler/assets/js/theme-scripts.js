@@ -143,19 +143,18 @@ $(document).ready(function(){
             }, time);
     }
     $(window).on("load",function() {
-        changeColor(".home .site-container--overlay", ["#F8F400", "#008D36", "#D2277C"], 5000);
+        changeColor(".home .site-container--overlay", ["#F8F400", "#008D36", "#D2277C"], 6000);
     });
 });
 
 
   window.addEventListener("load", function() {
-    const ele = document.querySelector('.home');
+    const ele = $('body.home');
     let cnt = 1;
     setInterval(function() {
-      ele.classList.remove("banner-" + cnt);
+      ele.removeClass("banner-" + cnt);
       cnt++;
       if (cnt > 3) cnt = 1;
-      ele.classList.add("banner-" + cnt);
-      ele.classList.toggle("active", !ele.classList.contains("banner-1"));
-    }, 5000);
+      ele.addClass("banner-" + cnt);
+    }, 6000);
   });
