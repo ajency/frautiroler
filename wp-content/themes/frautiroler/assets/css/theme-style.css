@@ -2423,6 +2423,7 @@ i {
   margin-bottom: 38px;
   position: relative !important;
   width: 80px !important;
+  margin-left: 8px !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -3088,6 +3089,8 @@ i {
   background-size: cover !important;
   background-position-y: -24vh !important;
   z-index: 99999 !important;
+  overflow-y: scroll !important;
+  max-height: 100vh !important;
 }
 
 .slick-lightbox .slick-lightbox-slick-img {
