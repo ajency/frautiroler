@@ -43,6 +43,20 @@ genesis_markup(
 	]
 );
 
+genesis_markup(
+	[
+		'open'    => '<div %s>',
+		'context' => 'site-container--overlay',
+	]
+);
+
+genesis_markup(
+	[
+		'close'   => '</div>',
+		'context' => 'site-container--overlay',
+	]
+);
+
 if ( function_exists( 'wp_body_open' ) ) {
 	wp_body_open();
 }

@@ -1,152 +1,261 @@
+
 .home{
-	.site-header{
-		min-height: 220px;
-		&--overlay{
-			transform: translate(-70px, 0) rotate(-5deg);
-			background-color: #D2277C;
-		    min-height: 95rem;
-		    @media(max-width: 991px){
-		    	transform: translate(-42px, 0) rotate(-5deg);
-		    	width: 120%;
-	    	    min-height: 64rem;
-		    }
-		}
+	position: relative;
+	.site-container--overlay{
+		background-color: $pink;
+		min-height:500px;
+		-webkit-transition: background-color $slow-duration $ease-in-out;
+		-moz-transition: background-color $slow-duration $ease-in-out;
+		-o-transition: background-color $slow-duration $ease-in-out;
+		transition: background-color $slow-duration $ease-in-out;
+		width: 100%;
+		min-height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: calc(100% + 120px);
+	    min-height: calc(100% - 38rem);
+		position: absolute;
+		top: -100px;
+		left: 0;
+		right: 0;
+		transform: translate(-20px, 0) rotate(-5deg);
+		-webkit-transform: translate(-70px, 0) rotate(-5deg);
 		@media(max-width: 991px){
-			min-height: 120px;
+			min-height: 950px;
 		}
 	}
 	.content-sidebar-wrap{
-		position: relative;
-	    z-index: 9999;
-    	.content{
-			width: 100%;
-			max-width: 100%;
-		 	padding: 0 15px;
-			@media (min-width: 768px) {
-			    max-width: 720px;
-			}
-			@media (min-width: 992px){
-			    max-width: 960px;
-			}
-			@media (min-width: 1200px) {
-			    max-width: 1140px;
-			}
-			@media (min-width: 1500px){
-			    max-width: 1340px;
-			}
-			@media(max-width: 767px){
-			    padding: 0 32px;
-			}
+		@media(max-width: 991px){
+			padding: 0 30px;
 		}
 	}
-	.gb-block-layout-column{
-		&-inner{
-			h2{
+	.site-header{
+	    min-height: 100%;
+	    background-color: transparent;
+	    box-shadow: none;
+		&--overlay{
+			display: none;
+		}
+	}
+	.wp-block-group{
+		position: relative;
+		z-index: 2;
+		margin-top: 100px;
+		&__inner-container{
+			h1{
+				font-weight: normal;
 				font-size: 60px;
 				line-height: 72px;
-				color: #F8F400;
-			    width: 850px;
-		        margin-bottom: 30px;
+				color: $yellow;
+				transition: color $slow-duration $ease-out;
+				width: 100%;
+				max-width: 900px;
+				margin-bottom: 30px;
 				@media(max-width: 991px){
 					font-size: 24px;
 					line-height: 29px;
-					width: 100%;
+					max-width: 100%;
+					margin-bottom: 15px;
 				}
 			}
-			.wp-block-button{
-				&__link{
-					font-weight: bold !important;
-					font-size: 32px !important;
-					line-height: 38px !important;
-					color: #F8F400 !important;
-					background: transparent !important;
-					padding: 5px 0 !important;
-					position: relative;
-					&:after{
-						content:'';
-						background-color: #F8F400;
-						height: 4px;
-						width: 100%;
-						position: absolute;
-						left: 0;
-						right: 0;
-						bottom: 0;
+			.wp-block-buttons{
+				.wp-block-button{
+					&__link{
+						font-weight: bold;
+						font-family: 'Myriad-Pro-Bold';
+						font-size: 32px;
+						line-height: 38px;
+						color: $yellow;
+						background: transparent;
+						padding: 0;
+						position: relative;
+						transition: color $slow-duration $ease-out;
+						&:after{
+							content: '';
+							background-color: $yellow;
+							transition: background-color $slow-duration $ease-out;
+							width: 100%;
+							height: 4px;
+							position: absolute;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							@media(max-width: 991px){
+								height: 2px;
+							}
+						}
+						@media(max-width: 991px){
+							font-size: 16px;
+							line-height: 19px;
+						}
 					}
-					@media(max-width: 991px){
-						font-size: 16px !important;
-						line-height: 19px !important;
+				}
+			}
+			.wp-block-gallery{
+				.blocks-gallery{
+					&-item{
+						img{
+					    	height: 399px;
+					    	object-fit: contain;
+					    	@media(max-width: 991px){
+				    		    height: 100%;
+					    	}
+						}
+						&:first-child{
+							display: block;
+							transition: display $slow-duration $ease-in-out $normal-duration-1;
+						}
+						&:nth-child(2){
+							display: none;
+							transition: display $slow-duration $ease-in-out $normal-duration-1;
+						}
+						&:nth-child(3){
+							display: none;
+							transition: display $slow-duration $ease-in-out $normal-duration-1;
+						}
 					}
 				}
 			}
 			p{
+				font-weight: normal;
+				font-family: 'Myriad-Pro-Regular';
 				font-size: 23px;
 				line-height: 36px;
-				color: #F8F400;
-			    width: 850px;
+				color: $yellow;
+				transition: color $slow-duration $ease-out;
+				width: 100%;
+				max-width: 850px;
+				margin-bottom: 0;
 				@media(max-width: 991px){
 					font-size: 16px;
 					line-height: 26px;
-					width: 100%;
-				}
-			}
-			.wp-block-image{
-				img{
-				    margin: 85px 0;
-				    @media(max-width: 991px){
-				    	margin: 50px 0;
-				    }
+					max-width: 100%;
 				}
 			}
 		}
 	}
-	&.yellow{
+	&.banner-2{
 		.site-header{
-			&--overlay{
-	    		background-color: #F8F400;
-    		}
-    	}
-		.gb-block-layout-column{
-			&-inner{
-				h2{
-					color: #CD1619;
+			.header-menu{ 
+				.menu-item{ 
+					a{
+						color: $red;
+						transition: color $slow-duration $ease-out;
+					}
+					&:last-child{
+			    		border: 1px solid transparent;
+						a{
+						    background: $red;
+						    color: $yellow;
+						    transition: all $slow-duration $ease-out;
+					    }
+					}
 				}
-				.wp-block-button{
-					&__link{
-						color: #CD1619 !important;
-						&:after{
-							content:'';
-							background-color: #CD1619;
+			}
+		}
+		.wp-block-group{
+			&__inner-container{
+				h1{
+					color: $red;
+					transition: color $slow-duration $ease-out;
+				}
+				.wp-block-gallery{
+					.blocks-gallery{
+						&-item{
+							&:first-child{
+								display: none;
+								transition: display $slow-duration $ease-in-out $normal-duration-1;
+							}
+							&:nth-child(2){
+								display: block;
+								transition: display $slow-duration $ease-in-out $normal-duration-1;
+							}
+							&:nth-child(3){
+								display: none;
+								transition: display $slow-duration $ease-in-out $normal-duration-1;
+							}
+						}
+					}
+				}
+				.wp-block-buttons{
+					.wp-block-button{
+						&__link{
+							color: $red;
+							transition: color $slow-duration $ease-out;
+							&:after{
+								background-color: $red;
+								transition: background-color $slow-duration $ease-out;
+							}
 						}
 					}
 				}
 				p{
-					color: #CD1619;
+					color: $red;
+					transition: color $slow-duration $ease-out;
 				}
 			}
 		}
 	}
-	&.green{
+	&.banner-3{
 		.site-header{
-			&--overlay{
-	    		background-color: #008D36;
-    		}
-    	}
-		.gb-block-layout-column{
-			&-inner{
-				h2{
-					color: #FFFFFF;
+			.header-menu{ 
+				.menu-item{ 
+					a{
+						color: $off-white;
+						transition: color $slow-duration $ease-out;
+					}
+					&:last-child{
+		    			border: 1px solid transparent;
+						a{
+						    background: $off-white;
+						    color: $green;
+						    transition: all $slow-duration $ease-out;
+					    }
+					}
 				}
-				.wp-block-button{
-					&__link{
-						color: #FFFFFF !important;
-						&:after{
-							content:'';
-							background-color: #FFFFFF;
+			}
+		}
+		.wp-block-group{
+			&__inner-container{
+				h1{
+					color: $off-white;
+					transition: color $slow-duration $ease-out;
+				}
+				.wp-block-buttons{
+					.wp-block-button{
+						&__link{
+							color: $off-white;
+							transition: color $slow-duration $ease-out;
+							&:after{
+								background-color: $off-white;
+								transition: background-color $slow-duration $ease-out;
+							}
+						}
+					}
+				}
+				.wp-block-gallery{
+					.blocks-gallery{
+						&-item{
+							&:first-child{
+								display: none;
+								transition: display $slow-duration $ease-in-out $normal-duration-1;
+							}
+							&:nth-child(2){
+								display: none;
+								transition: display $slow-duration $ease-in-out $normal-duration-1;
+							}
+							&:nth-child(3){
+								display: block;
+								transition: display $slow-duration $ease-in-out $normal-duration-1;
+							}
 						}
 					}
 				}
 				p{
-					color: #FFFFFF;
+					color: $off-white;
+					transition: color $slow-duration $ease-out;
 				}
 			}
 		}
