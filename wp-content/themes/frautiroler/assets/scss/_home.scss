@@ -15,7 +15,7 @@
 		left: 0;
 		right: 0;
 		width: calc(100% + 150px);
-	    min-height: 1348px;
+	    min-height: 1440px;
 		position: absolute;
 		top: -100px;
 		left: 0;
@@ -23,7 +23,7 @@
 		transform: translate(-20px, 0) rotate(-5deg);
 		-webkit-transform: translate(-70px, 0) rotate(-5deg);
 		@media(max-width: 991px){
-			min-height: 950px;
+			min-height: 1050px;
 			width: calc(100% + 110px);
 		}
 	}
@@ -325,6 +325,116 @@
 				p{
 					color: $off-white;
 					transition: color $slow-duration $ease-out;
+				}
+			}
+		}
+	}
+	.wp-block-button{
+		&__link{
+			padding: 15px 27px 14px !important;
+			border-radius: 60px !important;
+			font-family: 'Myriad-Pro-Regular' !important;
+		}
+	}
+	.wp-block-image{
+		position: relative;
+		img{
+			@media(max-width: 991px){
+			    width: 228px;
+			    height: 115px;
+			}
+		}
+		figcaption{
+			font-size: 60px;
+			line-height: 72px;
+			color: #000000;
+			margin: 0;
+		    position: absolute;
+		    top: 100px;
+		    left: 50px;
+		    @media(max-width: 991px){
+				font-size: 32px;
+				line-height: 40px;
+				top: 50px;
+    			left: 28px;
+		    }
+		}
+	}
+	h2{
+		code{
+			position: relative;
+		    background: white;
+			font-family: 'Myriad-Pro-Regular';
+		    &:after{
+		    	content: '';
+		    	background-image: url('../img/line-underline.png');
+			    background-size: cover;
+			    background-repeat: no-repeat;
+			    width: 275px;
+			    height: 12px;
+			    position: absolute;
+			    left: 0px;
+			    bottom: -3px;
+			    @media(max-width: 991px){
+				    background-size: contain;
+				    background-repeat: no-repeat;
+				    width: 150px;
+				    position: absolute;
+				    top: 32px;
+				    left: 0px;
+				    bottom: -2px;
+			    }
+		    }
+		}	
+	}
+	.wp-block-columns{
+		margin-bottom: 0;
+		.wp-block-column{
+			h4{
+				font-family: 'Myriad-Pro-Bold';
+				font-weight: bold;
+				font-size: 40px;
+				line-height: 48px;
+				color: #000000;
+				margin-top: 0px;
+				margin-bottom: 24px;
+				@media( max-width: 991px){
+					font-size: 24px;
+					line-height: 29px;
+				}
+			}
+			p{
+				font-family: 'Myriad-Pro-Regular';
+				font-size: 23px;
+				line-height: 36px;
+				color: #000000;
+				@media(max-width: 991px){
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+			.wp-block-image{
+				height: 130px;
+				position: relative;
+				.alignright{
+					margin-bottom: 0;
+					img{
+						@media(max-width: 991px){
+							height: auto;
+							width: 80px;
+						}
+					}
+				}
+				.aligncenter{
+					img{
+						@media(max-width: 991px){
+							height: auto;
+							width: 120px;
+						}
+					}
+				}
+				@media(max-width: 991px){
+					height: auto;
 				}
 			}
 		}

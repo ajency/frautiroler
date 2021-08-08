@@ -368,12 +368,13 @@ function wp_rand_posts() {
 	        $string .= '<div class="project-image">';
 	        $string .= '<a href="'. get_permalink() .'" alt="'. get_the_title() .'" title="'. get_the_title() .'">';
 			$string .= '<img src="'. $thumbnail .'" alt="'. get_the_title() .'" title="'. get_the_title() .'"/>';
+			$string .= '<div class="overlay"></div>';
 			$string .='</a></div>';
 			$string .= '<div class="project-votes tooltip" data-content="Abstimmen">' . do_shortcode( '[wp_ulike]' ) .'</div>';
 	        $string .= '<div class="project-title"><a href="'. get_permalink() .'">'. get_the_title() .'</a></div>';
 	        $string .= '<div class="project-description">';
-	        $string .= '<p><a href="'. get_permalink() .'">'. fr_get_excerpt(140) .'</a></p>';
-	        $string .= '<a href="'. get_permalink() .'">Mehr Info</a>';
+	        $string .= '<p><a href="'. get_permalink() .'">'. fr_get_excerpt(140) .'</a>';
+	        $string .= '<a href="'. get_permalink() .'">Mehr Info</a></p>';
 	        $string .= '</div>';
 	        $string .= '</div>';
 	    }

@@ -141,12 +141,25 @@ body{
 }
 
 p{
+	font-family: 'Myriad-Pro-Regular';
 	font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5{
 	font-family: 'Myriad-Pro-Regular';
+}
+h2{
+	font-size: 60px;
+	line-height: 72px;
+	color: #000000;
+	margin-bottom: 8px;
+	position: relative;
+	@media(max-width: 991px){
+		font-size: 32px;
+		line-height: 40px;
+	}
 }
