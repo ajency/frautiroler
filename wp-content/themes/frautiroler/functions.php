@@ -333,6 +333,18 @@ if ( function_exists('register_sidebar') )
   )
 );
 
+function fr_get_excerpt($limit) {
+	$content = str_replace("[&hellip;]", "", get_the_content());
+	if(strlen($content) > $limit){
+		$limit_pos = strpos($content, " ", $limit);
+		$excerpt = substr($content, 0, $limit_pos);
+	}
+	else{
+		$excerpt = $content;
+	}
+	return $excerpt." ";
+}
+
 function wp_rand_posts() { 
  
 	$args = array(
@@ -344,13 +356,28 @@ function wp_rand_posts() {
 	$the_query = new WP_Query( $args );
  
 	if ( $the_query->have_posts() ) {
- 
-	$string .= '<ul>';
+
+	$string .= '<div class="project-list">';
 	    while ( $the_query->have_posts() ) {
 	        $the_query->the_post();
-	        $string .= '<li><a href="'. get_permalink() .'">'. get_the_title() .'</a></li>';
+
+		 	$image1 = get_field('image_1');
+		 	$thumbnail =  $image1['url'];
+
+	        $string .= '<div class="project-item">';
+	        $string .= '<div class="project-image">';
+	        $string .= '<a href="'. get_permalink() .'" alt="'. get_the_title() .'" title="'. get_the_title() .'">';
+			$string .= '<img src="'. $thumbnail .'" alt="'. get_the_title() .'" title="'. get_the_title() .'"/>';
+			$string .='</a></div>';
+			$string .= '<div class="project-votes tooltip" data-content="Abstimmen">' . do_shortcode( '[wp_ulike]' ) .'</div>';
+	        $string .= '<div class="project-title"><a href="'. get_permalink() .'">'. get_the_title() .'</a></div>';
+	        $string .= '<div class="project-description">';
+	        $string .= '<p><a href="'. get_permalink() .'">'. fr_get_excerpt(140) .'</a></p>';
+	        $string .= '<a href="'. get_permalink() .'">Mehr Info</a>';
+	        $string .= '</div>';
+	        $string .= '</div>';
 	    }
-	    $string .= '</ul>';
+	    $string .= '</div>';
 	    /* Restore original Post Data */
 	    wp_reset_postdata();
 	} else {
