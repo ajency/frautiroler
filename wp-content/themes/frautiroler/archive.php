@@ -87,12 +87,10 @@ get_header();
                         </div>
                     <?php endwhile; ?>
                 </div>
-                <?php
-                if( wp_is_mobile() ) { ?>
-                    <div class="load-more d-sm"><?php  echo do_shortcode( '[ajax_load_more loading_style="purple" post_type="post" posts_per_page="6" offset="4" pause="true" scroll="false" button_label="Alle ansehen"]' ); ?></div>
-                <?php } else{ ?>
-                   <div class="load-more d-md"><?php  echo do_shortcode( '[ajax_load_more loading_style="purple" post_type="post" posts_per_page="6" offset="9" pause="true" scroll="false" button_label="Mehr anzeigen"]' ); ?></div>
-                <?php } ?>
+                    <div class="load-more load-more-mob d-sm"><?php  echo do_shortcode( '[ajax_load_more loading_style="purple" post_type="post" posts_per_page="6" pause="true" scroll="false" button_label="Alle ansehen"]' ); ?></div>
+
+                   <div class="load-more load-more-desk d-md"><?php  echo do_shortcode( '[ajax_load_more loading_style="purple" post_type="post" posts_per_page="6" pause="true" scroll="false" button_label="Mehr anzeigen"]' ); ?></div>
+                
 				
             </div>
 

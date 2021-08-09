@@ -160,8 +160,16 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     var minValue = 9;
-    if ($('.project-list > .project-item').length < 9 ){
-      $('.load-more').attr('disabled', 'disabled');
+    var minValue1 = 4;
+    if ($('.project-list > .project-item').length <= minValue ){
+      $('.load-more-desk button').attr('disabled', 'disabled');
+    }else{
+      $('.load-more-desk button').removeAttr('disabled', 'disabled');
+    }
+    if ($('.project-list > .project-item').length <= minValue1 ){
+      $('.load-more-mob button').attr('disabled', 'disabled');
+    }else{
+      $('.load-more-mob button').removeAttr('disabled', 'disabled');
     }
   });
 
