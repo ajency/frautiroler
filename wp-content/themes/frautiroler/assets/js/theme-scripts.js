@@ -158,5 +158,11 @@ $(document).ready(function(){
       ele.addClass("banner-" + cnt);
     }, 6000);
   });
+  $(document).ready(function(){
+    var minValue = 9;
+    if ($('.project-list > .project-item').length < 9 ){
+      $('.load-more').attr('disabled', 'disabled');
+    }
+  });
 
 // window.history.pushState("object or string", "Title", "/new-url");
