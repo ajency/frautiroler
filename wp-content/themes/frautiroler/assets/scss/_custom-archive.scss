@@ -13,7 +13,14 @@
     .footer-widgets{
         background-color: #F8F8F8 !important;
     }
-
+    .disable-btn{
+        button{
+            background-color: #919191 !important;
+            color: white !important;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    }
     button{
         &.load-more{
             display: block;
@@ -114,35 +121,35 @@
                     margin-top: 60px;
                 }
 
-                    button{
-                        outline: none !important;
-                        position: relative;
+                button{
+                    outline: none !important;
+                    position: relative;
 
-                        &:hover{
-                            background-color: $pink-hover;
-                        }
-                        &:active{
-                            background-color: $pink-pressed;
-                        }
-                        &:focus-visible{
-                            &:after{
-                                content: '';
-                                border: 1px solid #919191;
-                                -webkit-box-sizing: border-box;
-                                box-sizing: border-box;
-                                border-radius: 60px;
-                                position: absolute;
-                                height: 58px;
-                                width: 189px;
-                                left: -3px;
-                                top: -3px;
+                    &:hover{
+                        background-color: $pink-hover;
+                    }
+                    &:active{
+                        background-color: $pink-pressed;
+                    }
+                    &:focus-visible{
+                        &:after{
+                            content: '';
+                            border: 1px solid #919191;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            border-radius: 60px;
+                            position: absolute;
+                            height: 58px;
+                            width: 189px;
+                            left: -3px;
+                            top: -3px;
 
-                                @media only screen and (max-width: 768px){
-                                    width: 162px;
-                                }
+                            @media only screen and (max-width: 768px){
+                                width: 162px;
                             }
                         }
                     }
+                }
             }
         }
         .empty-state{

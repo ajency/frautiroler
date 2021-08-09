@@ -391,3 +391,4 @@ function wp_rand_posts() {
  
 add_shortcode('wp-random-posts','wp_rand_posts');
 add_filter('widget_text', 'do_shortcode'); 
+

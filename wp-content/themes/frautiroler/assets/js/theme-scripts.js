@@ -158,19 +158,4 @@ $(document).ready(function(){
       ele.addClass("banner-" + cnt);
     }, 6000);
   });
-  $(document).ready(function(){
-    var minValue = 9;
-    var minValue1 = 4;
-    if ($('.project-list > .project-item').length <= minValue ){
-      $('.load-more-desk button').attr('disabled', 'disabled');
-    }else{
-      $('.load-more-desk button').removeAttr('disabled', 'disabled');
-    }
-    if ($('.project-list > .project-item').length <= minValue1 ){
-      $('.load-more-mob button').attr('disabled', 'disabled');
-    }else{
-      $('.load-more-mob button').removeAttr('disabled', 'disabled');
-    }
-  });
 
-// window.history.pushState("object or string", "Title", "/new-url");

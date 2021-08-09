@@ -87,11 +87,11 @@ get_header();
                         </div>
                     <?php endwhile; ?>
                 </div>
-                    <div class="load-more load-more-mob d-sm"><?php  echo do_shortcode( '[ajax_load_more loading_style="purple" post_type="post" posts_per_page="6" pause="true" scroll="false" button_label="Alle ansehen"]' ); ?></div>
+                <?php $total = wp_count_posts()->publish; ?>
+                <div class="load-more load-more-mob d-sm" <?php if ($total < '4'){ ?> disabled <?php   } ?>><?php  echo do_shortcode( '[ajax_load_more loading_style="purple" post_type="post" posts_per_page="6" pause="true" scroll="false" button_label="Alle ansehen"]' ); ?></div>
 
-                   <div class="load-more load-more-desk d-md"><?php  echo do_shortcode( '[ajax_load_more loading_style="purple" post_type="post" posts_per_page="6" pause="true" scroll="false" button_label="Mehr anzeigen"]' ); ?></div>
+                <div class="load-more load-more-desk d-md <?php if ($total <='9'){ ?> disable-btn <?php   } ?>"><?php  echo do_shortcode( '[ajax_load_more loading_style="purple" post_type="post" posts_per_page="6" pause="true" scroll="false" button_label="Mehr anzeigen"]' ); ?></div>
                 
-				
             </div>
 
 		<!-- projects end -->
