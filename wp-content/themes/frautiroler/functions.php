@@ -307,7 +307,7 @@ Read more link for excerpts
 
 function new_excerpt_more($more) {
 	global $post;
-	   return '… <a href="'. get_permalink($post->ID) . '">' . 'Mehr Info' . '</a>';
+	   return '… <a class="default-link read-more-link" href="'. get_permalink($post->ID) . '"><span>' . 'Mehr Info' . '</span></a>';
 	}
 	add_filter('excerpt_more', 'new_excerpt_more');
 
@@ -374,7 +374,7 @@ function wp_rand_posts() {
 	        $string .= '<div class="project-title"><a href="'. get_permalink() .'">'. get_the_title() .'</a></div>';
 	        $string .= '<div class="project-description">';
 	        $string .= '<p><a href="'. get_permalink() .'">'. fr_get_excerpt(140) .'</a>';
-        	$string .= '<a class="read-more-link" href="'. get_permalink() .'">Mehr Info</a></p>';
+        	$string .= '<a class="default-link read-more-link" href="'. get_permalink() .'"><span>Mehr Info</span></a></p>';
 	        $string .= '</div>';
 	        $string .= '</div>';
 	    }
