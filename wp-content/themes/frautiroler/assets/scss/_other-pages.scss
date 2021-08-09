@@ -1,5 +1,5 @@
-//pageid=91
-.page-id-251{
+//pageid=251
+.page-id-251, .page-id-263, .page-id-265{
     .site-header{
         box-shadow: none !important;
     }
@@ -16,26 +16,97 @@
     
             .entry-title{
                 @extend h2;
-                margin-bottom: 72px;
-                margin-top: 20px;
-            }
-            ul{
-                @extend p;
-                line-height: 36px;
-                font-size: 18px;
-                font-family: 'Univers LT' !important;
-                padding-left: 20px;
-    
-                li::marker{
-                    font-size: 25px;
-    
-                    @media only screen and (max-width: 768px){
-                        font-size: 16px;
-                    }
-                }
-    
+                margin-bottom: 72px !important;
+                margin-top: 20px !important;
+
                 @media only screen and (max-width: 768px){
-                    font-size: 16px;
+                    margin-bottom: 40px !important;
+                    margin-top: 0px !important;
+                }
+            }
+        }
+    }
+
+    p, ul{
+        @extend p;
+        line-height: 32px !important;
+        font-size: 18px;
+        font-family: 'Univers LT' !important;
+
+        @media only screen and (max-width: 768px){
+            font-size: 16px;
+        }
+    }
+    ul{
+        padding-left: 20px;
+        line-height: 36px !important;
+
+        li::marker{
+            font-size: 25px;
+        }
+
+        @media only screen and (max-width: 768px){
+            font-size: 16px;
+        }
+    }
+
+    h4{
+        font-family: 'Myriad-Pro-Bold' !important;
+        font-size: 32px !important;
+        line-height: 38px !important;
+        margin-bottom: 24px !important;
+        margin-top: 0px !important;
+        @media only screen and (max-width: 768px){
+            font-size: 24px !important;
+            line-height: 29px !important;
+            margin: 12px 0px !important;
+        }
+    }
+
+    .wp-block-group__inner-container{
+        margin-top:64px;
+    }
+    .wp-block-group .wp-block-group__inner-container{
+        margin-top: 0px !important;
+    }
+    .wp-block-group{
+        margin-top:24px !important;
+    }
+    .main-block{
+        margin-top:64px !important;
+        @media only screen and (max-width: 768px){
+            margin-top:40px !important;
+        }
+    }
+    a{
+        color: black;
+        text-decoration: underline !important;
+        position: relative !important;
+        outline :none !important;
+
+        &:hover{
+            transition: color $fast-duration $ease-out;
+            color: $pink;
+        }
+        &:active{
+            transition: color $fast-duration $ease-out;
+            color: $pink-pressed;
+        }
+        &:focus-visible{
+            &:after{
+                content: '';
+                border: 1px solid #919191;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                border-radius: 4px;
+                position: absolute;
+                width: 174px !important;
+                left: -3px;
+                top: -3px;
+                height: 25px;
+
+                @media only screen and (max-width: 768px){
+                    width: 155px !important;
                 }
             }
         }
