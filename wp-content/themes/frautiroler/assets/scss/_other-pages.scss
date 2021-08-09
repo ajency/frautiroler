@@ -1,0 +1,32 @@
+.page-id-251{
+    .site-header{
+        box-shadow: none !important;
+    }
+    article{
+        width: 60%;
+
+        @media only screen and (max-width: 768px){
+            width: 100%;
+        }
+
+        .entry-title{
+            @extend h2;
+            margin-bottom: 72px;
+            margin-top: 20px;
+        }
+        ul{
+            @extend p;
+            line-height: 36px;
+            font-size: 18px;
+            font-family: 'Univers LT' !important;
+
+            li::marker{
+                font-size: 25px;
+            }
+
+            @media only screen and (max-width: 768px){
+                font-size: 16px;
+            }
+        }
+    }
+}
