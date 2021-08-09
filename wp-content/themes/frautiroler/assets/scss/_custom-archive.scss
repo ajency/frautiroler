@@ -1,6 +1,6 @@
 .page-template-archive{
 
-    background-color: #F8F8F8 !important;
+    background-color: #F8F8F8;
 
     header{
         background-color: #F8F8F8 !important;
@@ -12,6 +12,26 @@
     }
     .footer-widgets{
         background-color: #F8F8F8 !important;
+    }
+
+    button{
+        &.load-more{
+            display: block;
+            background: #D2277C;
+            border-radius: 60px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 17px;
+            padding: 14px 27px 17px;
+            margin: auto !important;
+            &:disabled{
+                background-color: #919191 !important;
+                color: white !important;
+                &:hover{
+                    background-color: #919191 !important;
+                }
+            }
+        }
     }
 }
 .custom_archive_page{
@@ -59,7 +79,7 @@
 
                 .project-item{
                     width: 31.7%;
-                    
+                    text-align: left;
 
                     @media only screen and (min-width: 768px){
                         margin-bottom:74px;
@@ -99,10 +119,10 @@
                         position: relative;
 
                         &:hover{
-                            background-color: $pink-hover !important;
+                            background-color: $pink-hover;
                         }
                         &:active{
-                            background-color: $pink-pressed !important;
+                            background-color: $pink-pressed;
                         }
                         &:focus-visible{
                             &:after{
@@ -135,7 +155,6 @@
                 }
                 .subtitle{
                     margin-bottom: 60px;
-                    color:#000000 !important;
 
                     a{
                         color: #000000;

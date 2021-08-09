@@ -87,7 +87,7 @@ get_header();
                         </div>
                     <?php endwhile; ?>
                 </div>
-				<div class="load-more"><button class="button-pink">Mehr anzeigen</button></div>
+				<div class="load-more"><?php  echo do_shortcode( '[ajax_load_more loading_style="purple" post_type="post" posts_per_page="6" offset="9" pause="true" scroll="false" button_label="Mehr anzeigen"]' ); ?></div>
             </div>
 
 		<!-- projects end -->
