@@ -1,5 +1,4 @@
-//pageid=251
-.page-id-251, .page-id-263, .page-id-265{
+.page-id-251, .page-id-263, .page-id-265, .page-id-95{
     .site-header{
         box-shadow: none !important;
     }
@@ -79,18 +78,18 @@
         }
     }
     a{
-        color: black;
+        color: black !important;
         text-decoration: underline !important;
         position: relative !important;
         outline :none !important;
 
         &:hover{
             transition: color $fast-duration $ease-out;
-            color: $pink;
+            color: $pink !important;
         }
         &:active{
             transition: color $fast-duration $ease-out;
-            color: $pink-pressed;
+            color: $pink-pressed !important;
         }
         &:focus-visible{
             &:after{
