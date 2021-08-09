@@ -374,7 +374,7 @@ function wp_rand_posts() {
 	        $string .= '<div class="project-title"><a href="'. get_permalink() .'">'. get_the_title() .'</a></div>';
 	        $string .= '<div class="project-description">';
 	        $string .= '<p><a href="'. get_permalink() .'">'. fr_get_excerpt(140) .'</a>';
-	        $string .= '<a href="'. get_permalink() .'">Mehr Info</a></p>';
+        	$string .= '<a class="read-more-link" href="'. get_permalink() .'">Mehr Info</a></p>';
 	        $string .= '</div>';
 	        $string .= '</div>';
 	    }
