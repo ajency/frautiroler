@@ -171,3 +171,35 @@ h2{
 		line-height: 40px;
 	}
 }
+
+.default-link{
+
+	a{
+		color:#000000;
+		text-decoration: none !important;
+		outline: none !important;
+		padding: 3px;
+		border:1px solid transparent;
+
+		span{
+			outline: none !important;
+			border-bottom: 1px solid #000000;
+		}
+
+		&:hover span{
+			transition: color $fast-duration $ease-out, border-color $fast-duration $ease-out;
+			border-color: $pink;
+			color: $pink;
+		}
+		&:active span{
+			transition: color $fast-duration $ease-out, border-color $fast-duration $ease-out;
+			border-color: $pink-pressed;
+			color: $pink-pressed;
+		}
+		&:focus-visible{
+			border:1px solid #919191;
+			border-radius: 4px;
+		}
+	}
+
+}

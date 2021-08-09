@@ -76,38 +76,5 @@
                 margin-top:40px !important;
             }
         }
-        a{
-            color: black !important;
-            text-decoration: underline !important;
-            position: relative !important;
-            outline :none !important;
-    
-            &:hover{
-                transition: color $fast-duration $ease-out;
-                color: $pink !important;
-            }
-            &:active{
-                transition: color $fast-duration $ease-out;
-                color: $pink-pressed !important;
-            }
-            &:focus-visible{
-                &:after{
-                    content: '';
-                    border: 1px solid #919191;
-                    -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-                    border-radius: 4px;
-                    position: absolute;
-                    width: 174px !important;
-                    left: -3px;
-                    top: -3px;
-                    height: 25px;
-    
-                    @media only screen and (max-width: 768px){
-                        width: 155px !important;
-                    }
-                }
-            }
-        }
     }
 }
