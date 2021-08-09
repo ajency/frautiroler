@@ -158,3 +158,5 @@ $(document).ready(function(){
       ele.addClass("banner-" + cnt);
     }, 6000);
   });
+
+// window.history.pushState("object or string", "Title", "/new-url");
