@@ -1,4 +1,54 @@
 .page-id-251, .page-id-263, .page-id-265, .page-id-95{
+    .process-block{
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            clip-path: polygon(0 43%, 100% 21%, 100% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0 43%, 100% 21%, 100% 100%, 0% 100%);
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            clip-path: polygon(0 45%, 100% 19%, 100% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0 45%, 100% 19%, 100% 100%, 0% 100%);
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            clip-path: polygon(0 59%, 100% 7%, 100% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0 59%, 100% 7%, 100% 100%, 0% 100%);
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            clip-path: polygon(0 53%,100% 14%, 100% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0 53%,100% 14%, 100% 100%, 0% 100%);
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1024px) {
+            clip-path: polygon(0 46%, 100% 20%, 100% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0 46%, 100% 20%, 100% 100%, 0% 100%);
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            clip-path: polygon(0 53%, 100% 14%, 100% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0 53%, 100% 14%, 100% 100%, 0% 100%);
+        }
+
+        /* Extra large devices (large laptops and desktops, 1441px and up) */
+        @media only screen and (min-width: 1440px) {
+            clip-path: polygon(0 53%, 100% 15%, 100% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0 53%, 100% 15%, 100% 100%, 0% 100%);
+        }
+
+        /* Extra large devices (large laptops and desktops, 1441px and up) */
+        @media only screen and (min-width: 2500px) {
+            clip-path: polygon(0 68%, 100% 3%, 100% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0 68%, 100% 3%, 100% 100%, 0% 100%);
+        }
+
+    }
     .site-header{
         box-shadow: none !important;
     }
