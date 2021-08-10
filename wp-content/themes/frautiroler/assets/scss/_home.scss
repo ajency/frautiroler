@@ -306,6 +306,12 @@
 						}
 					}
 				}
+				&:hover{
+					background: #E8E400;
+				}
+				&:active{
+					background: #D6D300;
+				}
 				@media(min-width: 992px){
 					transform: translate(-230px, 0) rotate(-5deg);
                     -webkit-transform: translate(-230px, 0) rotate(-5deg);
@@ -597,10 +603,10 @@
 						}
 					}
 					&:hover{
-						background: #008232;
+						background: #F5EFBF;
 					}
 					&:active{
-						background: #00732C;
+						background: #E8E3B5;
 					}
 				}
 				@media(max-width: 991px){
@@ -611,7 +617,7 @@
 	}
 	.wp-block-button{
 		&__link{
-			padding: 15px 27px 14px !important;
+			padding: 17px 27px 14px !important;
 			border-radius: 60px !important;
 			font-family: 'Myriad-Pro-Regular' !important;
 		}
