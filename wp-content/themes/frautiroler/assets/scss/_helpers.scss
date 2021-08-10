@@ -3,6 +3,9 @@ body{
 	-webkit-font-smoothing:antialiased; 
 	background-color: #FFF;
 }
+html{
+	overflow-x: hidden;
+}
 @font-face {
 	font-family: 'Myriad-Pro-Regular';
 	src: url('../fonts/Myriad-Pro-Regular.eot');

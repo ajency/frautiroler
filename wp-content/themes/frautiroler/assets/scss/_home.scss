@@ -71,7 +71,7 @@
 						line-height: 38px;
 						color: $yellow;
 						background: transparent;
-						padding: 0;
+						padding: 0 !important;
 						position: relative;
 						transition: color $slow-duration $ease-out;
 						&:after{
@@ -389,7 +389,17 @@
 	}
 	.wp-block-columns{
 		margin-bottom: 0;
+		background: #F8F8F8;
+		padding-bottom: 90px;
+
 		.wp-block-column{
+			background-color: white;
+			padding: 0 30px 30px;
+			height: 100%;
+			.wp-block-columns{
+				background-color: white;
+				padding-bottom: 0;
+			}
 			h4{
 				font-family: 'Myriad-Pro-Bold';
 				font-weight: bold;
@@ -414,10 +424,15 @@
 				}
 			}
 			.wp-block-image{
-				height: 130px;
+				height: 75px;
 				position: relative;
+				margin-bottom: 0;
 				.alignright{
 					margin-bottom: 0;
+					position: absolute;
+					top: -38px;
+					z-index: 3;
+					right: auto;
 					img{
 						@media(max-width: 991px){
 							height: auto;
@@ -426,6 +441,13 @@
 					}
 				}
 				.aligncenter{
+					position: absolute;
+					top: calc(100% + 100px);
+					left: 0;
+					right: 0;
+					text-align: center;
+					margin: auto;
+					display: block;
 					img{
 						@media(max-width: 991px){
 							height: auto;
@@ -437,6 +459,13 @@
 					height: auto;
 				}
 			}
+		}
+
+	}
+	header{
+		&.wp-block-group{
+			background: #F8F8F8;
+
 		}
 	}
 }
