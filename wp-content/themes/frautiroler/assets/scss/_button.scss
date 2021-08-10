@@ -65,7 +65,7 @@ canvas {
 	-webkit-tap-highlight-color: transparent;
 	z-index: 1;
 	&::before {
-		background: #D2277C; 
+		background: $pink; 
 		border-radius: 50px;
 		box-shadow: 0px;
 		content: '';
@@ -75,6 +75,18 @@ canvas {
 		position: relative;
 		transition: width .2s ease calc(var(--d) + 1000ms);
 		width: 100%;
+	}
+	&:hover::before{
+		transition: color $fast-duration $ease-out;
+		background: $pink-hover; 
+	}
+	&:active::before{
+		transition: color $fast-duration $ease-out;
+		background: $pink-pressed; 
+	}
+	&:focus-visible::before{
+		transition: color $fast-duration $ease-out;
+		background: $pink;
 	}
 	@media(max-width: 768px){
 		top: 0px;
