@@ -1,15 +1,16 @@
+document.body.style.cursor='wait';
+window.onload=function(){document.body.style.cursor='default';}
+      
 $('#button').click(function(){
     $(".post-content-right .wp_ulike_btn").click();
 })
 $('#button2').click(function(){
     $(".post-content-right .wp_ulike_btn").click();
 })
-
+$('body').addClass('loading');
 $(document).ready(function () {
   $('body').removeClass('overflow-hidden');
 });
-
-
 
 
 $('.burger-wrapper').on('click', function(){
