@@ -15,9 +15,9 @@
 		left: 0;
 		right: 0;
 		width: calc(100% + 150px);
-	    min-height: 1440px;
+	    min-height: 1460px;
 		position: absolute;
-		top: -100px;
+		top: -110px;
 		left: 0;
 		right: 0;
 		transform: translate(-20px, 0) rotate(-5deg);
@@ -29,7 +29,7 @@
 	}
 	.content-sidebar-wrap{
 		.entry{
-		    margin-bottom: 30px;
+		    margin-bottom: 0px;
 		}
 		@media(max-width: 991px){
 			padding: 0 30px;
@@ -262,13 +262,18 @@
 					}				
 				}
 		    }
+		    .wp-block-image{
+		    	@media(min-width: 992px){
+		    		left: -60px;
+	    		}
+		    }
 		    @media(max-width: 991px){
 				margin: 0 -14%;
 				padding-left: 32px;
 				padding-right: 32px;
 		    }
 		    @media(min-width: 992px){
-	    	 	margin: 0 -100% -60px;
+	    	 	margin: 0 -100% -24px;
 		    }
 		}
 		&.marquee{
@@ -291,6 +296,7 @@
 					animation: marquee 10s linear infinite;
 					p{
 						font-weight: bold;
+						font-family: 'Myriad-Pro-Bold';
 						color: $pink;
 						font-size: 80px;
 						line-height: 96px;
@@ -302,7 +308,7 @@
 						@media(max-width: 991px){
 							font-size: 24px;
 							line-height: 29px;
-							padding-left: 15px;
+							padding-left: 5px;
 						}
 					}
 				}
@@ -313,12 +319,12 @@
 					background: #D6D300;
 				}
 				@media(min-width: 992px){
-					transform: translate(-230px, 0) rotate(-5deg);
-                    -webkit-transform: translate(-230px, 0) rotate(-5deg);
+					transform: translate(-330px, 0) rotate(-5deg);
+                    -webkit-transform: translate(-330px, 0) rotate(-5deg);
 					margin: 20px -24% 0 -24%;
 				    padding: 20px 0 7px;
 				    position: absolute;
-					width: calc(100% + 1120px);
+					width: calc(100% + 1320px);
 				    transition: background 300ms cubic-bezier(0.48, 0.04, 0.25, 1);
 				    cursor: pointer;
 				    top: 100px;
@@ -334,6 +340,9 @@
 		}
 	}
 	&.banner-2{
+		.site-container--overlay{
+			background: #F8F400;
+		}
 		.site-header{
 			.header-menu{ 
 				.menu-item{ 
@@ -475,6 +484,9 @@
 		}
 	}
 	&.banner-3{
+		.site-container--overlay{
+			background: #008D36;
+		}
 		.site-header{
 			.header-menu{ 
 				.menu-item{ 
@@ -722,6 +734,7 @@
 				font-size: 23px;
 				line-height: 36px;
 				color: #000000;
+				margin-bottom: 30px;
 				@media(max-width: 991px){
 					font-size: 16px;
 					line-height: 26px;
@@ -763,7 +776,7 @@
 		}
 
 	}
-	header{
+	section{
 		&.wp-block-group{
 			background: #F8F8F8;
 

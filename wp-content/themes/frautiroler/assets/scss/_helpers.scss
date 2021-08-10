@@ -221,3 +221,15 @@ h2{
 		-webkit-transition: opacity $slow-duration ease-out, transform $slow-duration ease-out;
 	}
 }
+.scroll-trigger{
+	opacity: 0;
+	transform: translateY(20px);
+	-webkit-transform: translateY(20px);
+	&.moveupcol{
+		opacity: 1;
+		transform: translateY(0);
+	    -webkit-transform: translateY(0);
+		transition: opacity $slow-duration ease-out, transform $slow-duration ease-out;
+		-webkit-transition: opacity $slow-duration ease-out, transform $slow-duration ease-out;
+	}
+}

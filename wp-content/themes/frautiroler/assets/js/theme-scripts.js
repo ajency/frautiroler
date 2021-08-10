@@ -163,7 +163,7 @@ $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".scroll-reveal").each(function() {
-      var objectBottom = $(this).offset().top + 200;
+      var objectBottom = $(this).offset().top - 30;
       if (objectBottom < windowBottom) { 
         if ($(this).css("opacity")==0)  {$(this).addClass('moveup');}
       } else { 
@@ -173,5 +173,19 @@ $(window).on("load",function() {
   }).scroll(); 
 });
 
+
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".scroll-trigger").each(function() {
+      var objectBottom = $(this).offset().top;
+      if (objectBottom < windowBottom) { 
+        if ($(this).css("opacity")==0)  {$(this).addClass('moveupcol');}
+      } else { 
+        if ($(this).css("opacity")==1)  {$(this).removeClass('moveupcol');}
+      }
+    });
+  }).scroll(); 
+});
 
 // window.history.pushState("object or string", "Title", "/new-url");
