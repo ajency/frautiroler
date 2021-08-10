@@ -357,7 +357,7 @@ function wp_rand_posts() {
  
 	if ( $the_query->have_posts() ) {
 
-	$string .= '<div class="project-list">';
+	$string .= '<div class="project-list scroll-reveal">';
 	    while ( $the_query->have_posts() ) {
 	        $the_query->the_post();
 

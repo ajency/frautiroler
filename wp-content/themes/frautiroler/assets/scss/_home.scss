@@ -28,6 +28,9 @@
 		}
 	}
 	.content-sidebar-wrap{
+		.entry{
+		    margin-bottom: 30px;
+		}
 		@media(max-width: 991px){
 			padding: 0 30px;
 		}
@@ -133,6 +136,36 @@
 						}
 						&:hover{
 							box-shadow: none;
+							color: #E8E400;
+							&:after{
+								background-color: #E8E400; 
+							}
+						}
+						&:active{
+							color: #D6D300;
+							&:after{
+								background-color: #D6D300; 
+							}
+						}
+						&:focus{
+							outline: 0;
+							box-shadow: none;
+						}
+						&:focus-visible{
+							position: relative;
+							&:before{
+								content: '';
+								color: #DDDDDD;
+								border: 1px solid;
+								width: calc(100% + 14px);
+								height: 100%;
+								position: absolute;
+								top: -4px;
+								left: -7px;
+								right: 0;
+								padding: 25px 15px;
+								border-radius: 4px;
+							}
 						}
 					}
 				}
@@ -371,6 +404,39 @@
 								background-color: $red;
 								transition: background-color $slow-duration $ease-out;
 							}
+							&:hover{
+								box-shadow: none;
+								color: #B51316;
+								&:after{
+									background-color: #B51316; 
+								}
+							}
+							&:active{
+								color: #A31214;
+								&:after{
+									background-color: #A31214; 
+								}
+							}
+							&:focus{
+								outline: 0;
+								box-shadow: none;
+							}
+							&:focus-visible{
+								position: relative;
+								&:before{
+									content: '';
+									color: #919191;
+									border: 1px solid;
+									width: calc(100% + 14px);
+									height: 100%;
+									position: absolute;
+									top: -4px;
+									left: -7px;
+									right: 0;
+									padding: 25px 15px;
+									border-radius: 4px;
+								}
+							}
 						}
 					}
 				}
@@ -388,6 +454,12 @@
 							color: $yellow;
 							transition: color $slow-duration $ease-out;
 						}
+					}
+					&:hover{
+						background: #B51316;
+					}
+					&:active{
+						background: #A31214;
 					}
 				}
 				@media(max-width: 991px){
@@ -457,6 +529,39 @@
 								background-color: $off-white;
 								transition: background-color $slow-duration $ease-out;
 							}
+							&:hover{
+								box-shadow: none;
+								color: #F5EFBF;
+								&:after{
+									background-color: #F5EFBF; 
+								}
+							}
+							&:active{
+								color: #E8E3B5;
+								&:after{
+									background-color: #E8E3B5; 
+								}
+							}
+							&:focus{
+								outline: 0;
+								box-shadow: none;
+							}
+							&:focus-visible{
+								position: relative;
+								&:before{
+									content: '';
+									color: #DDDDDD;
+									border: 1px solid;
+									width: calc(100% + 14px);
+									height: 100%;
+									position: absolute;
+									top: -4px;
+									left: -7px;
+									right: 0;
+									padding: 25px 15px;
+									border-radius: 4px;
+								}
+							}
 						}
 					}
 				}
@@ -490,6 +595,12 @@
 							color: $green;
 							transition: color $slow-duration $ease-out;
 						}
+					}
+					&:hover{
+						background: #008232;
+					}
+					&:active{
+						background: #00732C;
 					}
 				}
 				@media(max-width: 991px){
@@ -531,7 +642,7 @@
 		&.is-style-default{
 			figure.aligncenter{
 				position: absolute;
-			    bottom: 20px;
+			    bottom: 33px;
 				left: 0;
 				right: 0;
 				text-align: center;
@@ -639,6 +750,9 @@
 			}
 			@media(max-width: 991px){
 				padding: 60px 30px 30px;
+			    height: fit-content;
+			    height: -moz-fit-content;
+			    height: -webkit-fit-content;
 			}
 		}
 

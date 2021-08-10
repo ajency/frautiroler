@@ -110,6 +110,7 @@ html{
 
 .overflow-hidden{
     overflow: hidden;
+    height: 100vh;
 }
 
 .section-title{
@@ -182,31 +183,41 @@ h2{
 }
 
 .default-link{
+	color:#000000;
+	text-decoration: none !important;
+	outline: none !important;
+	border:1px solid transparent;
 
-		color:#000000;
-		text-decoration: none !important;
+	span{
 		outline: none !important;
-		border:1px solid transparent;
+		border-bottom: 1px solid #000000;
+	}
 
-		span{
-			outline: none !important;
-			border-bottom: 1px solid #000000;
-		}
-
-		&:hover span{
-			transition: color $fast-duration $ease-out, border-color $fast-duration $ease-out;
-			border-color: $pink;
-			color: $pink;
-		}
-		&:active span{
-			transition: color $fast-duration $ease-out, border-color $fast-duration $ease-out;
-			border-color: $pink-pressed;
-			color: $pink-pressed;
-		}
-		&:focus-visible{
-			border:1px solid #919191;
-			border-radius: 4px;
-			padding: 3px;
-		}
-
+	&:hover span{
+		transition: color $fast-duration $ease-out, border-color $fast-duration $ease-out;
+		border-color: $pink;
+		color: $pink;
+	}
+	&:active span{
+		transition: color $fast-duration $ease-out, border-color $fast-duration $ease-out;
+		border-color: $pink-pressed;
+		color: $pink-pressed;
+	}
+	&:focus-visible{
+		border:1px solid #919191;
+		border-radius: 4px;
+		padding: 3px;
+	}
+}
+.scroll-reveal{
+	opacity: 0;
+	transform: translateY(20px);
+	-webkit-transform: translateY(20px);
+	&.moveup{
+		opacity: 1;
+		transform: translateY(0);
+	    -webkit-transform: translateY(0);
+		transition: opacity $slow-duration ease-out, transform $slow-duration ease-out;
+		-webkit-transition: opacity $slow-duration ease-out, transform $slow-duration ease-out;
+	}
 }

@@ -159,3 +159,19 @@ $(document).ready(function(){
     }, 6000);
   });
 
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".scroll-reveal").each(function() {
+      var objectBottom = $(this).offset().top + 200;
+      if (objectBottom < windowBottom) { 
+        if ($(this).css("opacity")==0)  {$(this).addClass('moveup');}
+      } else { 
+        if ($(this).css("opacity")==1)  {$(this).removeClass('moveup');}
+      }
+    });
+  }).scroll(); 
+});
+
+
+// window.history.pushState("object or string", "Title", "/new-url");
