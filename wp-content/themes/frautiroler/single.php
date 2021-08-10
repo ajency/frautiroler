@@ -18,7 +18,6 @@ get_header();  ?>
  
 <?php if ( have_posts() ) : ?>
 
-
     <div class="custom_single_post_page">
         <div class="container">
         <!-- project details -->
@@ -31,10 +30,13 @@ get_header();  ?>
                                     <?php  echo do_shortcode( '[wp_ulike for="post" style="wpulike-heart"]' ); ?>
                                 </div>
                                 <h1 class="post-title"><?php the_title(); ?></h1>
-                                <h5 class="post-author"><?php the_author(); ?></h5>
+                                <?php
+                                  $author_firstname = get_the_author_firstname();
+                                  $author_lastname = get_the_author_lastname();
+                                ?>
+                                <h5 class="post-author"><?php echo "von ".$author_firstname." ".substr($author_lastname, 0,1)."."; ?></h5>
                                 <div class="post-content"><?php the_content(); ?></div>
                             </div>
-
                             <div class="section-bottom">
                                     <?php
                                             $image1 = get_field('image_1');
