@@ -159,14 +159,19 @@ get_header();  ?>
         <?php $allPostsWPQuery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'post__not_in' => array( get_the_ID() ), 'posts_per_page'=>3));
 
         if ( $allPostsWPQuery->have_posts() ) :?>
+        
 
             <div class="row projects" style="position: relative;"> 
                 <div class="section-title"><?php the_field('section_title'); ?></div>
                 <div class="project-list">
-                    <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
+                    <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post();
+                        $imageFeatured = get_field('image_1'); ?>
+                     
                         <div class="project-item" style="cursor:pointer;">
                             <div class="project-image" style="cursor:pointer;">
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
+                                <a href="<?php the_permalink(); ?>"> 
+                                    <img src="<?php echo esc_url($imageFeatured['url']); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+                                </a>
                                 <a href="<?php the_permalink(); ?>"><div class="overlay"></div></a>
                             </div>
 
