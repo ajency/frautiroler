@@ -81,12 +81,18 @@ html{
 	}
     @media (min-width: 992px){
 	    max-width: 960px;
+        padding-right: 65px;
+    	padding-left: 65px;
     }
     @media (min-width: 1200px){
     	max-width: 1140px;
+	    padding-right: 65px;
+    	padding-left: 65px;
     }
     @media (min-width: 1500px){
     	max-width: 1340px;
+	    padding-right: 65px;
+    	padding-left: 65px;
     }
 }
 .w-960{
@@ -167,7 +173,7 @@ h2{
 	font-size: 60px;
 	line-height: 72px;
 	color: #000000;
-	margin-bottom: 8px;
+	margin-bottom: 14px;
 	position: relative;
 	@media(max-width: 991px){
 		font-size: 32px;

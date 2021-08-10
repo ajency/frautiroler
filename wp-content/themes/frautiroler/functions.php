@@ -392,3 +392,35 @@ function wp_rand_posts() {
 add_shortcode('wp-random-posts','wp_rand_posts');
 add_filter('widget_text', 'do_shortcode'); 
 
+function wp_marquee() { ?>
+
+	<div class="home process-block">
+		<div class="marquee3k news services prelative pr left is-init">
+			<div class="marquee3k__wrapper">
+				<div class="marquee3k-wrapper marquee3k__copy">
+					<div class="marquee-text news">
+						<span> Projekt Einreichen&nbsp;</span> 
+					</div>
+				</div>
+				<div class="marquee3k-wrapper marquee3k__copy">
+					<div class="marquee-text news">
+						<span> Projekt Einreichen&nbsp;</span>
+					</div>
+				</div>
+				<div class="marquee3k-wrapper marquee3k__copy">
+					<div class="marquee-text news">
+						<span> Projekt Einreichen&nbsp;</span>
+					</div>
+				</div>
+	            <div class="marquee3k-wrapper marquee3k__copy">
+	                <div class="marquee-text news">
+	                    <span> Projekt Einreichen&nbsp;</span>
+	                </div>
+	            </div>
+			</div>
+		</div>
+	</div>
+<?php } 
+ 
+add_shortcode('wp-marquee','wp_marquee');
+add_filter('widget_text', 'do_shortcode'); 

@@ -40,6 +40,45 @@
 			display: none;
 		}
 	}
+	.rounded-btn{
+		.wp-block-button__link{
+			font-size: 20px !important;
+			font-family: 'Myriad-Pro-Regular' !important;
+			font-weight: bold !important;
+			line-height: 17px !important;
+			color: #FFFFFF !important;
+			position: relative;
+			&:hover{
+				transition: background-color $fast-duration $ease-out;
+				background-color: $pink-hover;
+				box-shadow: none !important;
+			}
+			&:active{
+				transition: background-color $fast-duration $ease-out;
+				background-color: $pink-pressed;
+			}
+			&:focus{
+				outline: 0;
+				box-shadow: none !important;
+			}
+			&:focus-visible{
+				outline: 0;
+				transition: all $fast-duration $ease-out;
+				&:before{
+				    content: '';
+				    color: #919191;
+				    border: 1px solid;
+				    width: calc(100% + 6px);
+				    height: 100%;
+				    position: absolute;
+				    top: -3px;
+				    left: -3px;
+				    padding: 25px 0;
+				    border-radius: 60px;
+				}
+			}
+		}
+	}
 	.wp-block-group{
 		position: relative;
 		z-index: 2;
@@ -66,7 +105,7 @@
 				.wp-block-button{
 					&__link{
 						font-weight: bold;
-						font-family: 'Myriad-Pro-Bold';
+						font-family: 'Myriad-Pro-Bold' !important;
 						font-size: 32px;
 						line-height: 38px;
 						color: $yellow;
@@ -150,6 +189,54 @@
 					max-width: 100%;
 				}
 			}
+		}
+		&.has-background{
+		   
+		    padding-left: 15px;
+		    padding-right: 15px;
+		    .wp-block-image, .wp-block-columns{
+		    	width: 100%;
+		    	margin: 0 auto;
+				@media (min-width: 768px){
+					max-width: 720px;
+				}
+				@media (min-width: 992px){
+					max-width: 960px;
+				}
+				@media (min-width: 1200px){
+					max-width: 1140px;
+				}
+				@media (min-width: 1500px){
+					max-width: 1340px;
+				}
+		    }
+		    .wp-block-columns{
+		    	@media(max-width: 991px){
+					flex-wrap: nowrap;
+					display: grid;
+					overflow-x: scroll;
+					grid-gap: 16px;
+				    padding: 40px 0 0 0;
+					grid-auto-flow: column;
+					width: 100%;
+					display: grid;
+					grid-gap: 20px;
+					grid-auto-flow: column;
+				    grid-auto-columns: calc((100% + 5*100px)/3);
+				    margin: 0 auto -70px;
+				    &::-webkit-scrollbar {
+					    display: none;
+					}				
+				}
+		    }
+		    @media(max-width: 991px){
+				margin: 0 -14%;
+				padding-left: 32px;
+				padding-right: 32px;
+		    }
+		    @media(min-width: 992px){
+	    	 	margin: 0 -100% -60px;
+		    }
 		}
 		@media(max-width: 991px){
 			margin-top: 40px;
@@ -359,6 +446,27 @@
     			left: 28px;
 		    }
 		}
+		&.is-style-default{
+			figure.aligncenter{
+				position: absolute;
+			    bottom: 20px;
+				left: 0;
+				right: 0;
+				text-align: center;
+				margin: auto;
+				display: block;
+				img{
+					@media(max-width: 991px){
+						height: auto;
+						width: 120px;
+					}
+				}
+			}
+			@media(max-width: 991px){
+			    height: 320px;
+			    bottom: 20px;
+			}
+		}
 	}
 	h2{
 		code{
@@ -396,10 +504,7 @@
 			background-color: white;
 			padding: 0 30px 30px;
 			height: 100%;
-			.wp-block-columns{
-				background-color: white;
-				padding-bottom: 0;
-			}
+
 			h4{
 				font-family: 'Myriad-Pro-Bold';
 				font-weight: bold;
@@ -428,36 +533,30 @@
 				position: relative;
 				margin-bottom: 0;
 				.alignright{
-					margin-bottom: 0;
-					position: absolute;
-					top: -38px;
-					z-index: 3;
-					right: auto;
+				    margin-bottom: 0;
+				    position: absolute;
+				    top: -50px;
+				    z-index: 3;
+				    right: 0;
 					img{
+						height: 100px;
+						width: auto;
 						@media(max-width: 991px){
 							height: auto;
 							width: 80px;
 						}
 					}
-				}
-				.aligncenter{
-					position: absolute;
-					top: calc(100% + 100px);
-					left: 0;
-					right: 0;
-					text-align: center;
-					margin: auto;
-					display: block;
-					img{
-						@media(max-width: 991px){
-							height: auto;
-							width: 120px;
-						}
+					@media(max-width: 991px){
+						top: -100px;
 					}
 				}
+				
 				@media(max-width: 991px){
 					height: auto;
 				}
+			}
+			@media(max-width: 991px){
+				padding: 60px 30px 30px;
 			}
 		}
 
@@ -466,6 +565,11 @@
 		&.wp-block-group{
 			background: #F8F8F8;
 
+		}
+	}
+	.wp-block-spacer{
+		@media(max-width: 991px){
+			height: 64px !important;
 		}
 	}
 }

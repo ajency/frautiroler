@@ -4,8 +4,10 @@
 	&-widgets{
 	    padding: 36px 0;
 	    border-top:0;
+	    background: #F8F8F8;
 	    @media(max-width: 991px){
 	    	padding: 40px 0;
+	    	background: #FFF;
 	    }
 	}
 	&-sidebar{
@@ -153,5 +155,8 @@
 				}
 			}
 		}
+	}
+	@media(max-width: 991px){
+		background: #FFF;
 	}
 }
