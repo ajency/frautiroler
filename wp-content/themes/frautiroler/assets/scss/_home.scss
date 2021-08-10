@@ -8,17 +8,17 @@ body{
 	&.loading{
 		.site-container--overlay{
 			background-color: $pink;
-			-webkit-transition: background-color $slow-duration $ease-in-out, min-height $slow-duration $ease-in-out-cubic;
-			-moz-transition: background-color $slow-duration $ease-in-out, min-height $slow-duration $ease-in-out-cubic;
-			-o-transition: background-color $slow-duration $ease-in-out, min-height $slow-duration $ease-in-out-cubic;
-			transition: background-color $slow-duration $ease-in-out, min-height $slow-duration $ease-in-out-cubic;
+			min-height: 1460px;
+			-webkit-transition: background-color $slow-duration $ease-in-out, min-height $slow-duration-1 $ease-in-out-cubic;
+			-moz-transition: background-color $slow-duration $ease-in-out, min-height $slow-duration-1 $ease-in-out-cubic;
+			-o-transition: background-color $slow-duration $ease-in-out, min-height $slow-duration-1 $ease-in-out-cubic;
+			transition: background-color $slow-duration $ease-in-out, min-height $slow-duration-1 $ease-in-out-cubic;
 			width: 100%;
 			position: absolute;
 			top: 0;
 			left: 0;
 			right: 0;
 			width: calc(100% + 150px);
-		    min-height: 1460px;
 			position: absolute;
 			top: -110px;
 			left: 0;
@@ -26,7 +26,7 @@ body{
 			transform: translate(-20px, 0) rotate(-5deg);
 			-webkit-transform: translate(-70px, 0) rotate(-5deg);
 			@media(max-width: 991px){
-				min-height: 980px;
+				min-height: 1020px;
 				width: calc(100% + 110px);
 			}
 		}
@@ -290,6 +290,7 @@ body{
 			    padding: 14px 0 7px;
 			    position: absolute;
 			    left: -32px;
+			    top: 30px;
 			    width: calc(100% + 104px);
 			    transition: background 300ms cubic-bezier(0.48, 0.04, 0.25, 1);
 			    cursor: pointer;
