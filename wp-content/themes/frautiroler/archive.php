@@ -74,10 +74,13 @@ get_header();
                     </p>
                 </div>
                 <div class="project-list">
-                    <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); ?>
+                    <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post(); 
+                        $imageFeatured = get_field('image_1'); ?>
                         <div class="project-item" style="cursor:pointer;">
                             <div class="project-image" style="cursor:pointer;">
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
+                                <a href="<?php the_permalink(); ?>">
+                                    <img src="<?php echo esc_url($imageFeatured['url']); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+                                </a>
                                 <a href="<?php the_permalink(); ?>"><div class="overlay"></div></a>
                             </div>
 

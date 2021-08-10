@@ -170,7 +170,7 @@ get_header();  ?>
                         <div class="project-item" style="cursor:pointer;">
                             <div class="project-image" style="cursor:pointer;">
                                 <a href="<?php the_permalink(); ?>"> 
-                                    <img src="<?php echo esc_url($imageFeatured['url']); ?>"/>
+                                    <img src="<?php echo esc_url($imageFeatured['url']); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
                                 </a>
                                 <a href="<?php the_permalink(); ?>"><div class="overlay"></div></a>
                             </div>
