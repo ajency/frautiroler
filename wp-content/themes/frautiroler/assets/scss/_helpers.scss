@@ -186,7 +186,6 @@ h2{
 		color:#000000;
 		text-decoration: none !important;
 		outline: none !important;
-		padding: 3px;
 		border:1px solid transparent;
 
 		span{
@@ -207,6 +206,7 @@ h2{
 		&:focus-visible{
 			border:1px solid #919191;
 			border-radius: 4px;
+			padding: 3px;
 		}
 
 }
