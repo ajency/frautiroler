@@ -385,7 +385,7 @@ get_header();  ?>
       window.requestAnimationFrame(render)
     }
 
-    function changeSubtitle() {
+/*     function changeSubtitle() {
       if ( $('.count-box').attr('data-ulike-counter-value') == 0 ) {
         $(".votes-subtext").html("Stimmen");
       } else if ( $('.count-box').attr('data-ulike-counter-value') == 1 ){
@@ -393,7 +393,7 @@ get_header();  ?>
       }else{
         $(".votes-subtext").html("Stimmen");
       }
-    }
+    } */
 
     //cycle through button states when clicked
     clickButton = () => {
@@ -428,14 +428,12 @@ get_header();  ?>
       if (!disabled) {
         disabled = true
         // Loading stage
-        changeSubtitle();
         button1.classList.add('loading')
         button1.classList.remove('ready')
         setTimeout(() => {
           // Completed stage
           button1.classList.add('complete')
           button1.classList.remove('loading')
-          changeSubtitle();
           setTimeout(() => {
             window.initBurst()
           }, 320)
@@ -445,7 +443,6 @@ get_header();  ?>
       disabled = false
       button1.classList.add('ready')
       button1.classList.remove('complete')
-      changeSubtitle();
       }
     }
 
