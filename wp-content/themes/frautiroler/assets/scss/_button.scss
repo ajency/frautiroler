@@ -254,133 +254,181 @@ canvas {
 
 
 /* Sticky button */
-	.sticky-button{
-		opacity: 1;
+.sticky-button{
+	opacity: 1;
+	transition: opacity 250ms $ease-out;
+	&.sticky-button-visible{
+		opacity: 0;
 		transition: opacity 250ms $ease-out;
-		&.sticky-button-visible{
-			opacity: 0;
-			transition: opacity 250ms $ease-out;
-		}
-	    #button2 {
-			background: none;
-			border: none;
-			cursor: pointer;
-			font-size: 16px;
-			line-height: 19px;
-			height: 55px;
-		    font-family: 'Myriad-Pro-Bold';
-		    width: 100%;
-		    border-radius: 0;
-	    	color: $pink;
-			outline: none;
-			overflow: hidden;
-			padding: 0;
-			position: fixed;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			width: 100%;
-			-webkit-tap-highlight-color: transparent;
-			z-index: 1;
-			&::before {
-				background: $yellow;
-				box-shadow: 0px;
-				content: '';
-				display: block;
-				height: 100%;
-				margin: 0 auto;
-				position: relative;
-				transition: width .2s ease calc(var(--d) + 1000ms);
-				width: 100%;
-			}
-			&:active{
-				&::before {
-					transition: background .2s ease;
-					background: #D6D300;
-				}
-			}
-		}
-
-		// READY STATE
-
-		#button2.ready {
-		  	.submitMessage svg {
-				opacity: 1;
-				top: 1px;
-				transition: top .4s ease 600ms, opacity .3s linear 600ms;
-		  	}
-
-			.submitMessage .button-text{
-				position: relative;
-				padding: 0 20px 0 0;
-				&:after{
-					content:'\f004';
-					color: $pink;
-					width: 16px;
-					height: 16px;
-					position: absolute;
-					right: -4px;
-					font-family: 'FontAwesome';
-					animation: 2.5s ease 0s normal none infinite running animateHeart;
-				}
-			}
-
-		  	.submitMessage .button-text span {
-			    top: 0;
-			    opacity: 1;
-			    transition: all .2s ease calc(var(--dr) + 600ms);
-		  	}
-		}
-
-		// LOADING STATE
-		#button2.loading {
-
-		  	.loadingMessage {
-		    	opacity: 1;
-		  	}
-
-		  	.loadingCircle {
-			    animation-duration: 0.3s;
-			    animation-iteration-count: infinite;
-			    animation-name: loading;
-		    	cy: 10;
-		  	}
-		}
-
-		// COMPLETE STATE
-		#button2.complete {
-			color: white;
-			transition: color .2s ease-in-out;
-		  	.submitMessage svg {
-		    	top: -30px;
-		    	transition: none;
-		  	}
-
-		  	.submitMessage .button-text span {
-		    	top: -8px;
-		    	transition: none;
-		  	}
-
-		  	.loadingMessage {
-		    	top: 80px;
-		  	}
-
-		  	.successMessage .button-text span {
-		    	left: 0;
-		    	opacity: 1;
-		    	transition: all .2s ease calc(var(--d) + 1000ms);
-		  	}
-
-		  	.successMessage svg { 
-		    	stroke-dashoffset: 0;
-		    	transition: stroke-dashoffset .3s ease-in-out 1.4s;
-		  	}
-		  	&:before{
-		    	background: #919191;
-		    	transition: background 1s ease-in-out;
-		  	}
-	    }
-	    @media(min-width: 769px){
-	    	display: none;
-	    }
 	}
+    #button2 {
+		background: none;
+		border: none;
+		cursor: pointer;
+		font-size: 16px;
+		line-height: 19px;
+		height: 55px;
+	    font-family: 'Myriad-Pro-Bold';
+	    width: 100%;
+	    border-radius: 0;
+    	color: $pink;
+		outline: none;
+		overflow: hidden;
+		padding: 0;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		-webkit-tap-highlight-color: transparent;
+		z-index: 1;
+		&::before {
+			background: $yellow;
+			box-shadow: 0px;
+			content: '';
+			display: block;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+			transition: width .2s ease calc(var(--d) + 1000ms);
+			width: 100%;
+		}
+		&:active{
+			&::before {
+				transition: background .2s ease;
+				background: #D6D300;
+			}
+		}
+	}
+
+	// READY STATE
+
+	#button2.ready {
+	  	.submitMessage svg {
+			opacity: 1;
+			top: 1px;
+			transition: top .4s ease 600ms, opacity .3s linear 600ms;
+	  	}
+
+		.submitMessage .button-text{
+			position: relative;
+			padding: 0 20px 0 0;
+			&:after{
+				content:'\f004';
+				color: $pink;
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				right: -4px;
+				font-family: 'FontAwesome';
+				animation: 2.5s ease 0s normal none infinite running animateHeart;
+			}
+		}
+
+	  	.submitMessage .button-text span {
+		    top: 0;
+		    opacity: 1;
+		    transition: all .2s ease calc(var(--dr) + 600ms);
+	  	}
+	}
+
+	// LOADING STATE
+	#button2.loading {
+
+	  	.loadingMessage {
+	    	opacity: 1;
+	  	}
+
+	  	.loadingCircle {
+		    animation-duration: 0.3s;
+		    animation-iteration-count: infinite;
+		    animation-name: loading;
+	    	cy: 10;
+	  	}
+	}
+
+	// COMPLETE STATE
+	#button2.complete {
+		color: white;
+		transition: color .2s ease-in-out;
+	  	.submitMessage svg {
+	    	top: -30px;
+	    	transition: none;
+	  	}
+
+	  	.submitMessage .button-text span {
+	    	top: -8px;
+	    	transition: none;
+	  	}
+
+	  	.loadingMessage {
+	    	top: 80px;
+	  	}
+
+	  	.successMessage .button-text span {
+	    	left: 0;
+	    	opacity: 1;
+	    	transition: all .2s ease calc(var(--d) + 1000ms);
+	  	}
+
+	  	.successMessage svg { 
+	    	stroke-dashoffset: 0;
+	    	transition: stroke-dashoffset .3s ease-in-out 1.4s;
+	  	}
+	  	&:before{
+	    	background: #919191;
+	    	transition: background 1s ease-in-out;
+	  	}
+    }
+    @media(min-width: 769px){
+    	display: none;
+    }
+}
+.frm_submit{
+	.frm_button_submit{
+		font-family: 'Myriad-Pro-Regular' !important;
+		padding: 17px 27px !important;
+	    background-color: #D2277C !important;
+	    border-radius: 60px !important;
+		font-weight: bold !important;
+		font-size: 20px !important;
+		line-height: 17px !important;
+		border: 0 !important;
+		position: relative;
+		&:hover{
+			background-color: $pink-hover !important;
+			color: white !important; 
+		}
+		&:active{
+			background-color: $pink-pressed !important;
+			color: white !important;
+		}
+		&:focus{
+			outline: 0;
+			color: white !important;
+		}
+		&:focus-visible{
+			outline: 0;
+			&:before{
+			    content: '';
+			    color: #919191;
+			    border: 1px solid;
+			    width: calc(100% + 14px);
+			    height: 100%;
+			    position: absolute;
+			    top: 0;
+			    left: -7px;
+			    right: 0;
+			    padding: 6px 8px;
+			    border-radius: 4px;
+			}
+		}
+		@media(max-width: 991px){
+			font-size: 16px !important;
+			line-height: 19px !important;
+		}
+	}
+	@media(max-width: 991px){
+		text-align: center;
+	}
+}
