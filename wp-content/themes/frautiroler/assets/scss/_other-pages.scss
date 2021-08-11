@@ -86,9 +86,6 @@
                 font-size: 16px;
             }
         }
-        p{
-            margin:0 0 28px !important;
-        }
         ul{
             padding-left: 20px;
             line-height: 36px !important;
@@ -129,10 +126,8 @@
                 margin-top:40px !important;
             }
         }
-        .no-padding{
-            p{
-                margin-bottom: 0px !important;
-            }
+        .wp-block-spacer{
+            height: 28px !important;
         }
     }
 }
