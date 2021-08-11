@@ -33,10 +33,18 @@
 	}
 	.wp-block-column{
 	    position: relative !important;
-    	height: 110px !important;
+    	height: 130px !important;
+    	p{
+    		@media(min-width: 992px){
+    			width: calc(100% + 140px);
+    		}
+    	}
     	.wp-block-image{
+			position: absolute;
+			top: -140px;
+			z-index: 9999;
 			@media(max-width: 991px){
-				position: absolute;
+				top: 0px;
 				right: -50px;
 				width: 100%;
 				height: 100%;
