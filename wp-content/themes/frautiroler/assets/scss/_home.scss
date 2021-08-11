@@ -354,6 +354,10 @@ body{
 				    top: 100px;
 				    margin-top: 0;
 				}
+				@media(min-width: 2500px){
+					transform: translate(-380px, 0) rotate(-5deg);
+					width: calc(120% + 1320px);
+				}
 			}
 			@media(max-width: 991px){
 			    margin-bottom: 90px;
