@@ -129,11 +129,10 @@
             color: $pink !important;
         }
         &:hover > .project-description a.read-more-link{
-
-            color:$pink !important;
-
             span{
+                transition: color $fast-duration $ease-out, border $fast-duration $ease-out;
                 border-bottom-color: $pink;
+                color:$pink !important;
             }
         }
         &:active > .project-description a.read-more-link{
