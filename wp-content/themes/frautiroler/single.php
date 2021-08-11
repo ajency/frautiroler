@@ -140,7 +140,7 @@ get_header();  ?>
                                 </button>
                                 <canvas id="canvas"></canvas>  
                             </div>
-                            <div class="votes-subtext">Stimmen</div>
+                            <div class="votes-subtext">Stimme(n)</div>
 
                             
                             <div class="social-share">
@@ -385,8 +385,21 @@ get_header();  ?>
       window.requestAnimationFrame(render)
     }
 
+    function changeSubtitle() {
+      if ( $('.count-box').attr('data-ulike-counter-value') == 0 ) {
+        $(".votes-subtext").html("Stimmen");
+      } else if ( $('.count-box').attr('data-ulike-counter-value') == 1 ){
+        $(".votes-subtext").html("Stimme");
+      }else{
+        $(".votes-subtext").html("Stimmen");
+      }
+    }
+
     //cycle through button states when clicked
     clickButton = () => {
+      setTimeout(() => {
+        /* changeSubtitle() */
+      }, 320);
       if (!disabled) {
         disabled = true
         // Loading stage
@@ -394,6 +407,7 @@ get_header();  ?>
         button.classList.remove('ready')
         setTimeout(() => {
           // Completed stage
+          /* changeSubtitle() */
           button.classList.add('complete')
           button.classList.remove('loading')
           setTimeout(() => {
@@ -414,12 +428,14 @@ get_header();  ?>
       if (!disabled) {
         disabled = true
         // Loading stage
+        changeSubtitle();
         button1.classList.add('loading')
         button1.classList.remove('ready')
         setTimeout(() => {
           // Completed stage
           button1.classList.add('complete')
           button1.classList.remove('loading')
+          changeSubtitle();
           setTimeout(() => {
             window.initBurst()
           }, 320)
@@ -429,6 +445,7 @@ get_header();  ?>
       disabled = false
       button1.classList.add('ready')
       button1.classList.remove('complete')
+      changeSubtitle();
       }
     }
 

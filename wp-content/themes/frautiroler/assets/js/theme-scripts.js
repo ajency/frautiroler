@@ -190,3 +190,13 @@ $(window).on("load",function() {
 });
 
 // window.history.pushState("object or string", "Title", "/new-url");
+
+
+/* voting subtitle change */
+/* if ( $('.count-box').attr('data-ulike-counter-value') == 0 ) {
+  $(".votes-subtext").html("Stimmen");
+} else if ( $('.count-box').attr('data-ulike-counter-value') == 1 ){
+  $(".votes-subtext").html("Stimme");
+}else{
+  $(".votes-subtext").html("Stimmen");
+} */
