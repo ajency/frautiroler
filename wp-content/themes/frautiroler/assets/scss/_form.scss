@@ -1,15 +1,20 @@
-.form-block{
+.form-block, .frm-show-form{
 	margin-top: 78px;
     margin-bottom: 150px;
-	&--text{ 
-		margin-bottom: 32px; 
+	.frm_form_field{ 
+		margin-bottom: 32px !important; 
 		position:relative;
 		label{
+			font-family: 'Myriad-Pro-Regular';
 			font-weight: normal;
 			font-size: 20px;
 			line-height: 26px;
 			color: #000000;
 			margin-bottom: 4px;
+			.frm_required{
+				color: #000000 !important;
+			}
+
 			&.error{
 				position: absolute;
 				right: 0;
@@ -18,6 +23,7 @@
 				line-height: 17px;
 				text-align: right;
 				color: #CD1619;
+				font-family: 'Myriad-Pro-Regular';
 			}
 			&.upload{
 				margin-bottom: 10px;
@@ -34,6 +40,16 @@
 			box-sizing: border-box;
 			border-radius: 8px;
 			min-height: 100px;
+			font-family: 'Myriad-Pro-Regular';
+		    padding: 28px 25px;
+		    font-size: 16px;
+    		line-height: 26px;
+    		&::placeholder{
+    			color: #919191;
+    		}
+    		&::-ms-input-placeholder{
+    			color: #919191;
+    		}
 			&.dashed{
 				border: 2px dashed #DDDDDD;
 				min-height: 120px;
@@ -50,25 +66,31 @@
 			border: 2px solid #DDDDDD;
 			box-sizing: border-box;
 			border-radius: 8px;
+			font-family: 'Myriad-Pro-Regular';
+		    padding: 28px 25px;
+		    font-size: 16px;
+    		line-height: 26px;
 			&.error{
 				border-color: #CD1619;
 			}
 		}
-		.note{
-			font-size: 20px;
-			line-height: 26px;
-			color: #919191;
+		.frm_description{
+			font-family: 'Myriad-Pro-Regular' !important;
+			font-size: 20px !important;
+			line-height: 26px !important;
+			color: #919191 !important;
 			flex: none;
 			order: 2;
 			flex-grow: 0;
 			margin: 11px 0px;
 			@media(max-width: 991px){
-				font-size: 14px;
+				font-size: 14px !important;
 				line-height: 17px;
 			}
 		}
 	}
 	.info{
+		font-family: 'Myriad-Pro-Regular';
 		font-weight: normal;
 		font-size: 14px;
 		line-height: 17px;
@@ -79,6 +101,7 @@
 		margin: 20px 10px 0 0;
 	}
 	.required-feilds{
+		font-family: 'Myriad-Pro-Regular';
 		margin-top: 80px;
 		margin-bottom: 80px;
 		font-weight: 400;
@@ -86,7 +109,7 @@
 		line-height: 26px;
 		color: #000000;
 	}
-	.checkbox{
+	.frm_checkbox{
 		position: relative;
 	    margin-top: 80px;
 		label{
