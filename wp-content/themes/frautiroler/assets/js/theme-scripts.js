@@ -201,6 +201,8 @@ $(window).on("load",function() {
   $(".votes-subtext").html("Stimmen");
 } */
 
+/* homepage cards - mobile */
+
 $( document ).ready(function() {
 
   $(window).on("resize", function (e) {
@@ -218,4 +220,9 @@ function checkScreenSize(){
     else
     { }
 }
+});
+
+/* smooth scroll */
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500
 });
