@@ -387,7 +387,7 @@ canvas {
 .frm_submit{
 	.frm_button_submit{
 		font-family: 'Myriad-Pro-Regular' !important;
-		padding: 17px 27px !important;
+		padding: 17px 27px 14px !important;
 	    background-color: #D2277C !important;
 	    border-radius: 60px !important;
 		font-weight: bold !important;
@@ -413,14 +413,14 @@ canvas {
 			    content: '';
 			    color: #919191;
 			    border: 1px solid;
-			    width: calc(100% + 14px);
-			    height: 100%;
-			    position: absolute;
-			    top: 0;
-			    left: -7px;
-			    right: 0;
-			    padding: 6px 8px;
-			    border-radius: 4px;
+				width: calc(100% + 8px);
+				height: 100%;
+				position: absolute;
+				top: -4px;
+				left: -4px;
+				right: 0;
+				padding: 7px 0px 49px;
+				border-radius: 60px;
 			}
 		}
 		@media(max-width: 991px){
