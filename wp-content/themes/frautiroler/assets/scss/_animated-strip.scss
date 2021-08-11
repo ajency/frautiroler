@@ -108,3 +108,13 @@
 		}
 	}
 }
+.page-template-archive{
+	.process-block{
+		&.display-mobile{
+			background-color: #1b1a1a00 !important;
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
