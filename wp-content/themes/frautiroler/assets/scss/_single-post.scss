@@ -568,19 +568,21 @@ i{
         .slick-next{
             right: 0 !important;
             &:before {
-                content: '\f054';
-                color: white !important;
-                font-family: 'FontAwesome';
-                font-size: 16px;
+                opacity: 1 !important;
+                color: transparent;
+                background-image: url("data:image/svg+xml,%3Csvg width='15' height='25' viewBox='0 0 15 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 23L12.5 12.5L2 2' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
             }
         }
         .slick-prev{
             left: 0 !important;
             &::before {
-                content: '\f053';
-                color: white !important;
-                font-family: 'FontAwesome';
-                font-size: 16px;
+                opacity: 1 !important;
+                color: transparent;
+                background-image: url("data:image/svg+xml,%3Csvg width='15' height='25' viewBox='0 0 15 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 23L2.5 12.5L13 2' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
             }
         }
         .lightbox-close-btn{

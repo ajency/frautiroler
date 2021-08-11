@@ -87,8 +87,8 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		draggable:false,
-		prevArrow: '<span class="gallery-arrow mod-prev"><i class="fas fa-chevron-left"></i></span>',
-		nextArrow: '<span class="gallery-arrow mod-next"><i class="fas fa-chevron-right"></i></span>'
+		prevArrow: '<span class="gallery-arrow mod-prev"><span class="slider-arrow-left"></span></span>',
+		nextArrow: '<span class="gallery-arrow mod-next"><span class="slider-arrow-right"></span></span>'
 	});
 });
 
@@ -98,8 +98,8 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		draggable:false,
-		prevArrow: '<span class="gallery-arrow mod-prev"><i class="fas fa-chevron-left"></i></span>',
-		nextArrow: '<span class="gallery-arrow mod-next"><i class="fas fa-chevron-right"></i></span>'
+		prevArrow: '<span class="gallery-arrow mod-prev"><span class="slider-arrow-left"></span></span>',
+		nextArrow: '<span class="gallery-arrow mod-next"><span class="slider-arrow-right"></span></span>'
 	});
 
 	$('.js-gallery-mobile').slickLightbox({
