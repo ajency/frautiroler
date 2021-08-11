@@ -265,6 +265,18 @@ body{
 					    display: none;
 					}				
 				}
+				@media(max-width: 768px){
+					.wp-block-column:nth-child(1){
+						margin-left: 30px;
+					}
+					.span-wraper{
+						padding-right: 30px;
+
+						.wp-block-column{
+							margin-left: 0px;
+						}
+					}
+				}
 		    }
 		    .wp-block-image{
 		    	@media(min-width: 992px){
@@ -275,6 +287,13 @@ body{
 				margin: 0 -14%;
 				padding-left: 32px;
 				padding-right: 32px;
+		    }
+			@media(max-width: 768px){
+				padding-left: 0px;
+				padding-right: 0px;
+				.wp-block-image{
+					margin-left: 30px !important;
+				}
 		    }
 		    @media(min-width: 992px){
 	    	 	margin: 0 -100%;

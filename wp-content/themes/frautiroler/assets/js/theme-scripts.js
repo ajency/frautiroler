@@ -200,3 +200,22 @@ $(window).on("load",function() {
 }else{
   $(".votes-subtext").html("Stimmen");
 } */
+
+$( document ).ready(function() {
+
+  $(window).on("resize", function (e) {
+    checkScreenSize();
+});
+
+checkScreenSize();
+
+function checkScreenSize(){
+    var newWindowWidth = $(window).width();
+    if (newWindowWidth < 768) {
+      $('.has-background .wp-block-columns .wp-block-column:nth-child(3)').addClass("spanAdded");
+      $('.spanAdded').wrap('<span class="span-wraper"></span>');
+    }
+    else
+    { }
+}
+});
