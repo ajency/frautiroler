@@ -1,6 +1,7 @@
 .form-block, .frm-show-form{
-	margin-top: 78px;
-    margin-bottom: 150px;
+	margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 850px;
 	.frm_form_field{ 
 		margin-bottom: 32px !important; 
 		position:relative;
@@ -11,6 +12,7 @@
 			line-height: 26px;
 			color: #000000 !important;
 			margin-bottom: 4px;
+		    display: inline-block !important;
 			.frm_required{
 				color: #000000 !important;
 			}
@@ -51,7 +53,7 @@
 			min-height: 100px;
 			font-family: 'Myriad-Pro-Regular';
 		    padding: 28px 25px;
-		    font-size: 16px;
+			font-size: 20px;
     		line-height: 26px;
     		transition: all $fast-duration $ease-out;
     		&::placeholder{
@@ -96,6 +98,7 @@
 			}
 			@media(max-width: 991px){
 				min-height: 84px;
+			 	font-size: 16px;
 			}
 		}
 		textarea{
@@ -105,7 +108,7 @@
 			border-radius: 8px;
 			font-family: 'Myriad-Pro-Regular';
 		    padding: 28px 25px;
-		    font-size: 16px;
+		    font-size: 20px;
     		line-height: 26px;
     		transition: all $fast-duration $ease-out;
 			&.error{
@@ -138,6 +141,9 @@
 					border-radius: 60px;
 				}
 			}
+			@media(max-width: 991px){
+				font-size: 16px;
+			}
 		}
 		.frm_description{
 			font-family: 'Myriad-Pro-Regular' !important;
@@ -166,7 +172,7 @@
 					display: flex;
 					justify-content: center;
 					flex-direction: row-reverse;
-					padding: 35px 25px;
+					padding: 45px 25px;
 				    
 					.frm_upload_icon{
 						&:before{
@@ -193,17 +199,22 @@
 		    border-color: #CD1619;
 		    transition: all $fast-duration $ease-out;
 		    .dz-message{
+		    	transition: all $fast-duration $ease-out;
 		    	border-color: #CD1619 !important;
 		    }
 		    .frm_checkbox {
 		    	label{
+		    		transition: all $fast-duration $ease-out;
 			    	&:before{
 			    		border: 2px solid #CD1619;
 			    	}
 		    	}
 		    }
-		    &:hover{
-		    	border-color: #AD1315;
+		    input{
+		    	transition: all $fast-duration $ease-out;
+			    &:hover{
+			    	border-color: #AD1315;
+			    }
 		    }
 		}
 	}
@@ -243,7 +254,8 @@
 			position: relative;
 			padding-left: 38px !important;
 			text-indent: 0 !important;
-	        margin: 23px 0;
+	        margin: 10px 0;
+	        transition: all $fast-duration $ease-out;
 			&.error{
 				position: absolute;
 				top: -24px;
@@ -268,6 +280,40 @@
 				left: 0;
 			    top: -6px;
 			}
+			&.checked{
+				transition: all $fast-duration $ease-out;
+				&:before {
+					background-color: #D2277C;
+					border: 2px solid #D2277C;
+					box-sizing: border-box;
+					border-radius: 8px;
+				}
+				&:hover{
+					&:before {
+						background-color: $pink-hover;
+					}
+				}
+				&:active{
+					&:before {
+						background-color: $pink-pressed;
+					}
+				}
+				&:focus-visible{
+					outline: 0;
+				}
+				&:after{
+					content: '';
+					display: block;
+					position: absolute;
+					top: 1px;
+					left: 12px;
+					width: 6px;
+					height: 14px;
+					border: solid #FFFFFF;
+					border-width: 0 2px 2px 0;
+					transform: rotate(45deg);
+				}
+			}
 			&:hover{
 				&:before{
 					border-color: #B5226B;
@@ -278,48 +324,37 @@
 					border-color: #8C1A53
 				}
 			}
+			&:focus{
+				outline: 0;
+			}
+			&:focus-visible{
+				outline: 0;
+				
+			}
 		}
-		input[type='checkbox'] {
+		input[type=checkbox] {
 			padding: 0;
 			height: initial;
 			width: initial;
 			margin-bottom: 0;
 			display: none;
 			cursor: pointer;
-			&.checked + label:after {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 8px;
-				left: 12px;
-				width: 6px;
-				height: 14px;
-				border: solid #FFFFFF;
-				border-width: 0 2px 2px 0;
-				transform: rotate(45deg);
-			}
-			&.checked + label:before{
-				background-color: #D2277C;
-				border: 2px solid #D2277C;
-				box-sizing: border-box;
-				border-radius: 8px;
-			}
-			&:hover{
-				&.checked + label:before{
-					background: #B5226B;
-					border-color: #B5226B;
-				}
-			}
-			&:active{
-				&.checked + label:before{
-					background: #8C1A53;
-					border-color: #8C1A53;
-				}
-			}
 		}
 		@media(max-width: 991px){
 			margin-top: 0px;
 		}
+	}
+	.frm_html_container{
+		font-family: 'Myriad-Pro-Regular' !important;
+		font-size: 14px !important;
+		line-height: 17px;
+		color: black !important;
+	    margin-top: -15px !important;
+	    margin-bottom: 36px !important;
+	    @media(max-width: 991px){
+	    	margin-top: -22px !important;
+	    	margin-bottom: 25px !important;
+	    }
 	}
 	input[readonly]{
 		font-family: 'Myriad-Pro-Regular';
@@ -330,6 +365,8 @@
 		color: #000000;
 		padding: 0;
 		min-height: 0;
+	    margin-bottom: 38px !important;
+		margin-top: 15px;
 		&:hover{
 			box-shadow: none;
 			border: 0;
@@ -337,7 +374,12 @@
 		@media(max-width: 991px){
 			font-size: 16px;
 			line-height: 26px;
+			margin-bottom: 6px !important;
+			margin-top: 0px;
 		}
+	}
+	@media(max-width: 991px){
+		max-width: 100%;
 	}
 }
 

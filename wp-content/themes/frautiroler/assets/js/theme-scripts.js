@@ -188,10 +188,10 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 
 $("input[type='checkbox']").change(function() {
     if(this.checked) {
-      $(this).prop('checked', true);
-      $(this).addClass("checked");
+      $(this).attr( 'checked', 'checked' );
+      $(this).parent().addClass('checked');
     }else{
-      $(this).prop('checked', false);
-      $(this).removeClass("checked");
+      $(this).removeAttr( 'checked', 'checked' );
+      $(this).parent().removeClass('checked');
     }
 });
