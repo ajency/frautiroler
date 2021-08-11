@@ -4,6 +4,10 @@
 
     .process-block{
         background-color: #F8F8F8 !important;
+
+        &::before{
+            background-color: #F8F8F8 !important;;
+        }
     }
 
     .site-header--overlay {
