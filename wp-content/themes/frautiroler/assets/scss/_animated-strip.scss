@@ -11,21 +11,18 @@
 .home{
 	.process-block{
 		position: relative;
-		@media(max-width: 991px){
-			position: relative;
-			&:before{
-				content: '';
-				background: #f8f8f8;
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: -24px;
-				width: calc(100% + 44px);
-				height: 100px;
-				z-index: 0;
-				transform: translate(-20px, 0) rotate(-5deg);
-				-webkit-transform: translate(-20px, 0) rotate(-5deg);
-			}
+		&:before{
+			content: '';
+			background: #f8f8f8;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -24px;
+			width: calc(100% + 44px);
+			height: 100px;
+			z-index: 0;
+			transform: translate(-20px, 0) rotate(-5deg);
+			-webkit-transform: translate(-20px, 0) rotate(-5deg);
 		}
 	}
 }
