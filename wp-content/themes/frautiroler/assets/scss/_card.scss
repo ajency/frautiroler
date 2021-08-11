@@ -237,7 +237,7 @@
 
 	.heart1{
 		margin: 0 auto;
-		background: url('https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+		background: url('https://frautiroler.svr.fm/wp-content/uploads/2021/08/heart-sequence.png');
 		width: 60px;
 		height: 60px;
 		background-repeat: no-repeat;
@@ -265,7 +265,8 @@
 
 /* heart button size */
 .wpulike-robeen .wp_ulike_btn:after{
-    transform: translateX(-50%) translateY(-50%) scale(0.7) !important;
+    transform: translateX(-50%) translateY(-50%) scale(0.6) !important;
+    background: url('https://frautiroler.svr.fm/wp-content/uploads/2021/08/heart-sequence.png') no-repeat;
 }
 .wpulike-robeen .wp_ulike_btn{
     &:focus-visible{
