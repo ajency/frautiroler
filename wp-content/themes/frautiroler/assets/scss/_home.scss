@@ -9,10 +9,6 @@ body{
 		.site-container--overlay{
 			background-color: $pink;
 			min-height: 1460px;
-			-webkit-transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
-			-moz-transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
-			-o-transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
-			transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
 			width: 100%;
 			position: absolute;
 			top: 0;
@@ -365,6 +361,14 @@ body{
 		}
 		@media(max-width: 991px){
 			margin-top: 40px;
+		}
+	}
+	&.banner-1, &.banner-2, &.banner-3{
+		.site-container--overlay{
+			-webkit-transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
+			-moz-transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
+			-o-transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
+			transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
 		}
 	}
 	&.banner-2{
@@ -817,5 +821,8 @@ body{
 	}
 	#dieRegeln{
 		outline: none !important;
+	}
+	.content{
+		background-color: transparent !important;
 	}
 }
