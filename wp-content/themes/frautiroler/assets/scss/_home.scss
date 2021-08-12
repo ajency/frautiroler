@@ -111,6 +111,7 @@ body{
 				margin-bottom: 40px;
 				.wp-block-button{
 					&__link{
+						width:auto !important;
 						font-weight: bold;
 						font-family: 'Myriad-Pro-Bold' !important;
 						font-size: 32px;
