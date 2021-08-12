@@ -162,7 +162,7 @@ get_header();  ?>
         
 
             <div class="row projects" style="position: relative;"> 
-                <div class="section-title"><?php the_field('section_title'); ?></div>
+                <div class="section-title">Weitere Projekte</div>
                 <div class="project-list">
                     <?php while ( $allPostsWPQuery->have_posts() ) : $allPostsWPQuery->the_post();
                         $imageFeatured = get_field('image_1'); ?>
