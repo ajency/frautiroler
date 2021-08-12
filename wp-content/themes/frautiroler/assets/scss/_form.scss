@@ -150,19 +150,21 @@
 				font-size: 16px;
 			}
 		}
-		.frm_description{
-			font-family: 'Myriad-Pro-Regular' !important;
-			font-size: 20px !important;
-			line-height: 26px !important;
-			color: #919191 !important;
-			flex: none;
-			order: 2;
-			flex-grow: 0;
-			margin: 20px 0px 11px;
-			@media(max-width: 991px){
-				font-size: 14px !important;
-				line-height: 17px;
-				padding: 5px 0px 11px;
+		.upload-image{
+			input{
+				font-family: 'Myriad-Pro-Regular' !important;
+				font-size: 20px !important;
+				line-height: 26px !important;
+				color: #919191 !important;
+				flex: none;
+				order: 2;
+				flex-grow: 0;
+				margin: 20px 0px 11px;
+				@media(max-width: 991px){
+					font-size: 14px !important;
+					line-height: 17px;
+					padding: 5px 0px 11px;
+				}
 			}
 		}
 		.frm_dropzone{
@@ -172,21 +174,22 @@
 				flex-wrap: wrap;
 				justify-content: flex-start;
 				.dz-message{
-					border-color: #DDDDDD;
+					border: 1px solid #919191;
 					font-family: 'Myriad-Pro-Regular';
 					font-size: 20px;
 					line-height: 26px;
 					color: #919191;
-					display: flex;
-					justify-content: center;
-					flex-direction: row-reverse;
+				    border-style: solid;
 					padding: 45px 25px;
-					width: 100%;
-					max-width: 100%;
+					width: 120px;
+					height: 90px;
+					margin: 0;
 					.frm_upload_icon{
 						&:before{
 							color: #919191;
 						    font-size: 24px;
+						    position: relative;
+						    top: -12px;
 						}
 					}
 					.frm_upload_text{
@@ -203,13 +206,11 @@
 					}
 				}
 				.dz-preview{
-					width: 120px;
-					height: 86px;
-					border: 1px solid #919191;
-					border-radius: 8px;
-					position: relative;
-					margin-right: 27px;
-					margin-bottom: 25px;
+				    width: 120px;
+				    height: 92px;
+			        border: 1px solid #919191;
+				    border-radius: 8px;
+				    position: absolute;
 					.dz-image {
 						overflow: hidden;
 						width: 100%;
