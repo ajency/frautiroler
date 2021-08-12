@@ -366,7 +366,7 @@ function wp_rand_posts() {
 		 	$image1 = get_field('image_1');
 		 	$thumbnail =  $image1['url'];
 
-	        $string .= '<div class="project-item">';
+	        $string .= '<div class="project-item" onclick="window.location.href='."'". get_permalink() ."'".';" style="cursor:pointer;">';
 	        $string .= '<div class="project-image">';
 	        $string .= '<a href="'. get_permalink() .'" alt="'. get_the_title() .'" title="'. get_the_title() .'">';
 			$string .= '<img src="'. $thumbnail .'" alt="'. get_the_title() .'" title="'. get_the_title() .'"/>';
