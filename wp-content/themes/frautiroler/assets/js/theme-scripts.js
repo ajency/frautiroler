@@ -1,3 +1,7 @@
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+document.body.scrollTop = 0; // For Safari
+
 document.body.style.cursor='wait';
 window.onload=function(){document.body.style.cursor='default';}
       
