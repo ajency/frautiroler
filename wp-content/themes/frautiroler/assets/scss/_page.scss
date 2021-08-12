@@ -1,10 +1,13 @@
 .project-form{
 	.entry-header{
+		width: auto;
+		display: inline-block;
 		.entry-title{
 			font-size: 60px;
 			line-height: 72px;
 			color: #000000;
 			position: relative;
+
 			&:before{
 				content: '';
 		    	background-image: url('../img/line-underline.png');
@@ -13,7 +16,7 @@
 			    width: 258px;
 			    height: 12px;
 			    position: absolute;
-			    left: 188px;
+			    right: 0px;
 			    bottom: -3px;
 			    @media(max-width: 991px){
 				    background-size: contain;
@@ -21,7 +24,7 @@
 				    width: 140px;
 				    position: absolute;
 				    top: 32px;
-				    left: 110px;
+				    right: -5px;
 				    bottom: -2px;
 			    }
 			}
@@ -51,5 +54,39 @@
 				object-fit: contain;
 	    	}
     	}
+	}
+}
+.success-form{
+	h2.success-page{
+		font-size: 60px;
+		line-height: 72px;
+		color: #000000;
+		position: relative;
+		width: auto;
+		display: inline-block;
+		&:before{
+			content: '';
+	    	background-image: url('../img/line-underline.png');
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		    width: 267px;
+		    height: 12px;
+		    position: absolute;
+		    right: -12px;
+		    bottom: -3px;
+		    @media(max-width: 991px){
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			    width: 140px;
+			    position: absolute;
+			    top: 32px;
+			    right: -8px;
+			    bottom: -2px;
+		    }
+		}
+		@media(max-width: 991px){
+			font-size: 32px;
+			line-height: 40px;
+		}
 	}
 }

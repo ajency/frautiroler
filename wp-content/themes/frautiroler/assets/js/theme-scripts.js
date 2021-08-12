@@ -202,3 +202,10 @@ $("input[type='checkbox']").change(function() {
       $(this).parent().removeClass('checked');
     }
 });
+
+$( document ).ready(function() {
+  if($('.project-form .wp-block-group').hasClass('success-form')){
+    $('.entry-title').remove();
+    $('.wp-block-columns').remove();
+  }
+});

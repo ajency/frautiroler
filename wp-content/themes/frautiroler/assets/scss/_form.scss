@@ -35,6 +35,9 @@
 					top: -8px;
 				}
 			}
+			@media(max-width: 991px){
+				margin-top: 30px !important;
+			}
 		}
 		.frm_error{
 			position: absolute;
@@ -156,6 +159,16 @@
 				font-size: 0;
 				display: block !important;
 			}
+			.frm_error{
+				display: none;
+			}
+			@media(max-width: 991px){
+				grid-column: span 3/span 2 !important;
+			}
+			@media(max-width: 600px){
+			    grid-column: span 4/span 2 !important;
+		        margin-bottom: 0px !important;
+			}
 		}
 		.frm_dropzone{
 			&.frm_single_upload, &.frm_multi_upload{
@@ -172,7 +185,7 @@
 				    border-style: solid;
 					padding: 45px 25px;
 					width: 120px;
-					height: 90px;
+					height: 92px;
 					margin: 0;
 					.frm_upload_icon{
 						&:before{
@@ -180,6 +193,9 @@
 						    font-size: 24px;
 						    position: relative;
 						    top: -12px;
+						    @media(max-width: 991px){
+						    	top: 0;
+						    }
 						}
 					}
 					.frm_upload_text{
@@ -277,14 +293,12 @@
 						}
 					}
 					@media(max-width: 991px){
-						margin-right: 12px;
-						margin-bottom: 13px;
-						width: 95px;
-						height: 80px;
+						width: 120px;
 					}
 				}
 				@media(max-width: 991px){
 				    justify-content: flex-start;
+			        min-height: 92px;
 				}
 			}
 		}
@@ -473,8 +487,10 @@
 	}
 	.upload-image{
 		margin-bottom: 20px !important;
-
 		input[readonly]{
+			display: none;
+		}
+		.frm_description{
 			font-family: 'Myriad-Pro-Regular' !important;
 			font-size: 20px !important;
 			line-height: 26px !important;
