@@ -15,7 +15,7 @@ $('body').addClass('loading');
 $(document).ready(function () {
   $('body').removeClass('overflow-hidden');
   if($('.frm_forms').hasClass('frm_message')){
-    $('.wp-block-column p').css({display:'none'});
+    $('.wp-block-columns').css({display:'none'});
   }
 });
 
