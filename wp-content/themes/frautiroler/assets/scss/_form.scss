@@ -264,16 +264,20 @@
 							content:'';
 							background: url('../img/alert.svg');
 							border-radius: 100px;
-							width: 20px;
-							height: 20px;
+							width: 27px;
+							height: 30px;
 							font-size: 20px;
 							opacity: 1;
 							position: absolute;
-							top: 15px;
+							top: 26px;
 							left: 0;
 							right: 0;
+							margin: auto;
 							background-repeat: no-repeat;
 							background-size: contain;
+							@media(max-width: 991px){
+								top: 22px;
+							}
 						}
 					}
 					@media(max-width: 991px){
