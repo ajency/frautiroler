@@ -150,21 +150,11 @@
 				font-size: 16px;
 			}
 		}
-		.upload-image{
-			input{
-				font-family: 'Myriad-Pro-Regular' !important;
-				font-size: 20px !important;
-				line-height: 26px !important;
-				color: #919191 !important;
-				flex: none;
-				order: 2;
-				flex-grow: 0;
-				margin: 20px 0px 11px;
-				@media(max-width: 991px){
-					font-size: 14px !important;
-					line-height: 17px;
-					padding: 5px 0px 11px;
-				}
+		&.frm_sixth{
+			label{
+				line-height: 0;
+				font-size: 0;
+				display: block !important;
 			}
 		}
 		.frm_dropzone{
@@ -479,6 +469,24 @@
 			line-height: 26px;
 			margin-bottom: 6px !important;
 			margin-top: 0px;
+		}
+	}
+	.upload-image{
+		margin-bottom: 20px !important;
+
+		input[readonly]{
+			font-family: 'Myriad-Pro-Regular' !important;
+			font-size: 20px !important;
+			line-height: 26px !important;
+			color: #919191 !important;
+			flex: none;
+			order: 2;
+			flex-grow: 0;
+		    margin: 4px 0px 0px !important;
+			@media(max-width: 991px){
+				font-size: 14px !important;
+				line-height: 17px;
+			}
 		}
 	}
 	@media(max-width: 991px){
