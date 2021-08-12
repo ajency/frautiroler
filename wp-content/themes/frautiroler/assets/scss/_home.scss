@@ -80,6 +80,10 @@ body{
 				    border-radius: 60px;
 				}
 			}
+			@media(max-width: 768px){
+				font-size: 16px !important;
+    			line-height: 19px !important;
+			}
 		}
 	}
 	.wp-block-group{
@@ -664,6 +668,10 @@ body{
 			padding: 17px 27px 14px !important;
 			border-radius: 60px !important;
 			font-family: 'Myriad-Pro-Regular' !important;
+			@media(max-width: 768px){
+				padding: 20px !important;
+    			width: 170px !important;
+			}
 		}
 	}
 	.wp-block-image{

@@ -160,6 +160,13 @@ i{
                         width: 100%;
                      }
 
+                     #button{
+                         @media(max-width: 768px){
+                            height: 55px !important;
+                            width: 209px !important;
+                         }
+                     }
+
                     .wp_ulike_general_class{
                         display: flex;
                         flex-direction: column-reverse;
