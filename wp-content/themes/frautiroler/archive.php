@@ -54,8 +54,7 @@ get_header();
 
             <div class="row projects" style="position: relative;"> 
                 <div class="section-title">
-                    <span class="display-desktop"><?php the_field('page_title'); ?></span>
-                    <span class="display-mobile"><?php the_field('page_title_mobile'); ?></span>
+                    <span><?php the_field('page_title'); ?></span>
                     <div class="title-underline">
                         <svg width="278" height="13" viewBox="0 0 278 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
@@ -69,8 +68,7 @@ get_header();
                         </svg>
                     </div>
                     <p class="subtitle">
-                        <span class="display-desktop"><?php the_field('subtitle'); ?></span>
-                        <span class="display-mobile"><?php the_field('subtitle_mobile'); ?></span>
+                        <span><?php the_field('subtitle'); ?></span>
                     </p>
                 </div>
                 <div class="project-list">
