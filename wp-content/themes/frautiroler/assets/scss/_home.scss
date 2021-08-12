@@ -392,6 +392,13 @@ body{
 						    background: $red;
 						    color: $yellow;
 						    transition: all $slow-duration $ease-out;
+
+							&:hover{
+								background: $red-hover;
+							}
+							&:active{
+								background: $red-pressed;
+							}
 					    }
 					}
 					&:after{
@@ -533,9 +540,16 @@ body{
 					&:last-child{
 		    			border: 1px solid transparent;
 						a{
-						    background: $off-white;
+						    background: $creme;
 						    color: $green;
 						    transition: all $slow-duration $ease-out;
+
+							&:hover{
+								background: $creme-hover;
+							}
+							&:active{
+								background: $creme-pressed;
+							}
 					    }
 					}
 					&:after{
