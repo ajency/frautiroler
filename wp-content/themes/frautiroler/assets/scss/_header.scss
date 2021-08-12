@@ -231,13 +231,13 @@
 					    color: #D2277C;
 					    padding: 14px 27px;
 					    position: relative;
-					    background: $yellow !important;
-					    border-radius: 60px;
+					    background: #F8F400;
+					    border-radius: 60px;d
 						&:hover{
-							background: $yellow-hover !important;
+							background: #E8E400;
 						}
 						&:active{
-							background: $yellow-pressed !important;
+							background: #D6D300;
 						}
 						&:focus{
 			    			outline: 0;
@@ -250,7 +250,7 @@
 								color: #DDDDDD;
 								border: 1px solid;
 							    width: calc(100% + 6px);
-								height: 58px;
+								height: 54px;
 								position: absolute;
 								top: -3px;
 								left: -3px;
