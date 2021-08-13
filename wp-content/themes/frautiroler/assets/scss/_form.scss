@@ -32,7 +32,7 @@
 				left: 0;
 				right: auto;
 				@media(max-width: 991px){
-					top: -8px;
+					top: -15px;
 				}
 			}
 			@media(max-width: 991px){
@@ -125,6 +125,9 @@
 			&:hover{
 				border-color: #919191;
 				cursor: pointer;
+				&:active{
+					border-color: #000000;
+				}
 			}
 			&:active{
 				border-color: #000000;
@@ -162,11 +165,13 @@
 			.frm_error{
 				display: none;
 			}
-			@media(max-width: 991px){
-				grid-column: span 3/span 2 !important;
-			}
+
 			@media(max-width: 600px){
-			    grid-column: span 4/span 2 !important;
+			    grid-column: span 3/span 2 !important;
+		        margin-bottom: 0px !important;
+			}
+			@media(max-width: 475px){
+			    grid-column: span 4/span 1 !important;
 		        margin-bottom: 0px !important;
 			}
 		}
@@ -195,6 +200,7 @@
 						    top: -12px;
 						    @media(max-width: 991px){
 						    	top: 0;
+						    	font-size: 20px;
 						    }
 						}
 					}
@@ -205,6 +211,8 @@
 						display: none;
 					}
 					@media(max-width: 991px){
+						width: 95px;
+						height: 79px;
 						font-size: 16px;
 						line-height: 26px;
 						justify-content: space-between;
@@ -217,6 +225,7 @@
 			        border: 1px solid #919191;
 				    border-radius: 8px;
 				    position: absolute;
+				    padding: 0;
 					.dz-image {
 						overflow: hidden;
 						width: 100%;
@@ -226,7 +235,9 @@
 						margin-right: 0px;
 						img{
 							max-height: 100%;
+							height: 92px;
 							object-fit: contain;
+							width: 100%;
 						}
 					}
 					.dz-column{
@@ -293,12 +304,13 @@
 						}
 					}
 					@media(max-width: 991px){
-						width: 120px;
+						width: 95px;
+						height: 79px;;
 					}
 				}
 				@media(max-width: 991px){
 				    justify-content: flex-start;
-			        min-height: 92px;
+			        min-height: 79px;
 				}
 			}
 		}
@@ -307,7 +319,6 @@
 		    transition: all $fast-duration $ease-out;
 		    .dz-message{
 		    	transition: all $fast-duration $ease-out;
-		    	border-color: #CD1619 !important;
 		    }
 		    .frm_checkbox {
 		    	label{
@@ -316,6 +327,24 @@
 			    		border: 2px solid #CD1619;
 			    	}
 		    	}
+		    }
+		    #frm_error_field_34{
+				display: block;
+				position: absolute;
+				top: -103px;
+				width: auto;
+				white-space: nowrap;
+				right: -652px;
+				@media(max-width: 1199px){
+					right: -630px;
+				}
+				@media(max-width: 991px){
+					right: -492px;
+				}
+				@media(max-width: 767px){
+					top: -17px;
+					right: 0;
+				}
 		    }
 		    input{
 		    	transition: all $fast-duration $ease-out;
