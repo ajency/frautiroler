@@ -60,6 +60,10 @@ html{
     @media (min-width: 768px){
 	    max-width: 720px;
 	}
+	@media (max-width: 768px){
+		padding-right: 30px;
+		padding-left: 30px;
+	}
     @media (min-width: 992px){
 	    max-width: 960px;
     }

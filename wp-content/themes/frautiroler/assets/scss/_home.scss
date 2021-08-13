@@ -268,10 +268,10 @@ body{
 				}
 				@media(max-width: 768px){
 					.wp-block-column:nth-child(1){
-						margin-left: 30px;
+						margin-left: 55px;
 					}
 					.span-wraper{
-						padding-right: 30px;
+						padding-right: 55px;
 
 						.wp-block-column{
 							margin-left: 0px;
@@ -292,8 +292,8 @@ body{
 			@media(max-width: 768px){
 				padding-left: 0px;
 				padding-right: 0px;
-				.wp-block-image{
-					margin-left: 30px !important;
+				.wp-block-image:nth-child(2){
+					margin-left: 55px !important;
 				}
 		    }
 		    @media(min-width: 992px){
@@ -847,5 +847,7 @@ body{
 	}
 	.content{
 		background-color: transparent !important;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
