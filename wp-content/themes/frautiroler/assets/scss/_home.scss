@@ -124,7 +124,7 @@ body{
 						&:after{
 							content: '';
 							background-color: $yellow;
-							transition: background-color $slow-duration $ease-out;
+							transition: background-color $slow-duration $ease-out !important;
 							width: 100%;
 							height: 4px;
 							position: absolute;
@@ -141,15 +141,15 @@ body{
 						}
 						&:hover{
 							box-shadow: none;
-							color: #E8E400;
+							color: $yellow-hover;
 							&:after{
-								background-color: #E8E400; 
+								background-color: $yellow-hover; 
 							}
 						}
 						&:active{
-							color: #D6D300;
+							color: $yellow-pressed;
 							&:after{
-								background-color: #D6D300; 
+								background-color: $yellow-pressed; 
 							}
 						}
 						&:focus{
@@ -465,15 +465,15 @@ body{
 							}
 							&:hover{
 								box-shadow: none;
-								color: #B51316;
+								color: $red-hover;
 								&:after{
-									background-color: #B51316; 
+									background-color: $red-hover; 
 								}
 							}
 							&:active{
-								color: #A31214;
+								color: $red-pressed;
 								&:after{
-									background-color: #A31214; 
+									background-color: $red-pressed; 
 								}
 							}
 							&:focus{
@@ -600,15 +600,15 @@ body{
 							}
 							&:hover{
 								box-shadow: none;
-								color: #F5EFBF;
+								color: $creme-hover;
 								&:after{
-									background-color: #F5EFBF; 
+									background-color: $creme-hover; 
 								}
 							}
 							&:active{
-								color: #E8E3B5;
+								color: $creme-pressed;
 								&:after{
-									background-color: #E8E3B5; 
+									background-color: $creme-pressed; 
 								}
 							}
 							&:focus{
