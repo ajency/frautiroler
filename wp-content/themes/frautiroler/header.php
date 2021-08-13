@@ -37,7 +37,7 @@ wp_head(); // We need this for plugins.
 		<script type="application/ld+json">
 		{
 			"@context": "http://www.schema.org",
-			"@type": "Funding",
+			"@type": "FundingScheme",
 			"name": "Frautiroler",
 			"url": "https://frautiroler.svr.fm/",
 			"logo": "https://frautiroler.svr.fm/wp-content/uploads/2021/08/tiroler-green-logo.png",
@@ -49,7 +49,7 @@ wp_head(); // We need this for plugins.
 			"@type" : "PostalAddress",
 			"streetAddress": "Wilhelm-Greil-Straße 10",
 			"addressRegion": "6020 Innsbruck",
-			"addressCountry": "Österreich"
+			"addressCountry": "Austria"
 			}
 		}
 		</script>
