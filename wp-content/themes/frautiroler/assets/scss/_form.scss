@@ -54,13 +54,16 @@
 			position: relative;
 			border: 2px solid #DDDDDD;
 			box-sizing: border-box;
-		    box-shadow: none;
+			-webkit-box-shadow: none !important;
+			-moz-box-shadow: none !important;
+			box-shadow: none !important;
 			border-radius: 8px;
 			min-height: 100px;
 			font-family: 'Myriad-Pro-Regular';
 		    padding: 28px 25px;
 			font-size: 20px;
     		line-height: 26px;
+		 	background-clip: padding-box;
     		transition: all $fast-duration $ease-out;
     		&::placeholder{
     			color: #919191;
@@ -119,6 +122,7 @@
     		line-height: 26px;
     		transition: all $fast-duration $ease-out;
     		resize: none;
+		 	background-clip: padding-box;
 			&.error{
 				border-color: #CD1619;
 			}
@@ -158,6 +162,7 @@
 			}
 		}
 		&.frm_sixth{
+			margin-top: 20px;
 			label{
 				line-height: 0;
 				font-size: 0;
@@ -308,12 +313,6 @@
 								top: 22px;
 							}
 						}
-						&:after{
-							content: 'Maxmale';
-							font-size: 12px;
-							line-height: 26px;
-							color: $red;
-						}
 					}
 					@media(max-width: 991px){
 						width: 95px;
@@ -323,6 +322,20 @@
 				@media(max-width: 991px){
 				    justify-content: flex-start;
 			        min-height: 79px;
+				}
+			}
+		}
+		.frm_dropzone{
+			&.dz-started{
+				position: relative;
+				&:before{
+					content: 'Maximale Dateigröße überschritten.';
+					position: absolute;
+					top: -40px;
+					left: 0;
+					font-size: 14px;
+					line-height: 16px;
+					color: #CD1619;
 				}
 			}
 		}
@@ -490,6 +503,8 @@
 			margin-bottom: 0;
 			display: none;
 			cursor: pointer;
+		 	background-clip: padding-box;
+
 		}
 		@media(max-width: 991px){
 			margin-top: 0px;
@@ -518,6 +533,7 @@
 		min-height: 0;
 	    margin-bottom: 38px !important;
 		margin-top: 15px;
+	 	background-clip: padding-box;
 		&:hover{
 			box-shadow: none;
 			border: 0;
