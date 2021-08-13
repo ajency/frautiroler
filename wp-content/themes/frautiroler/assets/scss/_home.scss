@@ -847,7 +847,9 @@ body{
 	}
 	.content{
 		background-color: transparent !important;
-		padding-left: 0px;
-		padding-right: 0px;
+		@media (max-width: 768px){
+			padding-left: 0px;
+			padding-right: 0px;
+		}
 	}
 }
