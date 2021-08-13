@@ -426,3 +426,12 @@ function wp_marquee() { ?>
  
 add_shortcode('wp-marquee','wp_marquee');
 add_filter('widget_text', 'do_shortcode'); 
+
+
+/*
+=============================================================
+diasable/remove yoast schema
+=============================================================
+*/
+
+add_filter( 'wpseo_json_ld_output', '__return_false' );
