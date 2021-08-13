@@ -130,8 +130,8 @@ do_action( 'genesis_after_header' );
 					      	?>
 							<a href="<?php echo get_site_url(); ?>/" class="d-flex align-items-center">
 								<img src="<?php echo $image[0]; ?>" alt="" class="banner-1--logo pr-2">
-								<img class="banner-2--logo pr-2" src="../wp-content/themes/frautiroler/assets/img/tiroler-logo-red.png" alt="">
-								<img class="banner-3--logo pr-2" src="../wp-content/themes/frautiroler/assets/img/tiroler-logo-white.png" alt="">
+								<img class="banner-2--logo pr-2" src="../wp-content/themes/frautiroler/assets/img/tiroler-logo-red.svg" alt="">
+								<img class="banner-3--logo pr-2" src="../wp-content/themes/frautiroler/assets/img/tiroler-logo-white.svg" alt="">
 							</a>
 						</div>
 					</div>
