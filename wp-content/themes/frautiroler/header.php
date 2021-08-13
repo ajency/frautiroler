@@ -34,6 +34,25 @@ do_action( 'genesis_meta' );
 
 wp_head(); // We need this for plugins.
 ?>
+		<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "Funding",
+			"name": "Frautiroler",
+			"url": "https://frautiroler.svr.fm/",
+			"logo": "https://frautiroler.svr.fm/wp-content/uploads/2021/08/tiroler-green-logo.png",
+			"image": "https://frautiroler.svr.fm/wp-content/uploads/2021/08/opportunities-risk-group_mob.png",
+			"description": "Funding Website",
+			"telephone": "+43 (0) 512 5313 – 0",
+			"email": "mail@tiroler.at",
+			"address" : {
+			"@type" : "PostalAddress",
+			"streetAddress": "Wilhelm-Greil-Straße 10",
+			"addressRegion": "6020 Innsbruck",
+			"addressCountry": "Österreich"
+			}
+		}
+		</script>
 </head>
 <?php
 genesis_markup(
