@@ -57,6 +57,11 @@ genesis_markup(
                     <span> Projekt Einreichen&nbsp;</span>
                 </div>
             </div>
+            <div class="marquee3k-wrapper marquee3k__copy">
+                <div class="marquee-text news">
+                    <span> Projekt Einreichen&nbsp;</span>
+                </div>
+            </div>
 		</div>
 	</div>
 </div>
