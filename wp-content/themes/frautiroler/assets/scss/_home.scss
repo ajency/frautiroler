@@ -374,7 +374,7 @@ body{
 			-moz-transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
 			-o-transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
 			transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
-		}
+		} 
 	}
 	&.banner-2{
 		.site-container--overlay{
