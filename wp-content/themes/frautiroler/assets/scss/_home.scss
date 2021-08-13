@@ -413,9 +413,11 @@ body{
 						a {
 							.banner-1--logo{
 								display: none;
+								transition: color $slow-duration $ease-out;
 							}
 							.banner-2--logo{
 								display: block;
+								transition: color $slow-duration $ease-out;
 							}
 						}
 					}
@@ -564,9 +566,11 @@ body{
 						a {
 							.banner-1--logo{
 								display: none;
+								transition: color $slow-duration $ease-out;
 							}
 							.banner-3--logo{
 								display: block;
+								transition: color $slow-duration $ease-out;
 							}
 						}
 					}
