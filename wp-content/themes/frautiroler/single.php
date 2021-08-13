@@ -405,11 +405,18 @@ get_header();  ?>
         // Loading stage
         button.classList.add('loading')
         button.classList.remove('ready')
+
+        button1.classList.add('loading')
+        button1.classList.remove('ready')
+
         setTimeout(() => {
           // Completed stage
           /* changeSubtitle() */
           button.classList.add('complete')
           button.classList.remove('loading')
+
+          button1.classList.add('complete')
+          button1.classList.remove('loading')
           setTimeout(() => {
             window.initBurst()
           }, 320)
@@ -419,6 +426,9 @@ get_header();  ?>
       disabled = false
       button.classList.add('ready')
       button.classList.remove('complete')
+
+      button1.classList.add('ready')
+      button1.classList.remove('complete')
       }
     }
 

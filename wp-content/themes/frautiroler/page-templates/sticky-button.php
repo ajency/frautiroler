@@ -1,5 +1,5 @@
 <div class="sticky-button">
-	<button id="button2" class="ready" onclick="clickStickyButton();">
+	<button id="button2" class="ready" onclick="clickButton();">
 	    <div class="message submitMessage">
 	        <span class="button-text">Jetzt abstimmen</span>  
 	    </div>
