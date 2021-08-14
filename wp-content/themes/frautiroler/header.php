@@ -129,9 +129,9 @@ do_action( 'genesis_after_header' );
 							   	$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 					      	?>
 							<a href="<?php echo get_site_url(); ?>/" class="d-flex align-items-center">
-								<img src="<?php echo $image[0]; ?>" alt="" class="banner-1--logo pr-2">
-								<img class="banner-2--logo pr-2" src="../wp-content/themes/frautiroler/assets/img/tiroler-logo-red.svg" alt="">
-								<img class="banner-3--logo pr-2" src="../wp-content/themes/frautiroler/assets/img/tiroler-logo-white.svg" alt="">
+								<img id="logo-1" src="<?php echo $image[0]; ?>" alt="" class="banner-1--logo logo-block pr-2 show-logo">
+								<img id="logo-2" class="banner-2--logo logo-block pr-2" src="./wp-content/themes/frautiroler/assets/img/tiroler-logo-red.svg" alt="">
+								<img id="logo-3" class="banner-3--logo logo-block pr-2" src="./wp-content/themes/frautiroler/assets/img/tiroler-logo-white.svg" alt="">
 							</a>
 						</div>
 					</div>

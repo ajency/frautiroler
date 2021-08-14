@@ -122,6 +122,22 @@ $(document).ready(function(){
       if (cnt > 3) cnt = 1;
       ele.addClass("banner-" + cnt);
     }, 6000);
+    var currentDiv = $("#logo-1");
+    var nextDiv, count = 1;
+    var myInterval = setInterval(function() {
+    if (count == 3) {
+      currentDiv.removeClass('show-logo');
+      currentDiv = $("#logo-1");
+      currentDiv.addClass('show-logo');
+      count = 1;
+    } else {
+      count++;
+      currentDiv.removeClass('show-logo');
+      currentDiv = currentDiv.next();
+      currentDiv.addClass('show-logo');
+      }
+    }, 6000);
+
   });
 
 $(window).on("load",function() {
@@ -209,3 +225,36 @@ $( document ).ready(function() {
     $('.wp-block-columns').remove();
   }
 });
+
+// function get_ip_address(){
+//   var ipAddress = 'default value';
+//   const fetchPromise = fetch("https://api.ipify.org?format=json");
+//     fetchPromise.then(response => {
+//       response.json();
+//     }).then(data => {
+//       return ipAddress = data;
+
+//   });
+// }
+
+// $(window).on("load",function() {
+//   // console.log(get_ip_address());
+//   str = "2";
+//   function showUser(str) {
+//   if (str == "") {
+//     document.getElementById("txtHint").innerHTML = "";
+//     return;
+//   } else {
+//     var xmlhttp = new XMLHttpRequest();
+//     xmlhttp.onreadystatechange = function() {
+//       if (this.readyState == 4 && this.status == 200) {
+//         document.getElementById("txtHint").innerHTML = this.responseText;
+//       }
+//     };
+//     xmlhttp.open("GET","single.php?q="+str,true);
+//     xmlhttp.send();
+//   }
+// }
+// });
+
+

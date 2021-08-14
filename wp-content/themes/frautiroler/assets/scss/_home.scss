@@ -189,7 +189,6 @@ body{
 						}
 						&:first-child{
 							display: block;
-							transition: display 6s $ease-in-out;
 						}
 						&:nth-child(2){
 							display: none;
@@ -377,6 +376,26 @@ body{
 			transition: background-color $slow-duration $ease-in-out, min-height $fast-duration $ease-in-out-cubic;
 		} 
 	}
+	&.banner-1{
+		.site-header{
+			.site-navigation {
+				&-wrapper{
+					.site-logo{
+						a {
+							.logo-block{
+								opacity: 0;
+								transition: opacity $slow-duration  $ease-out;
+								&.show-logo{
+									opacity: 1;
+									transition: opacity $slow-duration 70ms $ease-out;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	&.banner-2{
 		.site-container--overlay{
 			background: #F8F400;
@@ -412,13 +431,13 @@ body{
 				&-wrapper{
 					.site-logo{
 						a {
-							.banner-1--logo{
-								display: none;
-								transition: color $slow-duration $ease-out;
-							}
-							.banner-2--logo{
-								display: block;
-								transition: color $slow-duration $ease-out;
+							.logo-block{
+								opacity: 0;
+								transition: opacity $slow-duration $ease-out;
+								&.show-logo{
+									opacity: 1;
+									transition: opacity $slow-duration 70ms $ease-out;
+								}
 							}
 						}
 					}
@@ -449,7 +468,6 @@ body{
 							}
 							&:nth-child(2){
 								display: block;
-								transition: display 6s $ease-in-out;
 							}
 							&:nth-child(3){
 								display: none;
@@ -565,13 +583,13 @@ body{
 				&-wrapper{
 					.site-logo{
 						a {
-							.banner-1--logo{
-								display: none;
-								transition: color $slow-duration $ease-out;
-							}
-							.banner-3--logo{
-								display: block;
-								transition: color $slow-duration $ease-out;
+							.logo-block{
+								opacity: 0;
+								transition: opacity $slow-duration $ease-out;
+								&.show-logo{
+									opacity: 1;
+									transition: opacity $slow-duration 70ms $ease-out;
+								}
 							}
 						}
 					}
@@ -650,7 +668,6 @@ body{
 							}
 							&:nth-child(3){
 								display: block;
-								transition: display 6s $ease-in-out;
 							}
 						}
 					}
