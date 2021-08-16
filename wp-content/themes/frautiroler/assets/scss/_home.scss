@@ -106,7 +106,7 @@ body{
 			-o-transition: min-height $normal-duration-2 $ease-in-out-cubic;
 			transition:  min-height $normal-duration-2 $ease-in-out-cubic;
 			@media(max-width: 991px){
-				min-height: 1020px;
+				min-height: 860px;
 				width: calc(100% + 110px);
 			}
 		}
