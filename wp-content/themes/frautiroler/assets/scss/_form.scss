@@ -350,7 +350,8 @@
 	    	   border-width: 2px !important;
 		    }
 		    .dz-message{
-		    	transition: all $fast-duration $ease-out;
+		    	border: 2px solid #CD1619 !important;
+		    	transition: all $fast-duration $ease-out !important;
 		    }
 		    .frm_checkbox {
 		    	label{
