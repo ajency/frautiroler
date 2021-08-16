@@ -61,20 +61,20 @@ body{
 								opacity: 0;
 							}
 						}
-						.desktop-gallery, .mobile-gallery{
-							video{
-								&:first-child{
-									opacity: 0;
-									-webkit-transform: translate3d(0, 48px, 0);
-									transform: translate3d(0, 48px, 0);	
-								}
-								&:nth-child(2){
-									opacity: 0;
-								}
-								&:nth-child(3){
-									opacity: 0;
-								}
-							}
+					}
+				}
+				.desktop-gallery, .mobile-gallery{
+					video{
+						&:first-child{
+							opacity: 0;
+							-webkit-transform: translate3d(0, 48px, 0);
+							transform: translate3d(0, 48px, 0);	
+						}
+						&:nth-child(2){
+							opacity: 0;
+						}
+						&:nth-child(3){
+							opacity: 0;
 						}
 					}
 				}
