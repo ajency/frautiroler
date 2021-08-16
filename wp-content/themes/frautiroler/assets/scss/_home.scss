@@ -211,6 +211,39 @@ body{
 					}
 				}
 			}
+			.desktop-gallery{
+				display: block;
+				@media(max-width: 991px){
+					display: none;
+				}
+			}
+			.mobile-gallery{
+				display: block;
+				@media(min-width: 992px){
+					display: none;
+				}
+			}
+			.desktop-gallery, .mobile-gallery{
+				margin-top: 0px;
+				video{
+					width: 100%;
+
+					&:first-child{
+						display: block;
+						margin-bottom: 70px;
+					}
+					&:nth-child(2){
+						display: none;
+					}
+					&:nth-child(3){
+						display: none;
+						margin-bottom: 70px;
+					}
+					@media(max-width: 991px){
+						margin-bottom: 40px !important;
+					}
+				}
+			}
 			p{
 				font-weight: normal;
 				font-family: 'Myriad-Pro-Regular';
@@ -475,6 +508,20 @@ body{
 						}
 					}
 				}
+				.desktop-gallery, .mobile-gallery{
+					video{
+	
+						&:first-child{
+							display: none;
+						}
+						&:nth-child(2){
+							display: block;
+						}
+						&:nth-child(3){
+							display: none;
+						}
+					}
+				}
 				.wp-block-buttons{
 					.wp-block-button{
 						&__link{
@@ -669,6 +716,20 @@ body{
 							&:nth-child(3){
 								display: block;
 							}
+						}
+					}
+				}
+				.desktop-gallery, .mobile-gallery{
+					video{
+	
+						&:first-child{
+							display: none;
+						}
+						&:nth-child(2){
+							display: none;
+						}
+						&:nth-child(3){
+							display: block;
 						}
 					}
 				}
