@@ -488,17 +488,18 @@ i{
         display: none;
         background-color: rgba(255, 255, 255, 0.8) !important;
         color:$pink !important;
-        top: 18vw;
-        left: 20vw;
+        margin: auto;
         position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
         z-index: 1;
         border-radius: 60px;
         outline:none !important;
         text-decoration: none;
-        width: auto !important;
-        padding: 15px 32px;
+        width: 133px;
+        height: 55px;
         font-family: 'Myriad-Pro-Bold';
-    
+        line-height: 55px;
+
         &::after{
             content: '\f030';
             color: #D2277C !important;
