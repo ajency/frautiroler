@@ -188,7 +188,7 @@
 				flex-wrap: wrap;
 				justify-content: flex-start;
 				.dz-message{
-					border: 1px solid #919191;
+					border: 2px solid #DDDDDD;
 					font-family: 'Myriad-Pro-Regular';
 					font-size: 20px;
 					line-height: 26px;
@@ -284,7 +284,13 @@
 							display: none;
 						}
 						.dz-error-message{
-							display: none;
+							display: block;
+							font-size: 14px;
+							line-height: 16px;
+							color: #CD1619;
+							position: absolute;
+							left: 0;
+							top: -54px;
 						}
 					}
 					&.dz-error{
@@ -325,7 +331,7 @@
 				}
 			}
 		}
-		.frm_dropzone{
+/*		.frm_dropzone{
 			&.dz-started{
 				position: relative;
 				&:before{
@@ -338,7 +344,7 @@
 					color: #CD1619;
 				}
 			}
-		}
+		}*/
 		&.frm_blank_field{
 		    border-color: #CD1619;
 		    transition: all $fast-duration $ease-out;
