@@ -122,12 +122,12 @@ $(document).ready(function(){
       if (cnt > 3) cnt = 1;
       ele.addClass("banner-" + cnt);
     }, 6000);
-    var currentDiv = $("#logo-1");
+    var currentDiv = $(".home #logo-1");
     var nextDiv, count = 1;
     var myInterval = setInterval(function() {
     if (count == 3) {
       currentDiv.removeClass('show-logo');
-      currentDiv = $("#logo-1");
+      currentDiv = $(".home #logo-1");
       currentDiv.addClass('show-logo');
       count = 1;
     } else {
