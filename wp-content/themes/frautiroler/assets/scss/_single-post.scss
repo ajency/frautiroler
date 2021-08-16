@@ -144,10 +144,17 @@ i{
                         .wp_ulike_put_image{
                             padding: 0 15px;
                             &:after{
-                                filter: invert(108%) sepia(203%) saturate(8072%) hue-rotate(329deg) brightness(100%) contrast(75%) !important;
                                 animation: 2.5s ease 0s normal none infinite running animateHeart;
                                 left: 25%;
                                 top: -10px;
+                            }
+                        }
+                        &.wp_ulike_is_liked{
+                            .wp_ulike_put_image{
+                                &:after{
+                                    filter: invert(108%) sepia(203%) saturate(8072%) hue-rotate(329deg) brightness(100%) contrast(75%) !important;
+                                    animation: 2.5s ease 0s normal none infinite running animateHeart;
+                                }
                             }
                         }
                     }
