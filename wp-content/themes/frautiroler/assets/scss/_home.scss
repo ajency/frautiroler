@@ -103,10 +103,10 @@ body{
 			right: 0;
 			transform: translate(-20px, 0) rotate(-5deg);
 			-webkit-transform: translate(-70px, 0) rotate(-5deg);
-			-webkit-transition:  min-height $normal-duration-2 $ease-in-out-cubic;
-			-moz-transition: min-height $normal-duration-2 $ease-in-out-cubic;
-			-o-transition: min-height $normal-duration-2 $ease-in-out-cubic;
-			transition:  min-height $normal-duration-2 $ease-in-out-cubic;
+			-webkit-transition:  min-height $normal-duration-1 $ease-out;
+			-moz-transition: min-height $normal-duration-1 $ease-out;
+			-o-transition: min-height $normal-duration-1 $ease-out;
+			transition:  min-height $normal-duration-1 $ease-out;
 			@media(max-width: 991px){
 				min-height: 860px;
 				width: calc(100% + 110px);
