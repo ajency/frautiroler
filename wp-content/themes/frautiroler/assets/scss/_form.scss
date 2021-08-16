@@ -363,7 +363,7 @@
 		    #frm_error_field_34{
 				display: block;
 				position: absolute;
-				top: -103px;
+				top: -125px;
 				width: auto;
 				white-space: nowrap;
 				right: -652px;
@@ -579,4 +579,11 @@
 	}
 }
 
-
+.project-form{
+	.content{
+		@media(max-width: 768px){
+			padding-left: 30px !important;
+			padding-right: 30px !important;
+		}
+	}
+}
