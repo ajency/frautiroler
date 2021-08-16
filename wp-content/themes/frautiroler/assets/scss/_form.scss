@@ -539,6 +539,7 @@
 	    margin-bottom: 38px !important;
 		margin-top: 15px;
 	 	background-clip: padding-box;
+ 	    pointer-events: none;
 		&:hover{
 			box-shadow: none;
 			border: 0;
