@@ -264,3 +264,7 @@ $( document ).ready(function() {
     window.location = "https://frautiroler.svr.fm/projekt-einreichen/";
     return false;
   });
+
+  jQuery(document).ready(function ($) {
+    jQuery('.frm_form_field textarea').prop('minLength', 100);
+});
