@@ -514,7 +514,7 @@ i{
     /* slick lightbox */
     .slick-lightbox{
         color: $pink;
-        background-image: url(https://frautiroler.svr.fm/wp-content/uploads/2021/08/lightbox-bg.png) !important;
+        background-image:url("data:image/svg+xml,%3Csvg width='375' height='581' viewBox='0 0 375 581' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 -133H375V542.541L0 581V-133Z' fill='%23D2277C'/%3E%3C/svg%3E") !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
         background-position-y: -24vh !important;
