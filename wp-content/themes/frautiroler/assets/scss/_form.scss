@@ -588,4 +588,10 @@
 			padding-right: 30px !important;
 		}
 	}
+	a.link{
+		color: #000000;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 }
