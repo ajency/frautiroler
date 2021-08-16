@@ -283,15 +283,6 @@
 						.dz-progress{
 							display: none;
 						}
-						.dz-error-message{
-							display: block;
-							font-size: 14px;
-							line-height: 16px;
-							color: #CD1619;
-							position: absolute;
-							left: 0;
-							top: -54px;
-						}
 					}
 					&.dz-error{
 						border: 1px solid #CD1619;
@@ -331,20 +322,27 @@
 				}
 			}
 		}
-/*		.frm_dropzone{
-			&.dz-started{
-				position: relative;
-				&:before{
-					content: 'Maximale Dateigröße überschritten.';
-					position: absolute;
-					top: -40px;
-					left: 0;
-					font-size: 14px;
-					line-height: 16px;
-					color: #CD1619;
-				}
+		.dz-error-message{
+			position: relative;
+			display: block;
+			font-size: 14px;
+			line-height: 16px;
+			color: #CD1619;
+			position: absolute;
+			left: 0;
+			top: -40px;
+			width: 125px;
+			span{
+				display: none;
 			}
-		}*/
+			&:before{
+				content: 'Maximale Dateigröße überschritten.';
+				color: #CD1619;
+				position: absolute;
+				top: 0px;
+				width: 134px;
+			}
+		}
 		&.frm_blank_field{
 		    border-color: #CD1619;
 		    transition: all $fast-duration $ease-out;
