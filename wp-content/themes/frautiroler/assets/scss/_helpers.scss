@@ -280,10 +280,13 @@ h2{
 body:not(.home){
 	.banner-1--logo{
 		display: block;
-		opaicty: 1 !important;
+		opacity: 1 !important;
 	}
 	.banner-3--logo.show-logo, banner-2--logo.show-logo{
 		opacity: 0 !important;
 		display: none;
 	}
+}
+.marquee-link{
+	text-decoration: none !important;
 }

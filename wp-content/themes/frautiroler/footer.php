@@ -33,38 +33,38 @@ genesis_markup(
  */
 // do_action( 'genesis_footer' );
 ?> 
-
-<div class="process-block">
-	<div class="marquee3k news services prelative pr left is-init">
-		<div class="marquee3k__wrapper">
-			<div class="marquee3k-wrapper marquee3k__copy">
-				<div class="marquee-text news">
-					<span> Projekt Einreichen&nbsp;</span> 
-				</div>
-			</div>
-			<div class="marquee3k-wrapper marquee3k__copy">
-				<div class="marquee-text news">
-					<span> Projekt Einreichen&nbsp;</span>
-				</div>
-			</div>
-			<div class="marquee3k-wrapper marquee3k__copy">
-				<div class="marquee-text news">
-					<span> Projekt Einreichen&nbsp;</span>
-				</div>
-			</div>
-            <div class="marquee3k-wrapper marquee3k__copy">
-                <div class="marquee-text news">
-                    <span> Projekt Einreichen&nbsp;</span>
+<a class="marquee-link" href="<?php echo get_site_url().'/projekt-einreichen'; ?>">
+    <div class="process-block">
+        <div class="marquee3k news services prelative pr left is-init">
+            <div class="marquee3k__wrapper">
+                <div class="marquee3k-wrapper marquee3k__copy">
+                    <div class="marquee-text news">
+                        <span> Projekt Einreichen&nbsp;</span> 
+                    </div>
+                </div>
+                <div class="marquee3k-wrapper marquee3k__copy">
+                    <div class="marquee-text news">
+                        <span> Projekt Einreichen&nbsp;</span>
+                    </div>
+                </div>
+                <div class="marquee3k-wrapper marquee3k__copy">
+                    <div class="marquee-text news">
+                        <span> Projekt Einreichen&nbsp;</span>
+                    </div>
+                </div>
+                <div class="marquee3k-wrapper marquee3k__copy">
+                    <div class="marquee-text news">
+                        <span> Projekt Einreichen&nbsp;</span>
+                    </div>
+                </div>
+                <div class="marquee3k-wrapper marquee3k__copy">
+                    <div class="marquee-text news">
+                        <span> Projekt Einreichen&nbsp;</span>
+                    </div>
                 </div>
             </div>
-            <div class="marquee3k-wrapper marquee3k__copy">
-                <div class="marquee-text news">
-                    <span> Projekt Einreichen&nbsp;</span>
-                </div>
-            </div>
-		</div>
-	</div>
-</div>
+    </div>
+</a>
 
 <footer id="footer" class="footer">
     <div id="footer-widgets" class="footer-widgets">

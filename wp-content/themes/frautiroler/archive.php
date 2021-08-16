@@ -6,33 +6,35 @@ get_header();
 
 
 ?>
-<div class="process-block display-mobile">
-	<div class="marquee3k news services prelative pr left is-init">
-		<div class="marquee3k__wrapper">
-			<div class="marquee3k-wrapper marquee3k__copy">
-				<div class="marquee-text news">
-					<span> Projekt Einreichen&nbsp;</span> 
-				</div>
-			</div>
-			<div class="marquee3k-wrapper marquee3k__copy">
-				<div class="marquee-text news">
-					<span> Projekt Einreichen&nbsp;</span>
-				</div>
-			</div>
-			<div class="marquee3k-wrapper marquee3k__copy">
-				<div class="marquee-text news">
-					<span> Projekt Einreichen&nbsp;</span>
-				</div>
-			</div>
-            <div class="marquee3k-wrapper marquee3k__copy">
-                <div class="marquee-text news">
-                    <span> Projekt Einreichen&nbsp;</span>
+<a class="marquee-link" href="<?php echo get_site_url().'/projekt-einreichen'; ?>">
+    <div class="process-block display-mobile">
+        <div class="marquee3k news services prelative pr left is-init">
+            <div class="marquee3k__wrapper">
+                <div class="marquee3k-wrapper marquee3k__copy">
+                    <div class="marquee-text news">
+                        <span> Projekt Einreichen&nbsp;</span> 
+                    </div>
+                </div>
+                <div class="marquee3k-wrapper marquee3k__copy">
+                    <div class="marquee-text news">
+                        <span> Projekt Einreichen&nbsp;</span>
+                    </div>
+                </div>
+                <div class="marquee3k-wrapper marquee3k__copy">
+                    <div class="marquee-text news">
+                        <span> Projekt Einreichen&nbsp;</span>
+                    </div>
+                </div>
+                <div class="marquee3k-wrapper marquee3k__copy">
+                    <div class="marquee-text news">
+                        <span> Projekt Einreichen&nbsp;</span>
+                    </div>
                 </div>
             </div>
-		</div>
-	</div>
-</div>
- 
+        </div>
+    </div>
+</a>
+
 <?php if ( have_posts() ) : ?>
 
     <div class="custom_archive_page">
