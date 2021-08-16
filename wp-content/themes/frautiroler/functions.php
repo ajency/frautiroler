@@ -462,3 +462,16 @@ function my_login_logo_url_title() {
     return 'Frautiroler';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+add_filter( 'frm_js_validate', 'validate_custom_file_size', 20, 3 );
+function validate_custom_file_size( $errors, $field, $value ) {
+  if ( $field->type == 'file' && ( isset( $_FILES['file'.$field->id] ) ) && ! empty( $_FILES['file'.$field->id]['name'] ) ) { 
+    $files = (array) $_FILES['file'. $field->id]['size'];
+    foreach ( $files as $v ) {
+      if ( $v > 1.5e+6 ) {//change this number to the max size you would like. 100000 bytes = 100 KB
+        $errors['field'.$field->id] = 'Maximale Dateigröße überschritten.';
+      }
+    }
+  }
+  return $errors;
+}
