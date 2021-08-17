@@ -593,5 +593,9 @@
 		&:hover{
 			text-decoration: underline;
 		}
+		&:focus{
+			outline: 0;
+			text-decoration: underline;
+		}
 	}
 }
