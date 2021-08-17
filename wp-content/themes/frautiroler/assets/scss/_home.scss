@@ -126,6 +126,9 @@ body{
 				min-height: 890px;
 				width: calc(100% + 110px);
 			}
+			@media(max-width: 391px){
+				min-height: 930px;
+			}
 		}
 	}
 	.content-sidebar-wrap{
