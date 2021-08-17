@@ -350,7 +350,8 @@
 	    	   border-width: 2px !important;
 		    }
 		    .dz-message{
-		    	transition: all $fast-duration $ease-out;
+		    	border: 2px solid #CD1619 !important;
+		    	transition: all $fast-duration $ease-out !important;
 		    }
 		    .frm_checkbox {
 		    	label{
@@ -538,6 +539,7 @@
 	    margin-bottom: 38px !important;
 		margin-top: 15px;
 	 	background-clip: padding-box;
+ 	    pointer-events: none;
 		&:hover{
 			box-shadow: none;
 			border: 0;
@@ -584,6 +586,12 @@
 		@media(max-width: 768px){
 			padding-left: 30px !important;
 			padding-right: 30px !important;
+		}
+	}
+	a.link{
+		color: #000000;
+		&:hover{
+			text-decoration: underline;
 		}
 	}
 }
