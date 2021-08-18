@@ -262,13 +262,7 @@ $( document ).ready(function() {
     return false;
   });
 
-  jQuery(document).ready(function ($) {
-      $('#form_projectsubmission').submit(function(e){
-      var minLength = 100;
-      var textarea = $('#frm_field_16_container');
-      if(textarea.val() < minLength) {
-        textarea.addClass('frm_blank_field');
-        textarea.append('<div class="frm_error" id="frm_error_field_16">Bitte ausfüllen (Min. 100 Zeichen)</div>');
-      }
-    });
+  $('textarea').on("input", function () {
+      var valid = /^(?:[^\n]{0,20}\n?){0,3}$/g.test( this.value );
+      $('#frm_field_16_container.form-field').toggleClass('frm_blank_field');
   });

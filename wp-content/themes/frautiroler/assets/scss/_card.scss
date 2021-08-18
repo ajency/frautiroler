@@ -222,7 +222,10 @@
 .project-votes:hover.tooltip:before,
 .project-votes:hover.tooltip:after {
     opacity: 1;
-  }
+    @media(max-width: 991px){
+        opacity: 0;
+    }
+}
 
 /* heart animation */
 
@@ -256,7 +259,7 @@
 	}
 	.click-heart {
 		cursor: pointer;
-	  }
+    }    
 }
 
 

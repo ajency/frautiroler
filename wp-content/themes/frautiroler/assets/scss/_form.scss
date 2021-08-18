@@ -346,8 +346,9 @@
 		&.frm_blank_field{
 		    border-color: #CD1619;
 		    transition: all $fast-duration $ease-out;
-		    input{
+		    input, textarea{
 	    	   border-width: 2px !important;
+	    	   border-color: #CD1619;
 		    }
 		    .dz-message{
 		    	border: 2px solid #CD1619 !important;
