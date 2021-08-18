@@ -257,14 +257,18 @@ $( document ).ready(function() {
 // }
 // });
 
-/* $(".marquee-text").click(function(){
-  window.location.href
-  }); */
   $('.marquee-text').click((e) => {
     window.location = "https://frautiroler.svr.fm/projekt-einreichen/";
     return false;
   });
 
   jQuery(document).ready(function ($) {
-    jQuery('.frm_form_field textarea').prop('minLength', 100);
-});
+      $('#form_projectsubmission').submit(function(e){
+      var minLength = 100;
+      var textarea = $('#frm_field_16_container');
+      if(textarea.val() < minLength) {
+        textarea.addClass('frm_blank_field');
+        textarea.append('<div class="frm_error" id="frm_error_field_16">Bitte ausfüllen (Min. 100 Zeichen)</div>');
+      }
+    });
+  });
