@@ -105,7 +105,7 @@ body{
 	&.loading{
 		.site-container--overlay{
 			background-color: $pink;
-			min-height: 1520px;
+			min-height: 1490px;
 			width: 100%;
 			position: absolute;
 			top: 0;
@@ -123,11 +123,23 @@ body{
 			-o-transition: min-height $normal-duration-1 $ease-out;
 			transition:  min-height $normal-duration-1 $ease-out;
 			@media(max-width: 991px){
-				min-height: 878px;
+				min-height: 800px;
 				width: calc(100% + 110px);
 			}
-			@media(max-width: 391px){
-				min-height: 930px;
+			@media(max-width: 767px){
+				min-height: 888px;
+			}
+			@media(max-width: 689px){
+				min-height: 828px;
+			}
+			@media(max-width: 594px){
+				min-height: 818px;
+			}
+			@media(max-width: 540px){
+				min-height: 825px;
+			}
+			@media(max-width: 339px){
+				min-height: 875px;
 			}
 		}
 	}
@@ -382,6 +394,9 @@ body{
 					}
 					@media(max-width: 425px){
 						height: 128px;
+					}
+					@media(max-width: 367px){
+						margin-bottom: 0;
 					}
 				}
 				.desktop-gallery, .mobile-gallery{
