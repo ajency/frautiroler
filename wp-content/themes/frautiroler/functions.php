@@ -475,3 +475,13 @@ function validate_custom_file_size( $errors, $field, $value ) {
   }
   return $errors;
 }
+add_filter('frm_validate_field_entry', 'my_custom_validation', 10, 3);
+function my_custom_validation($errors, $posted_field, $posted_value){
+  if ( $posted_field->id == 16 && $posted_value != '' ){
+    $words = explode(' ', $posted_value); //separate at each space
+    $count = count($words); //count each word
+    if($count < 100)
+	$errors['field'. $posted_field->id] = 'That is not long enough.';
+  }
+  return $errors;
+}
