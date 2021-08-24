@@ -37,6 +37,13 @@ $('.hamburger-close').on('click', function(){
 	$('body').removeClass('overflow-hidden');
 });
 
+ $('#menu-header-menu-1 li').on('click', function(){
+  $('.mobile-menu').removeClass('open');
+  $('.site-navigation').removeClass('show-main-menu');
+  $('.header-wrapper').removeClass('show-hamburger-menu');
+  $('body').removeClass('overflow-hidden');
+});
+
 
 /* heart animation */
 

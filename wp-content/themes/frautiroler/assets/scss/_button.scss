@@ -439,3 +439,8 @@ canvas {
 	display: none !important;
 	opacity: 0 !important;
 }
+.cc-animate.cc-revoke.cc-bottom{
+	@media(min-width: 991px){
+	    transform: translateY(-1em);
+	}
+}
