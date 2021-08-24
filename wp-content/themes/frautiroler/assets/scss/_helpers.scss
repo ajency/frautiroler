@@ -176,6 +176,9 @@ p{
     line-height: 26px;
     margin-bottom: 0;
     color: #000000;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
     @media(max-width: 991px){
 		font-size: 16px;
 		line-height: 26px;
