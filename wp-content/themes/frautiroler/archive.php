@@ -105,8 +105,8 @@ get_header();
                 <div class="empty-state">
                     <div class="left-section">
                         <h1 class="section-title">Aktuell wurden noch keine Projekte eingereicht.</h1>
-                        <p class="subtitle">Hier findest du alle Informationen zu den <a href="#">Teilnahmebedinungen</a> und <a href="#">Regeln</a>. Wir freuen uns auf deine Einreichung.</p>
-                        <a class="text-link-large" href="#">Jetzt einreichen</a>
+                        <p class="subtitle">Hier findest du alle Informationen zu den <a href="<?php echo get_site_url(); ?>/teilnahmebedingungen/">Teilnahmebedinungen</a> und <a href="<?php echo get_site_url(); ?>/#dieRegeln">Regeln</a>. Wir freuen uns auf deine Einreichung.</p>
+                        <a class="text-link-large" href="<?php echo get_site_url(); ?>/projekt-einreichen/">Jetzt einreichen</a>
                     </div>
                     <div class="right-section">
                         <svg width="601" height="121" viewBox="0 0 601 121" fill="none" xmlns="http://www.w3.org/2000/svg">
