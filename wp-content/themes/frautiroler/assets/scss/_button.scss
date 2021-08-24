@@ -442,5 +442,6 @@ canvas {
 .cc-animate.cc-revoke.cc-bottom{
 	@media(min-width: 991px){
 	    transform: translateY(-1em);
+	    display: none;
 	}
 }
