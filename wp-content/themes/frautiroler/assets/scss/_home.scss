@@ -149,7 +149,10 @@ body{
 				min-height: 818px;
 			}
 			@media(max-width: 540px){
-				min-height: 905px;
+				min-height: 873px;
+			}
+			@media(max-width: 465px){
+				min-height: 908px;
 			}
 			@media(max-width: 339px){
 				min-height: 950px;
@@ -475,10 +478,10 @@ body{
 						max-width: 960px;
 					}
 					@media (min-width: 1200px){
-						max-width: 1140px;
+						max-width: 1050px;
 					}
 					@media (min-width: 1500px){
-						max-width: 1340px;
+						max-width: 1200px;
 					}
 			    }
 			    .wp-block-columns{
@@ -570,8 +573,7 @@ body{
 							min-width: 275px;
 						}
 						.span-wraper{
-							padding-right: 55px;
-							margin-left: -40px;
+						    width: 20px;
 							.wp-block-column{
 								margin-left: 0px;
 								height: 100%;
@@ -1204,6 +1206,9 @@ body{
 					}
 					@media(max-width: 991px){
 						top: -100px;
+					}
+					@media(min-width: 992px){
+						right: -50px;
 					}
 				}
 				

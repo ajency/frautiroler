@@ -68,7 +68,7 @@ genesis_markup(
 
 <footer id="footer" class="footer">
     <div id="footer-widgets" class="footer-widgets">
-        <div class="footer-wrapper row container m-auto p-0">
+        <div class="footer-wrapper row container m-auto p-0 content">
             <div class="footer-sidebar footer-1 col-12">
                 <?php
                     if(is_active_sidebar('footer-1')){

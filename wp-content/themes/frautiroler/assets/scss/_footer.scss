@@ -32,7 +32,6 @@
 		}
 	}
 	&-wrapper{
-	    padding: 0 15px;
 	    display: flex;
 	    align-items: center;
 	    justify-content: space-between;
@@ -112,6 +111,29 @@
 			display: flex;
 			padding: 31px 0px 26px;
 			font-family: 'Myriad-Pro-Regular';
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+			@media (min-width: 768px){
+				max-width: 720px;
+			}
+			@media (min-width: 992px){
+				max-width: 960px;
+				padding-right: 60px;
+				padding-left: 60px;
+			}
+			@media (min-width: 1200px){
+				max-width: 1140px;
+				padding-right: 50px;
+				padding-left: 50px;
+			}
+			@media (min-width: 1500px){
+				max-width: 1325px;
+				padding-right: 56px;
+				padding-left: 56px;
+			}
 			&-item{
 				margin: 0px 24px 0 0;
 			    line-height: 0;
