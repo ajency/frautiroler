@@ -19,7 +19,7 @@ get_header();  ?>
 <?php if ( have_posts() ) : ?>
 
     <div class="custom_single_post_page">
-        <div class="container">
+        <div class="container content">
         <!-- project details -->
             <?php while ( have_posts() ) : the_post(); ?>
                 <div class="row project-details">

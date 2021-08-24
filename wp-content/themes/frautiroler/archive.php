@@ -38,7 +38,7 @@ get_header();
 <?php if ( have_posts() ) : ?>
 
     <div class="custom_archive_page">
-        <div class="container">
+        <div class="container content">
 
         <!-- Projects -->
 
