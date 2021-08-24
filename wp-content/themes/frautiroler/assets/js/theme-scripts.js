@@ -192,21 +192,20 @@ $(window).on("load",function() {
 
 $( document ).ready(function() {
 
-  $(window).on("resize", function (e) {
-    checkScreenSize();
-});
+  $(window).on("load", function (e) {
+      checkScreenSize();
+  });
 
-checkScreenSize();
+  //checkScreenSize();
 
-function checkScreenSize(){
+  function checkScreenSize(){
     var newWindowWidth = $(window).width();
     if (newWindowWidth < 768) {
-      $('.has-background .wp-block-columns .wp-block-column:nth-child(3)').addClass("spanAdded");
-      $('.spanAdded').wrap('<span class="span-wraper"></span>');
+      $('.has-background .wp-block-columns .wp-block-column:nth-child(1)').before('<div class="span-wraper"></div>');
+      $('.has-background .wp-block-columns .wp-block-column:nth-child(4)').after('<div class="span-wraper"></div>');
+    }else{ 
     }
-    else
-    { }
-}
+  }
 });
 
 /* smooth scroll */
