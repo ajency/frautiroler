@@ -258,7 +258,7 @@ $( document ).ready(function() {
 // });
 
   $('.marquee-text').click((e) => {
-    window.location = "https://frautiroler.svr.fm/projekt-einreichen/";
+    window.location = "https://frautiroler.info/projekt-einreichen/";
     return false;
   });
 
