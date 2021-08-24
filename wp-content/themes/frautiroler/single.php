@@ -31,8 +31,8 @@ get_header();  ?>
                                 </div>
                                 <h1 class="post-title"><?php the_title(); ?></h1>
                                 <?php
-                                  $author_firstname = get_the_author_firstname();
-                                  $author_lastname = get_the_author_lastname();
+                                  $author_firstname = get_field('vorname');
+                                  $author_lastname = get_field('nachname');
                                 ?>
                                 <h5 class="post-author"><?php echo "von ".$author_firstname." ".substr($author_lastname, 0,1)."."; ?></h5>
                                 <div class="post-content"><?php the_content(); ?></div>
