@@ -33,7 +33,12 @@
         }
     }
     header {
+        background-color: #fff !important;
+       @media screen and (min-width: 992px) {
         background-color: #f8f8f8 !important;
+       }
+       
+       
         box-shadow: none !important;
         //background-image: url("../../../../uploads/2021/08/single-page-header-bg.png");
         min-height: 300px;
