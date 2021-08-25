@@ -294,22 +294,45 @@ $( document ).ready(function() {
 $( document ).ready(function() {
   var countlist = $(".project-list .project-item").length;
   if (countlist<=9) {
-    console.log('works');
     $(".load-more-desk").addClass('d-none');
   }
   else{
-    console.log('not works');
     $(".load-more-desk").removeClass('d-none');
   }
 });
 $( document ).ready(function() {
   var countlist2 = $(".project-list .project-item").length;
   if (countlist2<=4) {
-    console.log('works mob');
     $(".load-more-mob").addClass('d-none');
   }
   else{
-    console.log('not mob works');
     $(".load-more-mob").removeClass('d-none');;
   }
 });
+
+$(".frm_checkbox a").hover(
+  function () {
+    $('.frm_checkbox > label').addClass("result_hover");
+  },
+  function () {
+    $('.frm_checkbox > label').removeClass("result_hover");
+  }
+);
+
+$(".frm_dropzone").on("click", function(){
+  const component = $(this);
+
+  setTimeout(function(){ 
+    var check_selected = component.hasClass('dz-started');
+  }, 500);
+
+  var checkSelected =  setInterval(function(){ 
+    var check_selected = component.hasClass('dz-started');
+    if(check_selected) {
+      clearInterval(checkSelected);
+      $('#frm_error_field_34').hide();
+    }else{
+      $('#frm_error_field_34').show();
+    }
+  }, 50);
+})

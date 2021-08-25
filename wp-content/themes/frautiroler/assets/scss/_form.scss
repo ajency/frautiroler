@@ -488,11 +488,13 @@
 				}
 			}
 			&:hover{
+				border-color: #DDDDDD;
 				&:before{
 					border-color: #919191;
 				}
 			}
 			&:active{
+				border-color: #DDDDDD;
 				&:before{
 					border-color: #000000;
 				}
@@ -502,7 +504,25 @@
 			}
 			&:focus-visible{
 				outline: 0;
-				
+			}
+			&.result_hover{
+				&:hover{
+
+					&:before{
+						border-color: #DDDDDD;
+					}
+				}
+				&:active{
+					border-color: #DDDDDD;
+					&:before{
+						border-color: #DDDDDD;
+					}
+				}
+				&:focus-visible{
+					&:before{
+						border-color: #DDDDDD;
+					}
+				}
 			}
 		}
 		input[type=checkbox] {
