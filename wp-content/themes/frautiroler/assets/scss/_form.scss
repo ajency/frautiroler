@@ -461,11 +461,13 @@
 				&:hover{
 					&:before {
 						background-color: $pink-hover;
+						border-color: $pink-hover;
 					}
 				}
 				&:active{
 					&:before {
 						background-color: $pink-pressed;
+						border-color: $pink-pressed;
 					}
 				}
 				&:focus-visible{
@@ -486,12 +488,12 @@
 			}
 			&:hover{
 				&:before{
-					border-color: #B5226B;
+					border-color: #919191;
 				}
 			}
 			&:active{
 				&:before{
-					border-color: #8C1A53
+					border-color: #000000;
 				}
 			}
 			&:focus{
