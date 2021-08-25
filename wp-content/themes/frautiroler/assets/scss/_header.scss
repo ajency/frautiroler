@@ -479,3 +479,9 @@ body{
 	    padding: 0 30px;
 	}
 }
+
+@-moz-document url-prefix() {
+    .site-navigation-wrapper{
+     margin-top: 55px;
+    }
+}
