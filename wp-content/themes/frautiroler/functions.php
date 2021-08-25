@@ -357,7 +357,7 @@ function wp_rand_posts() {
  
 	$the_query = new WP_Query( $args );
  
-	if ( $the_query->have_posts() ) {
+/* 	if ( $the_query->have_posts() ) {
 
 	$string .= '<div class="project-list scroll-reveal">';
 	    while ( $the_query->have_posts() ) {
@@ -381,14 +381,14 @@ function wp_rand_posts() {
 	        $string .= '</div>';
 	    }
 	    $string .= '</div>';
-	    /* Restore original Post Data */
+	    Restore original Post Data
 	    wp_reset_postdata();
 	} else {
  
 		$string .= 'no posts found';
 	}
  
-	return $string; 
+	return $string;  */
 } 
  
 add_shortcode('wp-random-posts','wp_rand_posts');
