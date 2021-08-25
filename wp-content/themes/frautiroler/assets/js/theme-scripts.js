@@ -289,7 +289,8 @@ $( document ).ready(function() {
   if($cbx_group.is(":checked")){
     $cbx_group.prop('required', false);
   }
-  var count = $(".project-list .project-item").length;
-  if (count<9) {
+  var countlist = $(".project-list .project-item").length;
+  if (countlist<9) {
+    console.log('works');
     $(".load-more-desk").hide;
   }
