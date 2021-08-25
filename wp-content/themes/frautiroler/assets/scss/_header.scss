@@ -482,11 +482,14 @@ body{
 
 @-moz-document url-prefix() {
     .site-navigation-wrapper{
-     margin-top: 55px;
+     margin-top: 55px ;
     }
 }
-@supports (-moz-appearance:none) {
-    .site-navigation-wrapper{
-		margin-top: 55px;
-	   }
+@media screen and (min-width: 992px) {
+	@supports (-moz-appearance:none) {
+		.site-navigation-wrapper{
+			margin-top: 55px !important;
+		   }
+	}
 }
+
