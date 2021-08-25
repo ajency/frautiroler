@@ -168,9 +168,6 @@
 				font-size: 0;
 				display: block !important;
 			}
-			.frm_error{
-				display: none;
-			}
 
 			@media(max-width: 600px){
 			    grid-column: span 3/span 2 !important;
@@ -363,7 +360,6 @@
 		    	}
 		    }
 		    #frm_error_field_34{
-				display: block;
 				position: absolute;
 				top: -125px;
 				width: auto;
@@ -414,6 +410,7 @@
 		label{
 			position: relative;
 			cursor: pointer;
+			pointer-events: none;
 			transition: all ease-out 250ms;
 			outline: 0;
 			display: block;
@@ -426,6 +423,9 @@
 			text-indent: 0 !important;
 	        margin: 10px 0;
 	        transition: all $fast-duration $ease-out;
+	        a{
+	        	pointer-events: auto;
+	        }
 			&.error{
 				position: absolute;
 				top: -24px;
@@ -449,6 +449,7 @@
 				position: absolute;
 				left: 0;
 			    top: -6px;
+			    pointer-events: auto;
 			}
 			&.checked{
 				transition: all $fast-duration $ease-out;
