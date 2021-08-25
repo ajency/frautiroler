@@ -295,19 +295,24 @@ $( document ).ready(function() {
   var countlist = $(".project-list .project-item").length;
   if (countlist<9) {
     console.log('works');
-    $(".load-more-desk").hide();
+    $(".load-more-desk").addClass('d-none');
   }
   else{
-    $(".load-more-desk").show();
+    console.log('not works');
+
+    $(".load-more-desk").removeClass('d-none');
   }
 });
 $( document ).ready(function() {
   var countlist2 = $(".project-list .project-item").length;
   if (countlist2<4) {
-    console.log('works');
-    $(".load-more-mob").hide();
+    console.log('works mob');
+
+    $(".load-more-mob").addClass('d-none');
   }
   else{
-    $(".load-more-mob").show();
+    console.log('not mob works');
+
+    $(".load-more-mob").removeClass('d-none');;
   }
 });
