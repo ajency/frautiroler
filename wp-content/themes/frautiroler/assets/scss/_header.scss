@@ -485,3 +485,8 @@ body{
      margin-top: 55px;
     }
 }
+@supports (-moz-appearance:none) {
+    .site-navigation-wrapper{
+		margin-top: 55px;
+	   }
+}
