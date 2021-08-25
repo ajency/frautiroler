@@ -289,8 +289,25 @@ $( document ).ready(function() {
   if($cbx_group.is(":checked")){
     $cbx_group.prop('required', false);
   }
+
+  
+$( document ).ready(function() {
   var countlist = $(".project-list .project-item").length;
   if (countlist<9) {
     console.log('works');
-    $(".load-more-desk").hide;
+    $(".load-more-desk").hide();
   }
+  else{
+    $(".load-more-desk").show();
+  }
+});
+$( document ).ready(function() {
+  var countlist2 = $(".project-list .project-item").length;
+  if (countlist2<4) {
+    console.log('works');
+    $(".load-more-mob").hide();
+  }
+  else{
+    $(".load-more-mob").show();
+  }
+});
