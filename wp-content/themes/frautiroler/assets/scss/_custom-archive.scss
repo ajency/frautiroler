@@ -213,18 +213,39 @@
                     font-size: 32px;
                     line-height: 38px;
                     font-family: 'Myriad-Pro-Bold';
-                    text-decoration: underline;
+                    text-decoration: none;
                     outline: none !important;
                     color: black;
                     position: relative;
+                    white-space: nowrap;
+                    padding-bottom: 2px;
+                    transition: all .2s $ease-out;
+                    &:before{
+                        content:'';
+                        border-bottom: 4px solid #000;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        transition: all .2s $ease-out;
+                    }
 
                     &:hover{
                         color: $pink;
+                        transition: all .2s $ease-out;
+                        &:before{
+                            border-color: $pink;
+                        }
                     }
                     &:active{
                         color: $pink-pressed;
+                        transition: all .2s $ease-out;
+                        &:before{
+                            border-color: $pink-pressed;
+                        }
                     }
                     &:focus-visible{
+                        transition: all .2s $ease-out;
                         &:after{
                             content: '';
                             border: 1px solid #919191;
@@ -235,7 +256,7 @@
                             height: 44px;
                             width: 235px;
                             left: -5px;
-                            top: 1px;
+                            top: -3px;
                         }
                     }
                 }
