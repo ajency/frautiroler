@@ -479,15 +479,20 @@ i{
     
             @media only screen and (max-width: 768px){
                 display:block;
+                height: 213px !important;
             }
     
             .slick-track{
                 display: flex;
                 align-items: center;
+                height: 213px !important;
             }
-    
+            .gallery-img-holder{
+                height: 100% !important;
+            }
             .gallery-img{
-                height: auto;
+                height: 100%;
+                object-fit: cover !important;
             }
             .gallery-item{
                 margin:0;
@@ -504,7 +509,10 @@ i{
         color:$pink !important;
         margin: auto;
         position: absolute;
-        top: -10px; left: -15px; bottom: 0; right: 0;
+        top: 0px; 
+        left: 0px;
+        bottom: 0;
+        right: 0;
         z-index: 1;
         border-radius: 60px;
         outline:none !important;
