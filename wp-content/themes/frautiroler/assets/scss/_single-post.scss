@@ -391,15 +391,6 @@ i {
             }
         }
     }
-    .slick-lightbox-slick-item-inner{
-        height: 75vh !important;
-        width: 82% !important;
-
-        img{
-            height: 75vh !important;
-            width: 100% !important;
-        }
-    }
 }
 
 /*slider*/
@@ -653,6 +644,15 @@ i {
         border-radius: 0;
         background: transparent;
         outline: none !important;
+    }
+    .slick-lightbox-slick-item-inner{
+        height: 75vh !important;
+        width: 82% !important;
+
+        img{
+            height: 75vh !important;
+            width: 100% !important;
+        }
     }
 }
 
