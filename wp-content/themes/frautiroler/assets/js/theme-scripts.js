@@ -293,26 +293,23 @@ $( document ).ready(function() {
   
 $( document ).ready(function() {
   var countlist = $(".project-list .project-item").length;
-  if (countlist<9) {
+  if (countlist<=9) {
     console.log('works');
     $(".load-more-desk").addClass('d-none');
   }
   else{
     console.log('not works');
-
     $(".load-more-desk").removeClass('d-none');
   }
 });
 $( document ).ready(function() {
   var countlist2 = $(".project-list .project-item").length;
-  if (countlist2<4) {
+  if (countlist2<=4) {
     console.log('works mob');
-
     $(".load-more-mob").addClass('d-none');
   }
   else{
     console.log('not mob works');
-
     $(".load-more-mob").removeClass('d-none');;
   }
 });
