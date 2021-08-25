@@ -489,7 +489,7 @@ function my_custom_validation($errors, $posted_field, $posted_value){
 add_filter('frm_validate_field_entry', 'require_minimum_checkbox_number', 10, 3);
 function require_minimum_checkbox_number( $errors, $field, $posted_value ){
   if ( $field->id == 23 ) {
-    $minimum = 4;
+    $minimum = 2;
     if ( ! is_array ( $posted_value ) || ( is_array( $posted_value ) && count( $posted_value ) < $minimum ) ) {
         $errors['field' . $field->id] = 'Bitte ankreuzen';
     } 
