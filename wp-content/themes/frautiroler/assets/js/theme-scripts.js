@@ -272,7 +272,7 @@ $( document ).ready(function() {
       var valid = /^(?:[^\n]{0,20}\n?){0,3}$/g.test( this.value );
       $('#frm_field_16_container.form-field').toggleClass('frm_blank_field');
   });
-  $(document).ready(function() {
-    history.scrollRestoration = "manual";
-    $(window).scrollTop(0);
-});
+//   $(document).ready(function() {
+//     history.scrollRestoration = "manual";
+//     $(window).scrollTop(0);
+// });
