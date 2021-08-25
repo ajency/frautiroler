@@ -298,3 +298,6 @@ body:not(.home){
 .marquee-link{
 	text-decoration: none !important;
 }
+.cc-revoke, .cc-window{
+	z-index: 99999 !important;
+}
