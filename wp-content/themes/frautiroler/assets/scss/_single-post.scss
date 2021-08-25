@@ -152,7 +152,7 @@ i{
                         &.wp_ulike_is_liked{
                             .wp_ulike_put_image{
                                 &:after{
-                                    webkit-filter: invert(26%) sepia(98%) saturate(1469%) hue-rotate(303deg) brightness(89%) contrast(102%) !important;
+                                    -webkit-filter: invert(26%) sepia(98%) saturate(1469%) hue-rotate(303deg) brightness(89%) contrast(102%) !important;
                                     -moz-filter: invert(26%) sepia(98%) saturate(1469%) hue-rotate(303deg) brightness(89%) contrast(102%) !important;
                                     -ms-filter: invert(26%) sepia(98%) saturate(1469%) hue-rotate(303deg) brightness(89%) contrast(102%) !important;
                                     -o-filter: invert(26%) sepia(98%) saturate(1469%) hue-rotate(303deg) brightness(89%) contrast(102%) !important;

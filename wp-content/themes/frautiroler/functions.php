@@ -485,3 +485,14 @@ function my_custom_validation($errors, $posted_field, $posted_value){
   }
   return $errors;
 }
+
+add_filter('frm_validate_field_entry', 'require_minimum_checkbox_number', 10, 3);
+function require_minimum_checkbox_number( $errors, $field, $posted_value ){
+  if ( $field->id == 23 ) {
+    $minimum = 4;
+    if ( ! is_array ( $posted_value ) || ( is_array( $posted_value ) && count( $posted_value ) < $minimum ) ) {
+        $errors['field' . $field->id] = 'Please select at least ' . $minimum . ' items.';
+    } 
+  }
+  return $errors;
+}
