@@ -272,7 +272,11 @@ $( document ).ready(function() {
       var valid = /^(?:[^\n]{0,20}\n?){0,3}$/g.test( this.value );
       $('#frm_field_16_container.form-field').toggleClass('frm_blank_field');
   });
-//   $(document).ready(function() {
-//     history.scrollRestoration = "manual";
-//     $(window).scrollTop(0);
-// });
+
+  $cbx_group = $("input:checkbox[name='item_meta[23][]']");
+  $cbx_group = $("input:checkbox[id^='field_4jx69-']"); // name is not always helpful ;)
+
+  $cbx_group.prop('required', true);
+  if($cbx_group.is(":checked")){
+    $cbx_group.prop('required', false);
+  }

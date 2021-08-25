@@ -491,7 +491,7 @@ function require_minimum_checkbox_number( $errors, $field, $posted_value ){
   if ( $field->id == 23 ) {
     $minimum = 4;
     if ( ! is_array ( $posted_value ) || ( is_array( $posted_value ) && count( $posted_value ) < $minimum ) ) {
-        $errors['field' . $field->id] = 'Please select at least ' . $minimum . ' items.';
+        $errors['field' . $field->id] = 'Bitte ankreuzen';
     } 
   }
   return $errors;
