@@ -725,7 +725,7 @@ body {
 					.menu-item {
 						a {
 							color: $red;
-							transition: all 250ms $ease-out;
+							transition: all 250ms ease-in-out;
 						}
 						&:last-child {
 							border: 1px solid transparent;
@@ -902,7 +902,7 @@ body {
 					.menu-item {
 						a {
 							color: $off-white;
-							transition: color 30ms $ease-out;
+							transition: all 30ms ease-in-out;
 						}
 						&:last-child {
 							border: 1px solid transparent;
