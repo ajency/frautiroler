@@ -222,7 +222,7 @@ body{
 						transition: all 250ms $ease-out;
 						background-color: #E8E400;
 						transform: scaleX(0);
-						transform-origin: right center;
+						transform-origin: left center;
 						position: absolute;
 						left: 0;
 						bottom: 0;
@@ -234,14 +234,14 @@ body{
 					&:hover{
 						&:after {
 						    transform: scaleX(1);
-						    transform-origin: left center;
+						    transform-origin: right center;
 					    }
 					}
 					&:active{
 						&:after{
 							background-color: #D6D300;
 						    transform: scaleX(1);
-						    transform-origin: left center;
+						    transform-origin: right center;
 						}
 					}
 					&:focus{
