@@ -73,6 +73,9 @@ i {
     font-family: "Myriad-Pro-Regular";
     background-color: #f8f8f8;
 
+    .content{
+        background-color: transparent;
+    }
     @media only screen and (max-width: 768px) {
         position: relative !important;
         z-index: 1 !important;
