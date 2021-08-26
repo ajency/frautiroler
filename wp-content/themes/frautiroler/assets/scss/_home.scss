@@ -462,8 +462,9 @@ body {
 								opacity: 1;
 								-webkit-transform: translate3d(0, 0, 0);
 								transform: translate3d(0, 0, 0);
-								transition: all $normal-duration-2 $delay-2 ease-in-out !important;
-								-webkit-transition: all $normal-duration-2 $delay-2 ease-in-out !important;
+								transition: all 30ms ease-in-out !important;
+
+								-webkit-transition: all 30ms ease-in-out !important;
 							}
 							&:nth-child(2) {
 								opacity: 0;
