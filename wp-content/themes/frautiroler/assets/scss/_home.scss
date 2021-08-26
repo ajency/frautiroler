@@ -139,6 +139,7 @@ body {
 				-moz-transition: min-height $normal-duration-1 $ease-out;
 				-o-transition: min-height $normal-duration-1 $ease-out;
 				transition: min-height $normal-duration-1 $ease-out;
+				transition: all 250ms ease-in-out;
 				@media (max-width: 991px) {
 					min-height: 1040px;
 					width: calc(100% + 110px);
@@ -724,10 +725,8 @@ body {
 			transition: all 250ms ease-in-out;
 
 			.site-container--overlay {
-				
 				transition: all 250ms ease-in-out;
 				background: #f8f400;
-
 			}
 			.site-header {
 				.header-menu {
@@ -788,6 +787,10 @@ body {
 				&__inner-container {
 					h1 {
 						color: $red;
+						transition: opacity $normal-duration-2 $delay-1 $ease-out,
+						transform $normal-duration-2 $delay-1 $ease-out;
+					-webkit-transition: opacity $normal-duration-2 $delay-1 $ease-out,
+						transform $normal-duration-2 $delay-1 $ease-out;
 					}
 					.wp-block-gallery {
 						.blocks-gallery {
@@ -910,8 +913,8 @@ body {
 			transition: all 250ms ease-in-out !important;
 
 			.site-container--overlay {
-				background: #008d36;
 				transition: all 250ms ease-in-out !important;
+				background: #008d36;
 			}
 			.site-header {
 				.header-menu {
@@ -973,6 +976,10 @@ body {
 				&__inner-container {
 					h1 {
 						color: $off-white;
+						transition: opacity $normal-duration-2 $delay-1 $ease-out,
+						transform $normal-duration-2 $delay-1 $ease-out;
+					-webkit-transition: opacity $normal-duration-2 $delay-1 $ease-out,
+						transform $normal-duration-2 $delay-1 $ease-out;
 					}
 					.wp-block-buttons {
 						.wp-block-button {
