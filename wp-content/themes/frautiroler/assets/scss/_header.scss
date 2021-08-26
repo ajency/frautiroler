@@ -214,7 +214,7 @@ body{
 				}
 				&:after{
 					content: '';
-					transition: transform 250ms $ease-out;
+					transition: all 250ms $ease-out;
 					background-color: #E8E400;
 					transform: scaleX(0);
 					transform-origin: right center;
