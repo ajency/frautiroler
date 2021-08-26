@@ -721,17 +721,22 @@ body {
 			.header-menu {
 				.menu-item {
 					a {
+					transition: all 250ms $ease-out;
+
 						color: $red;
 						transition: color 30ms $ease-out;
 					}
 					&:last-child {
 						border: 1px solid transparent;
 						a {
+
 							background: $red;
 							color: $yellow;
 							transition: all 30ms $ease-out;
 
 							&:hover {
+					transition: all 250ms $ease-out;
+
 								background: $red-hover;
 							}
 							&:active {
@@ -740,6 +745,7 @@ body {
 						}
 					}
 					&:after {
+						transition: all 250ms $ease-out;
 						background-color: $red;
 					}
 				}
@@ -908,6 +914,7 @@ body {
 							transition: all 30ms $ease-out;
 
 							&:hover {
+								
 								background: $creme-hover;
 							}
 							&:active {
@@ -916,6 +923,8 @@ body {
 						}
 					}
 					&:after {
+					transition: all 250ms $ease-out;
+
 						background-color: $off-white;
 					}
 				}
