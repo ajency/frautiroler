@@ -354,6 +354,23 @@
 		    .frm_checkbox {
 		    	label{
 		    		transition: all $fast-duration $ease-out;
+					&.result_hover{
+						&:hover{
+							&:before{
+								border-color: #CD1619;
+							}
+						}
+						&:active{
+							&:before{
+								border-color: #CD1619;
+							}
+						}
+						&:focus-visible{
+							&:before{
+								border-color: #CD1619;
+							}
+						}
+					}
 			    	&:before{
 			    		border: 2px solid #CD1619;
 			    	}
@@ -507,7 +524,7 @@
 			}
 			&.result_hover{
 				&:hover{
-
+					border-color: #DDDDDD;
 					&:before{
 						border-color: #DDDDDD;
 					}

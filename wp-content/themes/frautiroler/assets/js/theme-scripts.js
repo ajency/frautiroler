@@ -330,9 +330,9 @@ $(".frm_dropzone").on("click", function(){
     var check_selected = component.hasClass('dz-started');
     if(check_selected) {
       clearInterval(checkSelected);
-      $('#frm_error_field_34').hide();
+      $('#frm_error_field_34').addClass('hidden');
     }else{
-      $('#frm_error_field_34').show();
+      $('#frm_error_field_34').removeClass('hidden');
     }
   }, 50);
 })
