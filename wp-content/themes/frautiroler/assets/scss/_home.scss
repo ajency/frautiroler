@@ -139,7 +139,6 @@ body {
 				-moz-transition: min-height $normal-duration-1 $ease-out;
 				-o-transition: min-height $normal-duration-1 $ease-out;
 				transition: min-height $normal-duration-1 $ease-out;
-				transition: all 250ms ease-in-out;
 				@media (max-width: 991px) {
 					min-height: 1040px;
 					width: calc(100% + 110px);
@@ -678,8 +677,6 @@ body {
 			}
 		}
 		&.banner-1 {
-			transition: all 250ms ease-in-out;
-
 			.site-header {
 				.site-navigation {
 					&-wrapper {
@@ -723,10 +720,7 @@ body {
 			}
 		}
 		&.banner-2 {
-			transition: all 250ms ease-in-out;
-
 			.site-container--overlay {
-				transition: all 250ms ease-in-out;
 				background: #f8f400;
 			}
 			.site-header {
@@ -734,17 +728,16 @@ body {
 					.menu-item {
 						a {
 							color: $red;
-							transition: all 250ms ease-in-out;
 						}
 						&:last-child {
 							border: 1px solid transparent;
 							a {
 								background: $red;
 								color: $yellow;
-								transition: all 30ms $ease-out;
+								transition: transform 30ms $ease-out;
 
 								&:hover {
-									transition: all 250ms $ease-out;
+									transition: transform 250ms $ease-out;
 									background: $red-hover;
 								}
 								&:active {
@@ -911,10 +904,7 @@ body {
 			}
 		}
 		&.banner-3 {
-			transition: all 250ms ease-in-out !important;
-
 			.site-container--overlay {
-				transition: all 250ms ease-in-out !important;
 				background: #008d36;
 			}
 			.site-header {
@@ -941,7 +931,7 @@ body {
 						}
 						&:after {
 							background-color: $off-white;
-							transition: all 250ms $ease-out;
+							transition: transform 250ms $ease-out;
 						}
 					}
 				}
