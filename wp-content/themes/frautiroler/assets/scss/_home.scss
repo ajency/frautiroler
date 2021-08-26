@@ -734,7 +734,7 @@ body {
 							a {
 								background: $red;
 								color: $yellow;
-								transition: transform 30ms $ease-out;
+								transition: all 30ms $ease-out;
 
 								&:hover {
 									transition: transform 250ms $ease-out;
