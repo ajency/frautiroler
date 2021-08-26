@@ -1,6 +1,6 @@
 body {
 	&.home {
-		.site-container-wrapper{
+		.site-container-wrapper {
 			.site-container--overlay {
 				min-height: 0vh;
 			}
@@ -118,7 +118,7 @@ body {
 }
 .home {
 	position: relative;
-	.site-container-wrapper{
+	.site-container-wrapper {
 		&.loading {
 			.site-container--overlay {
 				background-color: $pink;
@@ -342,8 +342,8 @@ body {
 									opacity: 1;
 									-webkit-transform: translate3d(0, 0, 0);
 									transform: translate3d(0, 0, 0);
-									transition: all $normal-duration-2 $delay-2 $ease-in-out;
-									-webkit-transition: all $normal-duration-2 $delay-2 $ease-in-out;
+									transition: all $normal-duration-2 $delay-2 ease-in-out !important;
+									-webkit-transition: all $normal-duration-2 $delay-2 ease-in-out !important;
 								}
 								&:nth-child(2) {
 									opacity: 0;
@@ -441,8 +441,8 @@ body {
 								opacity: 1;
 								-webkit-transform: translate3d(0, 0, 0);
 								transform: translate3d(0, 0, 0);
-								transition: all $normal-duration-2 $delay-2 $ease-in-out;
-								-webkit-transition: all $normal-duration-2 $delay-2 $ease-in-out;
+								transition: all $normal-duration-2 $delay-2 ease-in-out !important;
+								-webkit-transition: all $normal-duration-2 $delay-2 ease-in-out !important;
 							}
 							&:nth-child(2) {
 								opacity: 0;
@@ -461,8 +461,8 @@ body {
 								opacity: 1;
 								-webkit-transform: translate3d(0, 0, 0);
 								transform: translate3d(0, 0, 0);
-								transition: all $normal-duration-2 $delay-2 $ease-in-out;
-								-webkit-transition: all $normal-duration-2 $delay-2 $ease-in-out;
+								transition: all $normal-duration-2 $delay-2 ease-in-out !important;
+								-webkit-transition: all $normal-duration-2 $delay-2 ease-in-out !important;
 							}
 							&:nth-child(2) {
 								opacity: 0;
@@ -676,6 +676,8 @@ body {
 			}
 		}
 		&.banner-1 {
+			transition: all 250ms ease-in-out;
+
 			.site-header {
 				.site-navigation {
 					&-wrapper {
@@ -683,10 +685,11 @@ body {
 							a {
 								.logo-block {
 									opacity: 0;
-									transition: opacity 30ms $ease-out;
+									transition: all 30ms ease-in-out !important;
+
 									&.show-logo {
 										opacity: 1;
-										transition: opacity 30ms $ease-out;
+										transition: all 30ms ease-in-out !important;
 									}
 								}
 							}
@@ -701,8 +704,9 @@ body {
 							&-item {
 								&:first-child {
 									opacity: 1;
-									transition: all 30ms $ease-in-out;
-									-webkit-transition: all 30ms $ease-in-out;
+									transition: all 30ms ease-in-out !important;
+
+									-webkit-transition: all 30ms ease-in-out !important;
 								}
 								&:nth-child(2) {
 									opacity: 0;
@@ -717,8 +721,13 @@ body {
 			}
 		}
 		&.banner-2 {
+			transition: all 250ms ease-in-out;
+
 			.site-container--overlay {
+				
+				transition: all 250ms ease-in-out;
 				background: #f8f400;
+
 			}
 			.site-header {
 				.header-menu {
@@ -754,10 +763,11 @@ body {
 							a {
 								.logo-block {
 									opacity: 0;
-									transition: opacity 30ms $ease-out;
+									transition: all 30ms ease-in-out !important;
+
 									&.show-logo {
 										opacity: 1;
-										transition: opacity 30ms $ease-out;
+										transition: all 30ms ease-in-out !important;
 									}
 								}
 							}
@@ -787,8 +797,9 @@ body {
 								}
 								&:nth-child(2) {
 									opacity: 1;
-									transition: all 30ms $ease-in-out;
-									-webkit-transition: all 30ms $ease-in-out;
+									transition: all 30ms ease-in-out !important;
+
+									-webkit-transition: all 30ms ease-in-out !important;
 								}
 								&:nth-child(3) {
 									opacity: 0;
@@ -804,8 +815,9 @@ body {
 							}
 							&:nth-child(2) {
 								opacity: 1;
-								transition: all 30ms $ease-in-out;
-								-webkit-transition: all 30ms $ease-in-out;
+								transition: all 30ms ease-in-out !important;
+
+								-webkit-transition: all 30ms ease-in-out !important;
 							}
 							&:nth-child(3) {
 								opacity: 0;
@@ -817,8 +829,9 @@ body {
 							}
 							&:nth-child(2) {
 								opacity: 1;
-								transition: all 30ms $ease-in-out;
-								-webkit-transition: all 30ms $ease-in-out;
+								transition: all 30ms ease-in-out !important;
+
+								-webkit-transition: all 30ms ease-in-out !important;
 							}
 							&:nth-child(3) {
 								opacity: 0;
@@ -894,15 +907,18 @@ body {
 			}
 		}
 		&.banner-3 {
+			transition: all 250ms ease-in-out !important;
+
 			.site-container--overlay {
 				background: #008d36;
+				transition: all 250ms ease-in-out !important;
 			}
 			.site-header {
 				.header-menu {
 					.menu-item {
 						a {
 							color: $off-white;
-							transition: all 30ms ease-in-out;
+							transition: all 30ms ease-in-out !important;
 						}
 						&:last-child {
 							border: 1px solid transparent;
@@ -931,10 +947,11 @@ body {
 							a {
 								.logo-block {
 									opacity: 0;
-									transition: opacity 30ms $ease-out;
+									transition: all 30ms ease-in-out !important;
+
 									&.show-logo {
 										opacity: 1;
-										transition: opacity 30ms $ease-out;
+										transition: all 30ms ease-in-out !important;
 									}
 								}
 							}
@@ -1011,8 +1028,9 @@ body {
 								}
 								&:nth-child(3) {
 									opacity: 1;
-									transition: all 30ms $ease-in-out;
-									-webkit-transition: all 30ms $ease-in-out;
+									transition: all 30ms ease-in-out !important;
+
+									-webkit-transition: all 30ms ease-in-out !important;
 								}
 							}
 						}
@@ -1028,8 +1046,9 @@ body {
 							}
 							&:nth-child(3) {
 								opacity: 1;
-								transition: all 30ms $ease-in-out;
-								-webkit-transition: all 30ms $ease-in-out;
+								transition: all 30ms ease-in-out !important;
+
+								-webkit-transition: all 30ms ease-in-out !important;
 							}
 						}
 						video {
@@ -1041,8 +1060,9 @@ body {
 							}
 							&:nth-child(3) {
 								opacity: 1;
-								transition: all 30ms $ease-in-out;
-								-webkit-transition: all 30ms $ease-in-out;
+								transition: all 30ms ease-in-out !important;
+
+								-webkit-transition: all 30ms ease-in-out !important;
 							}
 						}
 					}
