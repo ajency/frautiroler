@@ -128,6 +128,14 @@ do_action( 'genesis_after' );
 wp_footer(); // We need this for plugins.
 
 genesis_markup(
+    [
+        'open'    => '</div %s>',
+        'context' => 'site-container-wrapper',
+    ]
+);
+
+
+genesis_markup(
 	[
 		'close'   => '</body>',
 		'context' => 'body',

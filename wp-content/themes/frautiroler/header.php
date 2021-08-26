@@ -61,6 +61,12 @@ genesis_markup(
 		'context' => 'body',
 	]
 );
+genesis_markup(
+	[
+		'open'    => '<div %s>',
+		'context' => 'site-container-wrapper',
+	]
+);
 
 genesis_markup(
 	[
