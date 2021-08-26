@@ -1,11 +1,11 @@
-body{
-	&.home{
-		.site-container--overlay{
+body {
+	&.home {
+		.site-container--overlay {
 			min-height: 0vh;
 		}
-		.wp-block-group{
-			&__inner-container{
-				h1{
+		.wp-block-group {
+			&__inner-container {
+				h1 {
 					font-weight: normal;
 					font-size: 60px;
 					line-height: 72px;
@@ -13,98 +13,99 @@ body{
 					opacity: 0;
 					-webkit-transform: translate3d(0, 24px, 0);
 					transform: translate3d(0, 24px, 0);
-					@media(max-width: 991px){
+					@media (max-width: 991px) {
 						font-size: 24px;
 						line-height: 29px;
 					}
 				}
-				.wp-block-gallery{
-					.blocks-gallery{
-						&-grid{
+				.wp-block-gallery {
+					.blocks-gallery {
+						&-grid {
 							position: relative;
 							height: 420px;
-							@media(max-width: 991px){
-								height: 350px
+							@media (max-width: 991px) {
+								height: 350px;
 							}
-							@media(max-width: 768px){
+							@media (max-width: 768px) {
 								height: 470px;
 							}
-							@media(max-width: 691px){
+							@media (max-width: 691px) {
 								height: 435px;
 							}
-							@media(max-width: 625px){
-								height: 350px
+							@media (max-width: 625px) {
+								height: 350px;
 							}
-							@media(max-width: 475px){
+							@media (max-width: 475px) {
 								height: 330px;
 							}
-							@media(max-width: 425px){
+							@media (max-width: 425px) {
 								height: 290px;
 							}
-							@media(max-width: 382px){
+							@media (max-width: 382px) {
 								height: 230px;
 							}
-						}	
-						&-item{
+						}
+						&-item {
 							position: absolute;
 							left: 0;
 							right: 0;
-							&:first-child{
-								opacity: 0;
-								-webkit-transform: translate3d(0, 48px, 0);
-								transform: translate3d(0, 48px, 0);	
-							}
-							&:nth-child(2){
-								opacity: 0;
-							}
-							&:nth-child(3){
-								opacity: 0;
-							}
-						}
-					}
-				}
-				.desktop-gallery, .mobile-gallery{
-					figure{
-						&:first-child{
+							&:first-child {
 								opacity: 0;
 								-webkit-transform: translate3d(0, 48px, 0);
 								transform: translate3d(0, 48px, 0);
-						}
-						&:nth-child(2){
+							}
+							&:nth-child(2) {
 								opacity: 0;
-						}
-						&:nth-child(3){
+							}
+							&:nth-child(3) {
 								opacity: 0;
+							}
 						}
 					}
-					video{
-						&:first-child{
+				}
+				.desktop-gallery,
+				.mobile-gallery {
+					figure {
+						&:first-child {
 							opacity: 0;
 							-webkit-transform: translate3d(0, 48px, 0);
-							transform: translate3d(0, 48px, 0);	
+							transform: translate3d(0, 48px, 0);
 						}
-						&:nth-child(2){
+						&:nth-child(2) {
 							opacity: 0;
 						}
-						&:nth-child(3){
+						&:nth-child(3) {
+							opacity: 0;
+						}
+					}
+					video {
+						&:first-child {
+							opacity: 0;
+							-webkit-transform: translate3d(0, 48px, 0);
+							transform: translate3d(0, 48px, 0);
+						}
+						&:nth-child(2) {
+							opacity: 0;
+						}
+						&:nth-child(3) {
 							opacity: 0;
 						}
 					}
 				}
-				.wp-block-buttons{
+				.wp-block-buttons {
 					opacity: 0;
 					-webkit-transform: translate3d(0, 24px, 0);
 					transform: translate3d(0, 24px, 0);
-					.wp-block-button{
-						&__link{
-							&:after{
-								content: '';
+					.wp-block-button {
+						&__link {
+							&:after {
+								content: "";
 								width: 0;
 							}
 						}
 					}
 				}
-				p{
+				p {
 					opacity: 0;
 					-webkit-transform: translate3d(0, 24px, 0);
 					transform: translate3d(0, 24px, 0);
@@ -113,10 +114,10 @@ body{
 		}
 	}
 }
-.home{
+.home {
 	position: relative;
-	&.loading{
-		.site-container--overlay{
+	&.loading {
+		.site-container--overlay {
 			background-color: $pink;
 			min-height: 1490px;
 			width: 100%;
@@ -131,131 +132,135 @@ body{
 			right: 0;
 			transform: translate(-20px, 0) rotate(-5deg);
 			-webkit-transform: translate(-70px, 0) rotate(-5deg);
-			-webkit-transition:  min-height $normal-duration-1 $ease-out;
+			-webkit-transition: min-height $normal-duration-1 $ease-out;
 			-moz-transition: min-height $normal-duration-1 $ease-out;
 			-o-transition: min-height $normal-duration-1 $ease-out;
-			transition:  min-height $normal-duration-1 $ease-out;
-			@media(max-width: 991px){
+			transition: min-height $normal-duration-1 $ease-out;
+			@media (max-width: 991px) {
 				min-height: 1040px;
 				width: calc(100% + 110px);
 			}
-			@media(max-width: 767px){
+			@media (max-width: 767px) {
 				min-height: 888px;
 			}
-			@media(max-width: 689px){
+			@media (max-width: 689px) {
 				min-height: 828px;
 			}
-			@media(max-width: 594px){
+			@media (max-width: 594px) {
 				min-height: 818px;
 			}
-			@media(max-width: 540px){
+			@media (max-width: 540px) {
 				min-height: 873px;
 			}
-			@media(max-width: 465px){
+			@media (max-width: 465px) {
 				min-height: 908px;
 			}
-			@media(max-width: 339px){
+			@media (max-width: 339px) {
 				min-height: 950px;
 			}
 		}
 	}
-	.content-sidebar-wrap{
-		.entry{
-		    margin-bottom: 0px;
+	.content-sidebar-wrap {
+		.entry {
+			margin-bottom: 0px;
 		}
-		@media(max-width: 991px){
+		@media (max-width: 991px) {
 			padding: 0 30px;
 		}
 	}
-	.site-header{
-	    min-height: 100%;
-	    background-color: transparent;
-	    box-shadow: none;
-		&--overlay{
+	.site-header {
+		min-height: 100%;
+		background-color: transparent;
+		box-shadow: none;
+		&--overlay {
 			display: none;
 		}
 	}
-	.rounded-btn{
-		.wp-block-button__link{
+	.rounded-btn {
+		.wp-block-button__link {
 			font-size: 20px !important;
-			font-family: 'Myriad-Pro-Regular' !important;
+			font-family: "Myriad-Pro-Regular" !important;
 			font-weight: bold !important;
 			line-height: 17px !important;
-			color: #FFFFFF !important;
+			color: #ffffff !important;
 			position: relative;
-			&:hover{
+			&:hover {
 				transition: background-color $fast-duration $ease-out;
 				background-color: $pink-hover;
 				box-shadow: none !important;
 			}
-			&:active{
+			&:active {
 				transition: background-color $fast-duration $ease-out;
 				background-color: $pink-pressed;
 			}
-			&:focus{
+			&:focus {
 				outline: 0;
 				box-shadow: none !important;
 			}
-			&:focus-visible{
+			&:focus-visible {
 				outline: 0;
 				transition: all $fast-duration $ease-out;
-				&:before{
-				    content: '';
-				    color: #919191;
-				    border: 1px solid;
-				    width: calc(100% + 6px);
-				    height: 100%;
-				    position: absolute;
-				    top: -3px;
-				    left: -3px;
-				    padding: 26px 0;
-				    border-radius: 60px;
+				&:before {
+					content: "";
+					color: #919191;
+					border: 1px solid;
+					width: calc(100% + 6px);
+					height: 100%;
+					position: absolute;
+					top: -3px;
+					left: -3px;
+					padding: 26px 0;
+					border-radius: 60px;
 				}
 			}
-			@media(max-width: 768px){
+			@media (max-width: 768px) {
 				font-size: 16px !important;
-    			line-height: 20px !important;
+				line-height: 20px !important;
 			}
 		}
 	}
-	&.loading{
-		.wp-block-group{
+	&.loading {
+		.wp-block-group {
 			position: relative;
 			z-index: 2;
 			margin-top: 100px;
-			&__inner-container{
-				h1{
+			&__inner-container {
+				h1 {
 					font-weight: normal;
 					font-size: 60px;
 					line-height: 72px;
 					color: $yellow;
 					-webkit-transform: translate3d(0, 0, 0);
-		    		transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
 					opacity: 1;
-					transition: opacity $normal-duration-2 $delay-1 $ease-out, transform $normal-duration-2 $delay-1 $ease-out;
-					-webkit-transition: opacity $normal-duration-2 $delay-1 $ease-out, transform $normal-duration-2 $delay-1 $ease-out;
+					transition: opacity $normal-duration-2 $delay-1 $ease-out,
+						transform $normal-duration-2 $delay-1 $ease-out;
+					-webkit-transition: opacity $normal-duration-2 $delay-1 $ease-out,
+						transform $normal-duration-2 $delay-1 $ease-out;
 					width: 100%;
 					max-width: 900px;
 					margin-bottom: 30px;
-					@media(max-width: 991px){
+					@media (max-width: 991px) {
 						font-size: 24px;
 						line-height: 29px;
 						max-width: 100%;
 						margin-bottom: 15px;
 					}
 				}
-				.wp-block-buttons{
+				.wp-block-buttons {
 					margin-bottom: 40px;
 					opacity: 1;
 					-webkit-transform: translate3d(0, 0, 0);
-		    		transform: translate3d(0, 0, 0);
-		    		transition: opacity $normal-duration-2 $delay-2 $ease-out, transform $normal-duration-2 $delay-2 $ease-out;
-		    		-webkit-transition: opacity $normal-duration-2 $delay-2 $ease-out, transform $normal-duration-2 $delay-2 $ease-out;
-					.wp-block-button{
-						&__link{
-							width:auto !important;
+					transform: translate3d(0, 0, 0);
+					transition: opacity $normal-duration-2 $delay-2 $ease-out,
+						transform $normal-duration-2 $delay-2 $ease-out;
+					-webkit-transition: opacity $normal-duration-2 $delay-2 $ease-out,
+						transform $normal-duration-2 $delay-2 $ease-out;
+					.wp-block-button {
+						&__link {
+							width: auto !important;
 							font-weight: bold;
-							font-family: 'Myriad-Pro-Bold' !important;
+							font-family: "Myriad-Pro-Bold" !important;
 							font-size: 32px;
 							line-height: 38px;
 							color: $yellow;
@@ -263,48 +268,48 @@ body{
 							padding: 0 !important;
 							position: relative;
 							transition: none;
-							&:after{
-								content: '';
+							&:after {
+								content: "";
 								background-color: $yellow;
 								width: 100%;
-								transition:  width $normal-duration-2 $delay-3 !important;
+								transition: width $normal-duration-2 $delay-3 !important;
 								-webkit-transition: width $normal-duration-2 $delay-3 !important;
 								height: 4px;
 								position: absolute;
 								left: 0;
 								right: 0;
 								bottom: 0;
-								@media(max-width: 991px){
+								@media (max-width: 991px) {
 									height: 2px;
 								}
 							}
-							@media(max-width: 991px){
+							@media (max-width: 991px) {
 								font-size: 16px;
 								line-height: 19px;
-							    height: auto;
+								height: auto;
 							}
-							&:hover{
+							&:hover {
 								box-shadow: none;
 								color: $yellow-hover;
-								&:after{
-									background-color: $yellow-hover; 
+								&:after {
+									background-color: $yellow-hover;
 								}
 							}
-							&:active{
+							&:active {
 								color: $yellow-pressed;
-								&:after{
-									background-color: $yellow-pressed; 
+								&:after {
+									background-color: $yellow-pressed;
 								}
 							}
-							&:focus{
+							&:focus {
 								outline: 0;
 								box-shadow: none;
 							}
-							&:focus-visible{
+							&:focus-visible {
 								position: relative;
-								&:before{
-									content: '';
-									color: #DDDDDD;
+								&:before {
+									content: "";
+									color: #dddddd;
 									border: 1px solid;
 									width: calc(100% + 14px);
 									height: 100%;
@@ -320,211 +325,212 @@ body{
 					}
 					margin-bottom: 20px;
 				}
-				.wp-block-gallery{
-					.blocks-gallery{
-						&-item{
-							img{
-						    	height: 399px;
-						    	object-fit: contain;
-						    	@media(max-width: 991px){
-					    		    height: 100%;
-						    	}
+				.wp-block-gallery {
+					.blocks-gallery {
+						&-item {
+							img {
+								height: 399px;
+								object-fit: contain;
+								@media (max-width: 991px) {
+									height: 100%;
+								}
 							}
-							&:first-child{
+							&:first-child {
 								opacity: 1;
 								-webkit-transform: translate3d(0, 0, 0);
 								transform: translate3d(0, 0, 0);
 								transition: all $normal-duration-2 $delay-2 $ease-in-out;
 								-webkit-transition: all $normal-duration-2 $delay-2 $ease-in-out;
 							}
-							&:nth-child(2){
+							&:nth-child(2) {
 								opacity: 0;
 							}
-							&:nth-child(3){
+							&:nth-child(3) {
 								opacity: 0;
 							}
 						}
 					}
-					&.desktop-gallery{
+					&.desktop-gallery {
 						display: block;
-						@media(max-width: 992px){
+						@media (max-width: 992px) {
 							display: none;
 						}
 					}
-					&.mobile-gallery{
+					&.mobile-gallery {
 						display: block;
-						@media(min-width: 991px){
+						@media (min-width: 991px) {
 							display: none;
 						}
 					}
 				}
-				p{
+				p {
 					font-weight: normal;
-					font-family: 'Myriad-Pro-Regular';
+					font-family: "Myriad-Pro-Regular";
 					font-size: 23px;
 					line-height: 36px;
 					color: $yellow;
 					opacity: 1;
 					-webkit-transform: translate3d(0, 0, 0);
-		    		transform: translate3d(0, 0, 0);
-					transition: opacity $normal-duration-2 $delay-3 $ease-out, transform $normal-duration-2 $delay-3 $ease-out;
-					-webkit-transition: opacity $normal-duration-2 $delay-3 $ease-out, transform $normal-duration-2 $delay-3 $ease-out;
+					transform: translate3d(0, 0, 0);
+					transition: opacity $normal-duration-2 $delay-3 $ease-out,
+						transform $normal-duration-2 $delay-3 $ease-out;
+					-webkit-transition: opacity $normal-duration-2 $delay-3 $ease-out,
+						transform $normal-duration-2 $delay-3 $ease-out;
 					width: 100%;
 					max-width: 850px;
 					margin-bottom: 0;
-					@media(max-width: 991px){
+					@media (max-width: 991px) {
 						font-size: 16px;
 						line-height: 26px;
 						max-width: 100%;
 					}
 				}
-				.desktop-gallery{
+				.desktop-gallery {
 					display: block;
 					height: 500px;
 
-					@media(max-width: 991px){
+					@media (max-width: 991px) {
 						display: none;
 					}
 				}
-				.mobile-gallery{
+				.mobile-gallery {
 					display: block;
 					height: 500px;
 
-					@media(min-width: 992px){
+					@media (min-width: 992px) {
 						display: none;
 					}
-					@media(max-width: 991px){
+					@media (max-width: 991px) {
 						margin-bottom: 40px;
 					}
-					@media(max-width: 767px){
+					@media (max-width: 767px) {
 						height: 300px;
 					}
-					@media(max-width: 689px){
+					@media (max-width: 689px) {
 						height: 236px;
 					}
-					@media(max-width: 594px){
+					@media (max-width: 594px) {
 						height: 200px;
 					}
-					@media(max-width: 494px){
+					@media (max-width: 494px) {
 						height: 250px;
 					}
-					@media(max-width: 425px){
+					@media (max-width: 425px) {
 						height: 210px;
 					}
-					@media(max-width: 367px){
+					@media (max-width: 367px) {
 						margin-bottom: 0;
 					}
 				}
-				.desktop-gallery, .mobile-gallery{
+				.desktop-gallery,
+				.mobile-gallery {
 					margin-top: 0px;
-					figure{
-							img{
-								position: absolute;
-								left: 0;
-								right: 0;
-								width: 100% !important;
-								height: auto !important;
-							}
+					figure {
+						img {
+							position: absolute;
+							left: 0;
+							right: 0;
+							width: 100% !important;
+							height: auto !important;
+						}
 
-						&:first-child{
-
+						&:first-child {
 							opacity: 1;
 							-webkit-transform: translate3d(0, 0, 0);
 							transform: translate3d(0, 0, 0);
 							transition: all $normal-duration-2 $delay-2 $ease-in-out;
 							-webkit-transition: all $normal-duration-2 $delay-2 $ease-in-out;
-
 						}
-						&:nth-child(2){
+						&:nth-child(2) {
 							opacity: 0;
 						}
-						&:nth-child(3){
+						&:nth-child(3) {
 							opacity: 0;
 						}
 					}
-					video{
+					video {
 						position: absolute;
 						left: 0;
 						right: 0;
 						width: 100%;
-				
-						&:first-child{
+
+						&:first-child {
 							opacity: 1;
 							-webkit-transform: translate3d(0, 0, 0);
 							transform: translate3d(0, 0, 0);
 							transition: all $normal-duration-2 $delay-2 $ease-in-out;
 							-webkit-transition: all $normal-duration-2 $delay-2 $ease-in-out;
 						}
-						&:nth-child(2){
+						&:nth-child(2) {
 							opacity: 0;
 						}
-						&:nth-child(3){
+						&:nth-child(3) {
 							opacity: 0;
 						}
 					}
 				}
 			}
-			&.has-background{
-			   
-			    padding-left: 15px;
-			    padding-right: 15px;
-			    .wp-block-image, .wp-block-columns{
-			    	width: 100%;
-			    	margin: 0 auto;
-					@media (min-width: 768px){
+			&.has-background {
+				padding-left: 15px;
+				padding-right: 15px;
+				.wp-block-image,
+				.wp-block-columns {
+					width: 100%;
+					margin: 0 auto;
+					@media (min-width: 768px) {
 						max-width: 720px;
 					}
-					@media (min-width: 992px){
+					@media (min-width: 992px) {
 						max-width: 960px;
 					}
-					@media (min-width: 1200px){
+					@media (min-width: 1200px) {
 						max-width: 1050px;
 					}
-					@media (min-width: 1500px){
+					@media (min-width: 1500px) {
 						max-width: 1200px;
 					}
-			    }
-			    .wp-block-columns{
-					.wp-block-column{
-						a{
+				}
+				.wp-block-columns {
+					.wp-block-column {
+						a {
 							color: black;
 							text-decoration: none;
 							position: relative;
 							display: inline-flex;
 							width: auto;
-							&:after{
-								content: '';
+							&:after {
+								content: "";
 								border-bottom: 1px solid #000000;
 								position: absolute;
 								left: 0;
 								right: 0;
 								bottom: 8px;
 							}
-							&:hover{
+							&:hover {
 								transition: color $fast-duration $ease-out, border-color $fast-duration $ease-out;
 								border-color: $pink;
 								color: $pink;
-								&:after{
+								&:after {
 									border-color: $pink;
 								}
 							}
-							&:active{
+							&:active {
 								transition: color $fast-duration $ease-out, border-color $fast-duration $ease-out;
 								border-color: $pink-pressed;
 								color: $pink-pressed;
-								&:after{
+								&:after {
 									border-color: $pink-pressed;
 								}
 							}
-							&:focus{
+							&:focus {
 								outline: 0;
 							}
-							&:focus-visible{
+							&:focus-visible {
 								outline: 0;
 								position: relative;
 								display: inline-block;
-								&:before{
-								    content: '';
+								&:before {
+									content: "";
 									color: #919191;
 									border: 1px solid;
 									width: calc(100% + 10px);
@@ -534,92 +540,91 @@ body{
 									left: -3px;
 									right: 0;
 									border-radius: 4px;
-									@media(max-width: 991px){
+									@media (max-width: 991px) {
 										top: 0;
 									}
 								}
 							}
-							@media(max-width: 991px){
-								&:after{
+							@media (max-width: 991px) {
+								&:after {
 									bottom: 4px;
 								}
 							}
 						}
-						@media(max-width: 991px){
+						@media (max-width: 991px) {
 							width: 275px;
 						}
 					}
-			    	@media(max-width: 991px){
+					@media (max-width: 991px) {
 						flex-wrap: nowrap;
 						display: grid;
 						overflow-x: scroll;
-					    overflow-y: hidden;
+						overflow-y: hidden;
 						grid-gap: 16px;
-					    padding: 40px 0 0 0;
+						padding: 40px 0 0 0;
 						grid-auto-flow: column;
 						width: 100%;
 						display: grid;
 						grid-gap: 30px;
 						grid-auto-flow: column;
-				        grid-auto-columns: auto;
-					    margin: 0 auto -70px;
-					    &::-webkit-scrollbar {
-						    display: none;
-						}				
+						grid-auto-columns: auto;
+						margin: 0 auto -70px;
+						&::-webkit-scrollbar {
+							display: none;
+						}
 					}
-					@media(max-width: 768px){
-		
-						.span-wraper{
-						    width: 20px;
-							.wp-block-column{
+					@media (max-width: 768px) {
+						.span-wraper {
+							width: 20px;
+							.wp-block-column {
 								margin-left: 0px;
 								height: 100%;
 							}
 						}
 					}
-			    }
-			    .wp-block-image{
-			    	@media(min-width: 992px){
-			    		left: -60px;
-		    		}
-			    }
-			    @media(max-width: 991px){
+				}
+				.wp-block-image {
+					@media (min-width: 992px) {
+						left: -60px;
+					}
+				}
+				@media (max-width: 991px) {
 					margin: 0 -14%;
 					padding-left: 32px;
 					padding-right: 32px;
-			    }
-				@media(max-width: 768px){
+				}
+				@media (max-width: 768px) {
 					padding-left: 0px;
 					padding-right: 0px;
-					.wp-block-image:nth-child(2){
+					.wp-block-image:nth-child(2) {
 						margin-left: 55px !important;
 					}
-			    }
-			    @media(min-width: 992px){
-		    	 	margin: 0 -100%;
-			    }
+				}
+				@media (min-width: 992px) {
+					margin: 0 -100%;
+				}
 			}
-			&.marquee{
+			&.marquee {
 				position: relative;
 				margin-top: 20px;
-				.marquee-text{
-					background: #F6F100;
-				    transform: translate(-20px, 0) rotate(-5deg);
-				    -webkit-transform: translate(-20px, 0) rotate(-5deg);
-				    padding: 14px 0 7px;
-				    position: absolute;
-				    left: -32px;
-				    top: 30px;
-				    width: calc(100% + 104px);
-				    cursor: pointer;
-				    margin-top: 0;
-					.wp-block-group__inner-container{
+				.marquee-text {
+					background: #f6f100;
+					transform: translate(-20px, 0) rotate(-5deg);
+					-webkit-transform: translate(-20px, 0) rotate(-5deg);
+					padding: 14px 0 7px;
+					position: absolute;
+					left: -32px;
+					top: 30px;
+					width: calc(100% + 104px);
+					cursor: pointer;
+					margin-top: 0;
+					.wp-block-group__inner-container {
 						display: flex;
 						white-space: nowrap;
 						animation: marquee 30s linear infinite;
-						p{
+						p {
 							font-weight: bold;
-							font-family: 'Myriad-Pro-Bold';
+							font-family: "Myriad-Pro-Bold";
 							color: $pink;
 							font-size: 80px;
 							line-height: 96px;
@@ -628,55 +633,55 @@ body{
 							text-transform: uppercase;
 							white-space: nowrap;
 							padding-left: 5px;
-							@media(max-width: 991px){
+							@media (max-width: 991px) {
 								font-size: 24px;
 								line-height: 29px;
 								padding-left: 5px;
 							}
 						}
 					}
-					&:hover{
-						background: #E8E400;
+					&:hover {
+						background: #e8e400;
 					}
-					&:active{
-						background: #D6D300;
+					&:active {
+						background: #d6d300;
 					}
-					@media(min-width: 992px){
+					@media (min-width: 992px) {
 						transform: translate(-330px, 0) rotate(-5deg);
-	                    -webkit-transform: translate(-330px, 0) rotate(-5deg);
+						-webkit-transform: translate(-330px, 0) rotate(-5deg);
 						margin: 20px -24% 0 -24%;
-					    padding: 20px 0 7px;
-					    position: absolute;
+						padding: 20px 0 7px;
+						position: absolute;
 						width: calc(100% + 1320px);
-					    transition: background 300ms cubic-bezier(0.48, 0.04, 0.25, 1);
-					    cursor: pointer;
-					    top: 100px;
-					    margin-top: 0;
+						transition: background 300ms cubic-bezier(0.48, 0.04, 0.25, 1);
+						cursor: pointer;
+						top: 100px;
+						margin-top: 0;
 					}
-					@media(min-width: 2500px){
+					@media (min-width: 2500px) {
 						transform: translate(-380px, 0) rotate(-5deg);
 						width: calc(120% + 1320px);
 					}
 				}
-				@media(max-width: 991px){
-				    margin-bottom: 90px;
+				@media (max-width: 991px) {
+					margin-bottom: 90px;
 				}
 			}
-			@media(max-width: 991px){
+			@media (max-width: 991px) {
 				margin-top: 40px;
 			}
 		}
 	}
-	&.banner-1{
-		.site-header{
+	&.banner-1 {
+		.site-header {
 			.site-navigation {
-				&-wrapper{
-					.site-logo{
+				&-wrapper {
+					.site-logo {
 						a {
-							.logo-block{
+							.logo-block {
 								opacity: 0;
-								transition: opacity 30ms  $ease-out;
-								&.show-logo{
+								transition: opacity 30ms $ease-out;
+								&.show-logo {
 									opacity: 1;
 									transition: opacity 30ms $ease-out;
 								}
@@ -686,20 +691,20 @@ body{
 				}
 			}
 		}
-		.wp-block-group{
-			&__inner-container{
-				.wp-block-gallery{
-					.blocks-gallery{
-						&-item{
-							&:first-child{
+		.wp-block-group {
+			&__inner-container {
+				.wp-block-gallery {
+					.blocks-gallery {
+						&-item {
+							&:first-child {
 								opacity: 1;
 								transition: all 30ms $ease-in-out;
 								-webkit-transition: all 30ms $ease-in-out;
 							}
-							&:nth-child(2){
+							&:nth-child(2) {
 								opacity: 0;
 							}
-							&:nth-child(3){
+							&:nth-child(3) {
 								opacity: 0;
 							}
 						}
@@ -708,45 +713,45 @@ body{
 			}
 		}
 	}
-	&.banner-2{
-		.site-container--overlay{
-			background: #F8F400;
+	&.banner-2 {
+		.site-container--overlay {
+			background: #f8f400;
 		}
-		.site-header{
-			.header-menu{ 
-				.menu-item{ 
-					a{
+		.site-header {
+			.header-menu {
+				.menu-item {
+					a {
 						color: $red;
 						transition: color 30ms $ease-out;
 					}
-					&:last-child{
-			    		border: 1px solid transparent;
-						a{
-						    background: $red;
-						    color: $yellow;
-						    transition: all 30ms $ease-out;
+					&:last-child {
+						border: 1px solid transparent;
+						a {
+							background: $red;
+							color: $yellow;
+							transition: all 30ms $ease-out;
 
-							&:hover{
+							&:hover {
 								background: $red-hover;
 							}
-							&:active{
+							&:active {
 								background: $red-pressed;
 							}
-					    }
+						}
 					}
-					&:after{
+					&:after {
 						background-color: $red;
 					}
 				}
 			}
 			.site-navigation {
-				&-wrapper{
-					.site-logo{
+				&-wrapper {
+					.site-logo {
 						a {
-							.logo-block{
+							.logo-block {
 								opacity: 0;
 								transition: opacity 30ms $ease-out;
-								&.show-logo{
+								&.show-logo {
 									opacity: 1;
 									transition: opacity 30ms $ease-out;
 								}
@@ -754,96 +759,96 @@ body{
 						}
 					}
 				}
-				.navbar-right{
-					.burger-wrapper{
-						.hamburger{ 
-							.bar{
-    							background: $red;
+				.navbar-right {
+					.burger-wrapper {
+						.hamburger {
+							.bar {
+								background: $red;
 							}
 						}
 					}
 				}
 			}
 		}
-		.wp-block-group{
-			&__inner-container{
-				h1{
+		.wp-block-group {
+			&__inner-container {
+				h1 {
 					color: $red;
 				}
-				.wp-block-gallery{
-					.blocks-gallery{
-						&-item{
-							&:first-child{
+				.wp-block-gallery {
+					.blocks-gallery {
+						&-item {
+							&:first-child {
 								opacity: 0;
 							}
-							&:nth-child(2){
+							&:nth-child(2) {
 								opacity: 1;
 								transition: all 30ms $ease-in-out;
 								-webkit-transition: all 30ms $ease-in-out;
 							}
-							&:nth-child(3){
+							&:nth-child(3) {
 								opacity: 0;
 							}
 						}
 					}
 				}
-				.desktop-gallery, .mobile-gallery{
-					figure{
-						&:first-child{
+				.desktop-gallery,
+				.mobile-gallery {
+					figure {
+						&:first-child {
 							opacity: 0;
 						}
-						&:nth-child(2){
+						&:nth-child(2) {
 							opacity: 1;
 							transition: all 30ms $ease-in-out;
 							-webkit-transition: all 30ms $ease-in-out;
 						}
-						&:nth-child(3){
+						&:nth-child(3) {
 							opacity: 0;
 						}
 					}
-					video{
-	
-						&:first-child{
+					video {
+						&:first-child {
 							opacity: 0;
 						}
-						&:nth-child(2){
+						&:nth-child(2) {
 							opacity: 1;
 							transition: all 30ms $ease-in-out;
 							-webkit-transition: all 30ms $ease-in-out;
 						}
-						&:nth-child(3){
+						&:nth-child(3) {
 							opacity: 0;
 						}
 					}
 				}
-				.wp-block-buttons{
-					.wp-block-button{
-						&__link{
+				.wp-block-buttons {
+					.wp-block-button {
+						&__link {
 							color: $red;
-							&:after{
+							&:after {
 								background-color: $red;
 							}
-							&:hover{
+							&:hover {
 								box-shadow: none;
 								color: $red-hover;
-								&:after{
-									background-color: $red-hover; 
+								&:after {
+									background-color: $red-hover;
 								}
 							}
-							&:active{
+							&:active {
 								color: $red-pressed;
-								&:after{
-									background-color: $red-pressed; 
+								&:after {
+									background-color: $red-pressed;
 								}
 							}
-							&:focus{
+							&:focus {
 								outline: 0;
 								box-shadow: none;
 							}
-							&:focus-visible{
+							&:focus-visible {
 								position: relative;
-								&:before{
-									content: '';
+								&:before {
+									content: "";
 									color: #919191;
 									border: 1px solid;
 									width: calc(100% + 14px);
@@ -859,70 +864,70 @@ body{
 						}
 					}
 				}
-				p{
+				p {
 					color: $red;
 				}
 			}
-			&.marquee{
-				.marquee-text{
+			&.marquee {
+				.marquee-text {
 					background: $red;
-					.wp-block-group__inner-container{
-						p{
+					.wp-block-group__inner-container {
+						p {
 							color: $yellow;
 						}
 					}
-					&:hover{
-						background: #B51316;
+					&:hover {
+						background: #b51316;
 					}
-					&:active{
-						background: #A31214;
+					&:active {
+						background: #a31214;
 					}
 				}
-				@media(max-width: 991px){
-				    margin-bottom: 90px;
+				@media (max-width: 991px) {
+					margin-bottom: 90px;
 				}
 			}
 		}
 	}
-	&.banner-3{
-		.site-container--overlay{
-			background: #008D36;
+	&.banner-3 {
+		.site-container--overlay {
+			background: #008d36;
 		}
-		.site-header{
-			.header-menu{ 
-				.menu-item{ 
-					a{
+		.site-header {
+			.header-menu {
+				.menu-item {
+					a {
 						color: $off-white;
 						transition: color 30ms $ease-out;
 					}
-					&:last-child{
-		    			border: 1px solid transparent;
-						a{
-						    background: $creme;
-						    color: $green;
-						    transition: all 30ms $ease-out;
+					&:last-child {
+						border: 1px solid transparent;
+						a {
+							background: $creme;
+							color: $green;
+							transition: all 30ms $ease-out;
 
-							&:hover{
+							&:hover {
 								background: $creme-hover;
 							}
-							&:active{
+							&:active {
 								background: $creme-pressed;
 							}
-					    }
+						}
 					}
-					&:after{
+					&:after {
 						background-color: $off-white;
 					}
 				}
 			}
 			.site-navigation {
-				&-wrapper{
-					.site-logo{
+				&-wrapper {
+					.site-logo {
 						a {
-							.logo-block{
+							.logo-block {
 								opacity: 0;
 								transition: opacity 30ms $ease-out;
-								&.show-logo{
+								&.show-logo {
 									opacity: 1;
 									transition: opacity 30ms $ease-out;
 								}
@@ -930,52 +935,52 @@ body{
 						}
 					}
 				}
-				.navbar-right{
-					.burger-wrapper{
-						.hamburger{ 
-							.bar{
-    							background: $off-white;
-    							transition: background-color 30ms $ease-out;
+				.navbar-right {
+					.burger-wrapper {
+						.hamburger {
+							.bar {
+								background: $off-white;
+								transition: background-color 30ms $ease-out;
 							}
 						}
 					}
 				}
 			}
 		}
-		.wp-block-group{
-			&__inner-container{
-				h1{
+		.wp-block-group {
+			&__inner-container {
+				h1 {
 					color: $off-white;
 				}
-				.wp-block-buttons{
-					.wp-block-button{
-						&__link{
+				.wp-block-buttons {
+					.wp-block-button {
+						&__link {
 							color: $off-white;
-							&:after{
+							&:after {
 								background-color: $off-white;
 							}
-							&:hover{
+							&:hover {
 								box-shadow: none;
 								color: $creme-hover;
-								&:after{
-									background-color: $creme-hover; 
+								&:after {
+									background-color: $creme-hover;
 								}
 							}
-							&:active{
+							&:active {
 								color: $creme-pressed;
-								&:after{
-									background-color: $creme-pressed; 
+								&:after {
+									background-color: $creme-pressed;
 								}
 							}
-							&:focus{
+							&:focus {
 								outline: 0;
 								box-shadow: none;
 							}
-							&:focus-visible{
+							&:focus-visible {
 								position: relative;
-								&:before{
-									content: '';
-									color: #DDDDDD;
+								&:before {
+									content: "";
+									color: #dddddd;
 									border: 1px solid;
 									width: calc(100% + 14px);
 									height: 100%;
@@ -990,16 +995,16 @@ body{
 						}
 					}
 				}
-				.wp-block-gallery{
-					.blocks-gallery{
-						&-item{
-							&:first-child{
+				.wp-block-gallery {
+					.blocks-gallery {
+						&-item {
+							&:first-child {
 								opacity: 0;
 							}
-							&:nth-child(2){
+							&:nth-child(2) {
 								opacity: 0;
 							}
-							&:nth-child(3){
+							&:nth-child(3) {
 								opacity: 1;
 								transition: all 30ms $ease-in-out;
 								-webkit-transition: all 30ms $ease-in-out;
@@ -1007,236 +1012,233 @@ body{
 						}
 					}
 				}
-				.desktop-gallery, .mobile-gallery{
-					figure{
-	
-						&:first-child{
+				.desktop-gallery,
+				.mobile-gallery {
+					figure {
+						&:first-child {
 							opacity: 0;
 						}
-						&:nth-child(2){
+						&:nth-child(2) {
 							opacity: 0;
 						}
-						&:nth-child(3){
+						&:nth-child(3) {
 							opacity: 1;
 							transition: all 30ms $ease-in-out;
 							-webkit-transition: all 30ms $ease-in-out;
 						}
 					}
-					video{
-	
-						&:first-child{
+					video {
+						&:first-child {
 							opacity: 0;
 						}
-						&:nth-child(2){
+						&:nth-child(2) {
 							opacity: 0;
 						}
-						&:nth-child(3){
+						&:nth-child(3) {
 							opacity: 1;
 							transition: all 30ms $ease-in-out;
 							-webkit-transition: all 30ms $ease-in-out;
 						}
 					}
 				}
-				p{
+				p {
 					color: $off-white;
 				}
 			}
-			&.marquee{
-				.marquee-text{
+			&.marquee {
+				.marquee-text {
 					background: $off-white;
-					.wp-block-group__inner-container{
-						p{
+					.wp-block-group__inner-container {
+						p {
 							color: $green;
 						}
 					}
-					&:hover{
-						background: #F5EFBF;
+					&:hover {
+						background: #f5efbf;
 					}
-					&:active{
-						background: #E8E3B5;
+					&:active {
+						background: #e8e3b5;
 					}
 				}
-				@media(max-width: 991px){
-				    margin-bottom: 90px;
+				@media (max-width: 991px) {
+					margin-bottom: 90px;
 				}
 			}
 		}
 	}
-	.wp-block-button{
-		&__link{
+	.wp-block-button {
+		&__link {
 			padding: 17px 27px 14px !important;
 			border-radius: 60px !important;
-			font-family: 'Myriad-Pro-Regular' !important;
-			@media(max-width: 768px){
-    			width: 170px !important;
+			font-family: "Myriad-Pro-Regular" !important;
+			@media (max-width: 768px) {
+				width: 170px !important;
 				height: 55px;
 			}
 		}
 	}
-	.wp-block-image{
+	.wp-block-image {
 		position: relative;
-		img{
-			@media(max-width: 991px){
-			    width: 228px;
-			    height: 115px;
+		img {
+			@media (max-width: 991px) {
+				width: 228px;
+				height: 115px;
 			}
 		}
-		figcaption{
+		figcaption {
 			font-size: 60px;
 			line-height: 72px;
 			color: #000000;
 			margin: 0;
-		    position: absolute;
-		    top: 100px;
-		    left: 50px;
-		    @media(max-width: 991px){
+			position: absolute;
+			top: 100px;
+			left: 50px;
+			@media (max-width: 991px) {
 				font-size: 32px;
 				line-height: 40px;
 				top: 50px;
-    			left: 28px;
-		    }
+				left: 28px;
+			}
 		}
-		&.is-style-default{
-			figure.aligncenter{
+		&.is-style-default {
+			figure.aligncenter {
 				position: absolute;
-			    bottom: 5px;
+				bottom: 5px;
 				left: 0;
 				right: 0;
 				text-align: center;
 				margin: auto;
 				display: block;
-				img{
-					@media(max-width: 991px){
+				img {
+					@media (max-width: 991px) {
 						height: auto;
 						width: 120px;
 					}
 				}
-				@media(min-width: 991px){
-				    left: 9%;
+				@media (min-width: 991px) {
+					left: 9%;
 				}
 			}
-			@media(max-width: 991px){
-			    height: 320px;
-			    bottom: 20px;
-			    z-index: -1;
+			@media (max-width: 991px) {
+				height: 320px;
+				bottom: 20px;
+				z-index: -1;
 			}
 		}
 	}
-	h2{
-		code{
+	h2 {
+		code {
 			position: relative;
-		    background: white;
-			font-family: 'Myriad-Pro-Regular';
-		    &:after{
-		    	content: '';
-		    	background-image: url('../img/line-underline.png');
-			    background-size: cover;
-			    background-repeat: no-repeat;
-			    width: 275px;
-			    height: 12px;
-			    position: absolute;
-			    left: 0px;
-			    bottom: -3px;
-			    @media(max-width: 991px){
-				    background-size: contain;
-				    background-repeat: no-repeat;
-				    width: 150px;
-				    position: absolute;
-				    top: 32px;
-				    left: 0px;
-				    bottom: -2px;
-			    }
-		    }
-		}	
+			background: white;
+			font-family: "Myriad-Pro-Regular";
+			&:after {
+				content: "";
+				background-image: url("../img/line-underline.png");
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 275px;
+				height: 12px;
+				position: absolute;
+				left: 0px;
+				bottom: -3px;
+				@media (max-width: 991px) {
+					background-size: contain;
+					background-repeat: no-repeat;
+					width: 150px;
+					position: absolute;
+					top: 32px;
+					left: 0px;
+					bottom: -2px;
+				}
+			}
+		}
 	}
-	.wp-block-columns{
+	.wp-block-columns {
 		margin-bottom: 0;
-		background: #F8F8F8;
+		background: #f8f8f8;
 		padding-bottom: 300px;
 
-		.wp-block-column{
+		.wp-block-column {
 			background-color: white;
 			padding: 0 30px 0px;
 			height: auto;
 
-			h4{
-				font-family: 'Myriad-Pro-Bold';
+			h4 {
+				font-family: "Myriad-Pro-Bold";
 				font-weight: bold;
 				font-size: 40px;
 				line-height: 48px;
 				color: #000000;
 				margin-top: 0px;
 				margin-bottom: 24px;
-				@media( max-width: 991px){
+				@media (max-width: 991px) {
 					font-size: 24px;
 					line-height: 29px;
 				}
 			}
-			p{
-				font-family: 'Myriad-Pro-Regular';
+			p {
+				font-family: "Myriad-Pro-Regular";
 				font-size: 23px;
 				line-height: 36px;
 				color: #000000;
 				margin-bottom: 30px;
-				@media(max-width: 991px){
+				@media (max-width: 991px) {
 					font-size: 16px;
 					line-height: 26px;
 				}
 			}
-			.wp-block-image{
+			.wp-block-image {
 				height: 75px;
 				position: relative;
 				margin-bottom: 0;
-				.alignright{
-				    margin-bottom: 0;
-				    position: absolute;
-				    top: -65px;
-				    z-index: 3;
-				    right: 0;
-					img{
+				.alignright {
+					margin-bottom: 0;
+					position: absolute;
+					top: -65px;
+					z-index: 3;
+					right: 0;
+					img {
 						height: 100px;
 						width: auto;
-						@media(max-width: 991px){
+						@media (max-width: 991px) {
 							height: auto;
 							width: 80px;
 						}
 					}
-					@media(max-width: 991px){
+					@media (max-width: 991px) {
 						top: -100px;
 					}
-					@media(min-width: 992px){
+					@media (min-width: 992px) {
 						right: -50px;
 					}
 				}
-				
-				@media(max-width: 991px){
+
+				@media (max-width: 991px) {
 					height: auto;
 				}
 			}
-			@media(max-width: 991px){
+			@media (max-width: 991px) {
 				padding: 60px 30px 1px;
 				max-width: 275px;
 			}
 		}
-
 	}
-	section{
-		&.wp-block-group{
-			background: #F8F8F8;
-
+	section {
+		&.wp-block-group {
+			background: #f8f8f8;
 		}
 	}
-	.wp-block-spacer{
-		@media(max-width: 991px){
+	.wp-block-spacer {
+		@media (max-width: 991px) {
 			height: 64px !important;
 		}
 	}
-	#dieRegeln{
+	#dieRegeln {
 		outline: none !important;
 	}
-	.content{
+	.content {
 		background-color: transparent !important;
-		@media (max-width: 768px){
+		@media (max-width: 768px) {
 			padding-left: 0px;
 			padding-right: 0px;
 		}
