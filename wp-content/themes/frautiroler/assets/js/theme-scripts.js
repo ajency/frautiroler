@@ -11,7 +11,7 @@ $('#button').click(function(){
 $('#button2').click(function(){
     $(".post-content-right .wp_ulike_btn").click();
 })
-$('body').addClass('loading');
+$('body .site-container-wrapper').addClass('loading');
 $(document).ready(function () {
   $('body').removeClass('overflow-hidden');
   if($('.frm_forms').hasClass('frm_message')){
@@ -130,7 +130,7 @@ $(document).ready(function(){
 
 
   window.addEventListener("load", function() {
-    const ele = $('body.home');
+    const ele = $('body.home .site-container-wrapper');
     let cnt = 1;
     setInterval(function() {
       ele.removeClass("banner-" + cnt);
@@ -138,12 +138,12 @@ $(document).ready(function(){
       if (cnt > 3) cnt = 1;
       ele.addClass("banner-" + cnt);
     }, 6000);
-    var currentDiv = $(".home #logo-1");
+    var currentDiv = $(".home .site-container-wrapper #logo-1");
     var nextDiv, count = 1;
     var myInterval = setInterval(function() {
     if (count == 3) {
       currentDiv.removeClass('show-logo');
-      currentDiv = $(".home #logo-1");
+      currentDiv = $(".home .site-container-wrapper #logo-1");
       currentDiv.addClass('show-logo');
       count = 1;
     } else {

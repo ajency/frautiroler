@@ -285,7 +285,7 @@ h2{
 		}
 	}
 }
-body:not(.home){
+body:not(.home .site-container-wrapper){
 	.banner-1--logo{
 		display: block;
 		opacity: 1 !important;
