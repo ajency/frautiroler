@@ -210,7 +210,7 @@ i {
                         @media (max-width: 768px) {
                             height: 55px !important;
                             width: 209px !important;
-                            font-family: "Myriad-Pro-Bold";
+                            font-family: "Myriad-Pro-Bold" !important;
                             font-size: 16px;
                             line-height: 19px;
                         }
@@ -553,7 +553,7 @@ i {
     text-decoration: none;
     width: 133px;
     height: 55px;
-    font-family: "Myriad-Pro-Bold";
+    font-family: "Myriad-Pro-Bold" !important;
     line-height: 55px;
     font-size: 16px;
 
@@ -677,7 +677,7 @@ i {
     height: 53px;
     font-size: 16px;
     line-height: 19px;
-    font-family: "Myriad-Pro-Bold";
+    font-family: "Myriad-Pro-Bold" !important;
     width: 100%;
     border-radius: 0px;
     position: fixed;
