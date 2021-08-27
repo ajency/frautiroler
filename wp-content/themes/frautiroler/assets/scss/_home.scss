@@ -728,7 +728,6 @@ body {
 					.menu-item {
 						a {
 							color: $red;
-							transition: all 30ms $ease-out;
 						}
 						&:last-child {
 							border: 1px solid transparent;
@@ -912,8 +911,7 @@ body {
 					.menu-item {
 						a {
 							color: $off-white;
-							transition: all 30ms ease-in-out !important;
-							transition: all 30ms $ease-out;
+							transition: transform 250ms $ease-out;
 						}
 						&:last-child {
 							border: 1px solid transparent;
