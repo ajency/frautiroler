@@ -728,13 +728,13 @@ body {
 					.menu-item {
 						a {
 							color: $red;
+							transition: all 30ms $ease-out;
 						}
 						&:last-child {
 							border: 1px solid transparent;
 							a {
 								background: $red;
 								color: $yellow;
-								transition: all 30ms $ease-out;
 
 								&:hover {
 									transition: transform 250ms $ease-out;
@@ -913,16 +913,18 @@ body {
 						a {
 							color: $off-white;
 							transition: all 30ms ease-in-out !important;
+							transition: all 30ms $ease-out;
 						}
 						&:last-child {
 							border: 1px solid transparent;
 							a {
 								background: $creme;
 								color: $green;
-								transition: all 30ms $ease-out;
+							
 
 								&:hover {
 									background: $creme-hover;
+									transition: transform 250ms $ease-out;
 								}
 								&:active {
 									background: $creme-pressed;
