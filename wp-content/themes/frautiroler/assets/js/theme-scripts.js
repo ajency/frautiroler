@@ -349,3 +349,4 @@ $(".project-votes").hover(
         $('.project-item').removeClass("trasit-scale");
     }
 );
+console.log('hello');
