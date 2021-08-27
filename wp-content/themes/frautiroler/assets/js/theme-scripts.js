@@ -137,7 +137,7 @@ $(document).ready(function(){
       cnt++;
       if (cnt > 3) cnt = 1;
       ele.addClass("banner-" + cnt);
-    }, 20000);
+    }, 6000);
     var currentDiv = $(".home .site-container-wrapper #logo-1");
     var nextDiv, count = 1;
     var myInterval = setInterval(function() {
