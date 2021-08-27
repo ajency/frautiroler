@@ -1,9 +1,10 @@
-.project-list, .alm-reveal{
+.project-list,
+.alm-reveal {
     display: flex;
     flex-wrap: wrap;
     margin-left: -16px;
     margin-right: -16px;
-    .project-item{
+    .project-item {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
         width: 100%;
@@ -13,23 +14,23 @@
         margin-bottom: 74px;
         text-align: left;
 
-        @media only screen and (max-width: 768px){
+        @media only screen and (max-width: 768px) {
             flex: 0 0 100%;
             max-width: 100%;
             margin-bottom: 48px;
         }
-    
-        .project-image{
+
+        .project-image {
             overflow: hidden !important;
             position: relative !important;
             height: 254px;
-            img{
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 transition: transform $normal-duration-2 $ease-out !important;
             }
-            .overlay{
+            .overlay {
                 height: 100%;
                 width: 100%;
                 background-color: black;
@@ -38,115 +39,110 @@
                 opacity: 0%;
                 transition: opacity $normal-duration-2 $ease-out;
             }
+            @media screen and (min-width: 992px) {
+                &:hover > .project-image img {
+                    transform: scale(1.05);
+                }
+                &:hover > .project-image .overlay {
+                    opacity: 10%;
+                }
+
+                &:active > .project-image img {
+                    transform: scale(1.07);
+                }
+                &:active > .project-image .overlay {
+                    opacity: 10%;
+                }
+            }
         }
-        .project-title{
+        .project-title {
             margin-top: 24px;
             margin-bottom: 12px;
             font-style: normal;
-            font-family: 'Myriad-Pro-Bold';
+            font-family: "Myriad-Pro-Bold";
             font-size: 32px;
             line-height: 38px;
             text-decoration: none !important;
             color: #000000;
-    
-            a{
+
+            a {
                 text-decoration: none !important;
                 color: #000000;
                 outline: none !important;
             }
-            @media(max-width: 991px){
+            @media (max-width: 991px) {
                 font-size: 24px;
                 line-height: 29px;
             }
         }
-        .project-description{
-            font-family: 'Myriad-Pro-Regular';
-            a:nth-child(1){
-    
+        .project-description {
+            font-family: "Myriad-Pro-Regular";
+            a:nth-child(1) {
                 text-decoration: none;
                 color: black !important;
                 outline: none !important;
-    
-                &:hover{
+
+                &:hover {
                     text-decoration: none;
                     color: black !important;
                 }
             }
-            p{
+            p {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 0;
                 align-items: flex-start;
-    
-                a{
-    
+
+                a {
                     text-decoration: none;
                     color: black !important;
-    
-                    &:hover{
+
+                    &:hover {
                         text-decoration: none;
                         color: black !important;
                     }
                 }
-    
-                @media(max-width: 991px){
+
+                @media (max-width: 991px) {
                     font-size: 16px;
                     line-height: 26px;
                 }
             }
-           a.read-more-link{
-                margin-top:19px;
-                font-family: 'Myriad-Pro-Bold' !important;
+            a.read-more-link {
+                margin-top: 19px;
+                font-family: "Myriad-Pro-Bold" !important;
                 font-size: 16px;
                 line-height: 19px;
                 width: auto;
                 padding: 3px 0px 5px;
 
-                span{
+                span {
                     color: #000000;
-                    font-family: 'Myriad-Pro-Bold' !important;
+                    font-family: "Myriad-Pro-Bold" !important;
                     border-bottom-width: 2px;
                     transition: color $fast-duration $ease-out, border $fast-duration $ease-out;
                 }
-
             }
         }
 
-        @media screen and (min-width: 992px) {
-            &:hover >.project-image img{
-                transform: scale(1.05);
-            }
-            &:hover >.project-image .overlay{
-                opacity: 10%;
-            }
-            
-            &:active >.project-image img{
-                transform: scale(1.07);
-            }
-            &:active >.project-image .overlay{
-                opacity: 10%;
-            }
-        }
-        
-        
-        &:hover >.read-more-link{
+        &:hover > .read-more-link {
             color: $pink !important;
         }
-        &:hover > .project-description a.read-more-link{
-            span{
+        &:hover > .project-description a.read-more-link {
+            span {
                 border-bottom-color: $pink;
-                color:$pink !important;
+                color: $pink !important;
             }
         }
-        &:active > .project-description a.read-more-link{
-            span{
-                color:$pink-pressed !important;
+        &:active > .project-description a.read-more-link {
+            span {
+                color: $pink-pressed !important;
                 border-bottom-color: $pink-pressed;
             }
         }
-        &:focus-visible > .project-description a.read-more-link{
-            span{
-                color:#000000;
+        &:focus-visible > .project-description a.read-more-link {
+            span {
+                color: #000000;
                 border-bottom-color: #000000;
             }
         }
@@ -154,7 +150,7 @@
 }
 /*votes*/
 
-.project-votes{
+.project-votes {
     position: absolute;
     top: 19px;
     right: 40px;
@@ -165,26 +161,25 @@
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.08em;
-    font-family: 'Myriad-Pro-Bold' !important;
+    font-family: "Myriad-Pro-Bold" !important;
     cursor: pointer;
-    
-    @media only screen and (max-width: 768px){
+
+    @media only screen and (max-width: 768px) {
         top: 9px;
         right: 25px;
     }
-    
-    &:hover .heart{
+
+    &:hover .heart {
         color: $pink-hover;
         transition: color $normal-duration-2 $ease-out;
     }
-    &:active .heart{
+    &:active .heart {
         color: $pink-pressed;
         transition: color $normal-duration-2 $ease-out;
     }
-    .heart{
+    .heart {
         color: $pink;
         margin-left: 2px;
-
     }
 }
 
@@ -193,18 +188,18 @@
 .tooltip:before {
     content: attr(data-content);
     display: block;
-    background-color:$pink;
+    background-color: $pink;
     border-radius: 3px;
-    padding:10px;
+    padding: 10px;
     color: white;
     font-size: 12px;
     font-size: 14px;
     line-height: 17px;
-    font-family: 'Myriad-Pro-Regular';
+    font-family: "Myriad-Pro-Regular";
     letter-spacing: normal;
-  }
+}
 .tooltip:after {
-    content: '';
+    content: "";
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 8px solid $pink;
@@ -213,9 +208,9 @@
     display: block;
     margin-top: 36.5px;
     margin-left: 35px;
-  }
-  .tooltip:before,
-  .tooltip:after {
+}
+.tooltip:before,
+.tooltip:after {
     top: -50px;
     left: -10px;
     position: absolute;
@@ -226,73 +221,89 @@
 .project-votes:hover.tooltip:before,
 .project-votes:hover.tooltip:after {
     opacity: 1;
-    @media(max-width: 991px){
+    @media (max-width: 991px) {
         opacity: 0;
     }
 }
 
 /* heart animation */
 
-.project-votes{
-
-    &:hover .heart1{
+.project-votes {
+    &:hover .heart1 {
         background-position: right;
     }
 
-	.heart1{
-		margin: 0 auto;
-		background: url('https://frautiroler.svr.fm/wp-content/uploads/2021/08/heart-sequence.png');
-		width: 60px;
-		height: 60px;
-		background-repeat: no-repeat;
-		position: absolute;
-		top: -8px;
-		left: 19px;
-	}
-	.animated-heart {
-		animation-name: moveHeart;
-		animation-duration: .8s;
-		animation-iteration-count: 1;
-		animation-timing-function: steps(28);
-		animation-fill-mode: forwards;
-	  }
-	  @keyframes moveHeart {
-		0% { background-position: left; }
-		50% { background-position: right; }
-		100% { background-position: right; }
-	}
-	.click-heart {
-		cursor: pointer;
-    }    
+    .heart1 {
+        margin: 0 auto;
+        background: url("https://frautiroler.svr.fm/wp-content/uploads/2021/08/heart-sequence.png");
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -8px;
+        left: 19px;
+    }
+    .animated-heart {
+        animation-name: moveHeart;
+        animation-duration: 0.8s;
+        animation-iteration-count: 1;
+        animation-timing-function: steps(28);
+        animation-fill-mode: forwards;
+    }
+    @keyframes moveHeart {
+        0% {
+            background-position: left;
+        }
+        50% {
+            background-position: right;
+        }
+        100% {
+            background-position: right;
+        }
+    }
+    .click-heart {
+        cursor: pointer;
+    }
 }
-
 
 /* heart button size */
-.wpulike-robeen .wp_ulike_btn:after{
+.wpulike-robeen .wp_ulike_btn:after {
     transform: translateX(-50%) translateY(-50%) scale(0.6) !important;
-    background: url('https://frautiroler.svr.fm/wp-content/uploads/2021/08/heart-sequence.png') no-repeat;
+    background: url("https://frautiroler.svr.fm/wp-content/uploads/2021/08/heart-sequence.png") no-repeat;
 }
-.wpulike-robeen .wp_ulike_btn{
-    &:focus-visible{
+.wpulike-robeen .wp_ulike_btn {
+    &:focus-visible {
         outline: none !important;
     }
 }
 
 /* heart beat animation */
-.wpulike-robeen .wp_ulike_btn{
+.wpulike-robeen .wp_ulike_btn {
     animation: 2.5s ease 0s normal none infinite running animateHeart;
 
-/*     &:hover:after{
+    /*     &:hover:after{
         background-position: right !important;
     } */
 }
 /* keyframes */
 
 @keyframes animateHeart {
-    0% {transform: scale(1); } 
-    5% {transform: scale(1.2); } 
-    10% {transform: scale(1.1); } 
-    15% {transform: scale(1.3); } 
-    50% {transform: scale(1); } 
-    100% {transform: scale(1); } 
+    0% {
+        transform: scale(1);
+    }
+    5% {
+        transform: scale(1.2);
+    }
+    10% {
+        transform: scale(1.1);
+    }
+    15% {
+        transform: scale(1.3);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
