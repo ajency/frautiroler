@@ -344,3 +344,9 @@ $(".project-title,.project-description").hover(
 $(".project-item").mouseleave(function(){
     $('.project-image').removeClass("trasit-scale");
   });
+  
+  $(".project-votes").hover(
+    function() {
+        $('.project-image').removeClass("trasit-scale");
+    }
+  );
