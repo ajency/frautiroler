@@ -2,6 +2,13 @@
 
     .process-block{
         background-color: #F8F8F8 !important;
+
+        &:before{
+            @media (min-width:1441px){
+                top: -115px !important;
+                height: 240px !important;
+            }
+        }
     }
 
     header{
