@@ -336,3 +336,8 @@ $(".frm_dropzone").on("click", function(){
     }
   }, 50);
 })
+$(".project-title").hover(
+  function() {
+      $('.project-image').addClass("trasit-scale");
+  }
+);
