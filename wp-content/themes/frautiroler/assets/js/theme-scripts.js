@@ -336,3 +336,16 @@ $(".frm_dropzone").on("click", function(){
     }
   }, 50);
 })
+$(".project-title,.project-description").hover(
+    function() {
+        $(this).parents(".project-item").addClass("trasit-scale");
+    }
+  );
+  $(".project-item").mouseleave(function() {
+      $('.project-item').removeClass("trasit-scale");
+  });
+$(".project-votes").hover(
+    function() {
+        $('.project-item').removeClass("trasit-scale");
+    }
+);
