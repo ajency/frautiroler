@@ -39,20 +39,19 @@
                 opacity: 0%;
                 transition: opacity $normal-duration-2 $ease-out;
             }
-            @media screen and (min-width: 992px) {
-                &:hover > .project-image img {
-                    transform: scale(1.05);
-                }
-                &:hover > .project-image .overlay {
-                    opacity: 10%;
-                }
 
-                &:active > .project-image img {
-                    transform: scale(1.07);
-                }
-                &:active > .project-image .overlay {
-                    opacity: 10%;
-                }
+            &:hover > img {
+                transform: scale(1.05);
+            }
+            &:hover > .overlay {
+                opacity: 10%;
+            }
+
+            &:active > img {
+                transform: scale(1.07);
+            }
+            &:active > .overlay {
+                opacity: 10%;
             }
         }
         .project-title {
