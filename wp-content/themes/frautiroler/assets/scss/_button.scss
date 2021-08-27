@@ -75,7 +75,7 @@ canvas {
 	width: 200px;
 	-webkit-tap-highlight-color: transparent;
 	z-index: 1;
-	
+
 	font-family: "Myriad-Pro-Bold" !important;
 	&::before {
 		background: $pink;
@@ -238,8 +238,7 @@ canvas {
 	}
 }
 #button2 {
-	
-                            font-family: "Myriad-Pro-Bold" !important;
+	font-family: "Myriad-Pro-Bold" !important;
 	.loadingMessage {
 		svg {
 			fill: $pink;
@@ -460,3 +459,4 @@ canvas {
 	transform: translateY(-1em);
 	display: none;
 }
+
