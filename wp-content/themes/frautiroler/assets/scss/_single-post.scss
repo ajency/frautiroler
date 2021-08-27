@@ -207,10 +207,11 @@ i {
                     }
 
                     #button {
+                        
+                        font-family: "Myriad-Pro-Bold" !important;
                         @media (max-width: 768px) {
                             height: 55px !important;
                             width: 209px !important;
-                            font-family: "Myriad-Pro-Bold" !important;
                             font-size: 16px;
                             line-height: 19px;
                         }
