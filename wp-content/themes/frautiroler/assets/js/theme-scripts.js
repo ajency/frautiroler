@@ -341,9 +341,17 @@ $(".project-title,.project-description").hover(
         $(this).parents(".project-item").addClass("trasit-scale");
     }
   );
+  $(".project-title,.project-description").mousedown(
+    function() {
+        $(this).parents(".project-item").addClass("trasit-active");
+    }
+  );
   $(".project-item").mouseleave(function() {
       $('.project-item').removeClass("trasit-scale");
   });
+  $(".project-item").mouseleave(function() {
+    $('.project-item').removeClass("trasit-active");
+});
 $(".project-votes").hover(
     function() {
         $('.project-item').removeClass("trasit-scale");
