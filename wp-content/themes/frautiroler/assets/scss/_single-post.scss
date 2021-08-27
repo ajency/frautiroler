@@ -664,6 +664,7 @@ i {
         img{
             max-height: 75vh !important;
             width: 100% !important;
+            object-fit: contain !important;
         }
     }
 }
