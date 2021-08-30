@@ -281,10 +281,9 @@
     animation: 2.5s ease 0s normal none infinite running animateHeart;
     transition: transform $fast-duration $ease-in;
 
-    &:hover:after{
-        /* background-position: right !important; */
+    &:hover{
         animation: none !important;
-        transform: scale(0.8);
+        transform: scale(0.8) !important;
     }
 }
 /* keyframes */
