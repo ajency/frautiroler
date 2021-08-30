@@ -105,7 +105,7 @@ get_header();
                 <div class="empty-state">
                     <div class="left-section">
                         <h1 class="section-title">Aktuell wurden noch keine Projekte eingereicht.</h1>
-                        <p class="subtitle">Hier findest du alle Informationen zu den <a href="<?php echo get_site_url(); ?>/teilnahmebedingungen/">Teilnahmebedinungen</a> und <a href="<?php echo get_site_url(); ?>/#dieRegeln">Regeln</a>. Wir freuen uns auf deine Einreichung.</p>
+                        <p class="subtitle">Hier findest du alle Informationen zu den <a href="<?php echo get_site_url(); ?>/teilnahmebedingungen/">Teilnahmebedingungen</a> und <a href="<?php echo get_site_url(); ?>/#dieRegeln">Regeln</a>. Wir freuen uns auf deine Einreichung.</p>
                         <a class="text-link-large" href="<?php echo get_site_url(); ?>/projekt-einreichen/">Jetzt einreichen</a>
                     </div>
                     <div class="right-section">
