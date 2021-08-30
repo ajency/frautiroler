@@ -279,10 +279,13 @@
 /* heart beat animation */
 .wpulike-robeen .wp_ulike_btn {
     animation: 2.5s ease 0s normal none infinite running animateHeart;
+    transition: transform $fast-duration $ease-in;
 
-    /*     &:hover:after{
-        background-position: right !important;
-    } */
+    &:hover:after{
+        /* background-position: right !important; */
+        animation: none !important;
+        transform: scale(0.8);
+    }
 }
 /* keyframes */
 
