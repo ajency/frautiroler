@@ -238,7 +238,6 @@ i {
                         font-size: 100px;
                         line-height: 120px;
                         color: #000000;
-                        padding: 0px !important;
 
                         @media (max-width: 767px) {
                             display: none;
@@ -405,6 +404,9 @@ i {
         .wp_ulike_put_image.wp_ulike_btn_is_active:after{
             filter: none !important;
         }
+    }
+    .content-first .project-votes .count-box {
+        padding: 0px !important;
     }
 }
 
