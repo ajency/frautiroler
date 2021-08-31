@@ -1268,3 +1268,17 @@ body {
 		}
 	}
 }
+
+/* Safari */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+  :not(#safari) { 
+		.desktop-gallery{
+			.wp-block-group__inner-container{
+				video{
+					background-image: none !important;
+				}
+			}
+		}
+	}
+}
