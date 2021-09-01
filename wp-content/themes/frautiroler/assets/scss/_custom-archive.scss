@@ -6,12 +6,14 @@
         &.display-mobile{
             .marquee3k{
                 background-image: url("data:image/svg+xml,%3Csvg width='2191' height='151' viewBox='0 0 2191 151' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.634521' y='0.487503' width='2189.39' height='150' fill='%23F8F400'/%3E%3C/svg%3E") !important;
-
+                background-color: transparent !important;
                 &:hover{
                     background-image: url("data:image/svg+xml,%3Csvg width='2191' height='151' viewBox='0 0 2191 151' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.634521' y='0.487503' width='2189.39' height='150' fill='%23E8E400'/%3E%3C/svg%3E") !important;
+                    background-color: transparent !important;
                 }
                 &:active{
                     background-image: url("data:image/svg+xml,%3Csvg width='2191' height='151' viewBox='0 0 2191 151' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.634521' y='0.487503' width='2189.39' height='150' fill='%23D6D300'/%3E%3C/svg%3E") !important;
+                    background-color: transparent !important;
                 }
             }
         }
