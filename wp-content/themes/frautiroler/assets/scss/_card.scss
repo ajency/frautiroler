@@ -308,6 +308,26 @@
         transform: scale(1);
     }
 }
+@keyframes animateHeart2 {
+    0% {
+        transform: scale(0.8);
+    }
+    5% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
 .trasit-scale{
     img {
         transform: scale(1.05);
