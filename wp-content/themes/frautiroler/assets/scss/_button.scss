@@ -117,6 +117,11 @@ canvas {
 	.submitMessage .button-text {
 		position: relative;
 		padding: 0 20px 0 0;
+		margin-left: -5px;
+
+		@media (max-width: 768px){
+			margin-left: 0 !important;
+		}
 		&:after {
 			content: "\f004";
 			color: white;
@@ -124,8 +129,9 @@ canvas {
 			height: 16px;
 			position: absolute;
 			right: -4px;
+			top: 3px;
 			font-family: "FontAwesome";
-			animation: 2.5s ease 0s normal none infinite running animateHeart;
+			animation: 2.5s ease 0s normal none infinite running animateHeart2;
 		}
 	}
 
