@@ -139,6 +139,12 @@ body {
 				-moz-transition: min-height $normal-duration-1 $ease-out;
 				-o-transition: min-height $normal-duration-1 $ease-out;
 				transition: min-height $normal-duration-1 $ease-out;
+
+				@media (min-width: 2500px) {
+					transform: translate(-500px, 0) rotate(-5deg);
+					-webkit-transform: translate(-500px, 0) rotate(-5deg);
+					width: calc(100% + 550px);
+				}
 				@media (max-width: 991px) {
 					min-height: 1040px;
 					width: calc(100% + 110px);
@@ -613,8 +619,7 @@ body {
 					margin-top: 25px;
 					.marquee-text {
 						background: #f6f100;
-						transform: matrix(1, -0.1, 0, 1, 0, 0);
-						-webkit-transform: matrix(1, -0.1, 0, 1, 0, 0);
+						transform: translate(-380px, 0) rotate(-5deg);
 						padding: 14px 0 7px;
 						position: absolute;
 						left: -32px;
@@ -663,8 +668,11 @@ body {
 							margin-top: 0;
 						}
 						@media (min-width: 2500px) {
-							transform: translate(-380px, 0) rotate(-5deg);
-							width: calc(120% + 1320px);
+							transform: translate(-650px, 0) rotate(-5deg);
+							width: calc(120% + 1720px);
+						}
+						@media (max-width: 991px) {
+							transform: translate(-10px, 0) rotate(-5deg) !important;
 						}
 					}
 					@media (max-width: 991px) {
