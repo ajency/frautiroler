@@ -481,7 +481,7 @@ function my_custom_validation($errors, $posted_field, $posted_value){
     $words = explode(' ', $posted_value); //separate at each space
     $count = count($words); //count each word
     if($count < 99)
-	$errors['field'. $posted_field->id] = 'Bitte ausfüllen (Min. 100 Zeichen)';
+	$errors['field'. $posted_field->id] = 'Bitte ausfüllen (Min. 100 Wörter)';
   }
   return $errors;
 }
