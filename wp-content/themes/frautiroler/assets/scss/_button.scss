@@ -132,6 +132,10 @@ canvas {
 			top: 3px;
 			font-family: "FontAwesome";
 			animation: 2.5s ease 0s normal none infinite running animateHeart2;
+
+			@media (max-width: 768px){
+				top: -2px !important;
+			}
 		}
 	}
 
