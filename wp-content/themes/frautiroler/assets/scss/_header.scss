@@ -59,13 +59,6 @@ body{
 			    align-items: center;
 			    margin-top: 40px;
 			    .site-logo{
-					transition: transform $fast-duration $ease-out;
-					&:hover{
-						transform: scale(0.97);
-					}
-					&:active{
-						transform: scale(0.95);
-					}
 			    	a{
 			    		position: relative;
 				    	img{
@@ -358,13 +351,6 @@ body{
 						overflow: hidden;
 					}
 				   	.site-logo{
-						transition: transform $fast-duration $ease-out;
-						&:hover{
-							transform: scale(0.97);
-						}
-						&:active{
-							transform: scale(0.95);
-						}
 				   		img{
 							position: relative;
 							width: 140px;
