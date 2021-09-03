@@ -88,6 +88,7 @@ canvas {
 		position: relative;
 		transition: width 0.2s ease calc(var(--d) + 1000ms);
 		width: 100%;
+		padding: 17px 27px 14px;
 	}
 	&:hover::before {
 		transition: color $fast-duration $ease-out;
