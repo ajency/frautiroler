@@ -210,6 +210,10 @@ canvas {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
+
+	@media (min-width: 992px){
+		top: 54% !important;
+	}
 }
 
 .message svg {
