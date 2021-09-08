@@ -202,23 +202,6 @@ get_header();  ?>
 ?>  
 
 <script type="text/javascript">
-
-
-/* hide & show sticky button */
-$(window).scroll(function() {
-  var top_of_element = $(".button-burst").offset().top;
-  var bottom_of_element = $(".button-burst").offset().top + $(".button-burst").outerHeight();
-  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-  var top_of_screen = $(window).scrollTop();
-
-  if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-      // the element is visible, do something
-      $('.sticky-button').addClass('sticky-button-visible');
-  } else {
-      // the element is not visible, do something else
-      $('.sticky-button').removeClass('sticky-button-visible');
-  }
-});
     
     // ammount to add on each button press
     const confettiCount = 20
