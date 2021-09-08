@@ -92,40 +92,19 @@ $(document).ready(function(){
 	});
 /* lightbox gallery end*/
 
-$(window).on("load",function() {
-    $(window).scroll(function() {
-      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-      $(".button-burst").each(function() {
-        var objectBottom = $(this).offset().top - 30;
-        if (objectBottom < windowBottom && objectBottom + 860 > windowBottom ) { 
-          if ($(this).css("opacity")==0)  {
-            /* $(this).addClass('moveup'); */
-            $('.sticky-button').addClass('sticky-button-visible');
-          }
-        } else { 
-          if ($(this).css("opacity")==1)  {
-           /*  $(this).removeClass('moveup'); */
-            $('.sticky-button').removeClass('sticky-button-visible');
-          }
-        }
-      });
-    }).scroll(); 
-});
-
 /* hide & show sticky button */
-$(window).scroll(function() {
-  var top_of_element = $(".button-burst").offset().top;
-  var bottom_of_element = $(".button-burst").offset().top + $(".button-burst").outerHeight();
-  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-  var top_of_screen = $(window).scrollTop();
-
-  if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-      // the element is visible, do something
-      $('.sticky-button').addClass('sticky-button-visible');
-  } else {
-      // the element is not visible, do something else
-      $('.sticky-button').removeClass('sticky-button-visible');
-  }
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".button-burst").each(function() {
+      var objectBottom = $(this).offset().top;
+      if (objectBottom < windowBottom) { 
+        $('.sticky-button').addClass('sticky-button-visible');
+      } else { 
+        $('.sticky-button').removeClass('sticky-button-visible');
+      }
+    });
+  }).scroll(); 
 });
 
 //home
