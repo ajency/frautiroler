@@ -99,12 +99,12 @@ $(window).on("load",function() {
       var objectBottom = $(this).offset().top - 30;
       if (objectBottom < windowBottom && objectBottom + 860 > windowBottom ) { 
         if ($(this).css("opacity")==0)  {
-          $(this).addClass('moveup');
+          /* $(this).addClass('moveup'); */
           $('.sticky-button').addClass('sticky-button-visible');
         }
       } else { 
         if ($(this).css("opacity")==1)  {
-          $(this).removeClass('moveup');
+          /* $(this).removeClass('moveup'); */
           $('.sticky-button').removeClass('sticky-button-visible');
         }
       }
