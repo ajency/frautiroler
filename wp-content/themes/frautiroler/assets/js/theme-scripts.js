@@ -92,21 +92,6 @@ $(document).ready(function(){
 	});
 /* lightbox gallery end*/
 
-/* hide & show sticky button */
-$(window).on("load",function() {
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".button-burst").each(function() {
-      var objectBottom = $(this).offset().top;
-      if (objectBottom < windowBottom) { 
-        $('.sticky-button').addClass('sticky-button-visible');
-      } else { 
-        $('.sticky-button').removeClass('sticky-button-visible');
-      }
-    });
-  }).scroll(); 
-});
-
 //home
 
 $(document).ready(function(){
