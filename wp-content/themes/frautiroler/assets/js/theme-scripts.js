@@ -302,7 +302,7 @@ $( document ).ready(function() {
 });
 $( document ).ready(function() {
   var countlist2 = $(".project-list .project-item").length;
-  if (countlist2<=4) {
+  if (countlist2<=3) {
     $(".load-more-mob").addClass('d-none');
   }
   else{
@@ -358,3 +358,12 @@ $(".project-votes").hover(
     }
 );
 console.log('hello');
+
+/* cookie banner */
+$(".menu-item-1219 a").click(function show_cookie(){
+  $("#onetrust-consent-sdk").css({"display":"block", "opacity":"1", "visibility":"visible"});
+  $("#onetrust-banner-sdk").css({"display":"block", "opacity":"1", "visibility":"visible"});
+  $(".onetrust-pc-dark-filter,#onetrust-pc-sdk").attr('style','');
+  $(".onetrust-pc-dark-filter,#onetrust-pc-sdk").removeClass('ot-hide ot-slide-out-left');
+});
+/* cookie banner end*/

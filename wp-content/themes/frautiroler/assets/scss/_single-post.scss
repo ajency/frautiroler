@@ -146,9 +146,9 @@ i {
                     .post-title {
                         font-size: 45px;
                         line-height: 50px;
-                        color: #000000;
                         hyphens: auto;
                         word-break: break-word;
+                        color: #000000;
 
                         @media only screen and (max-width: 768px) {
                             font-size: 32px;
@@ -735,5 +735,14 @@ i {
             content: "" !important;
             margin-left: 0;
         }
+    }
+}
+
+.page-id-265{
+    #onetrust-consent-sdk{
+        display: none !important;
+    }
+    #onetrust-banner-sdk{
+        display: none !important;
     }
 }
